@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 
 
-def temporal_random_split_by_horizon(train_size=0.8, test_size=0.2, random_seed=42):
+def temporal_random_split_by_horizon(train_size=0.8, vali_size=0.2,test_size=0.2, random_seed=42):
     """
     using temporal dataset cross-validation method.
 
@@ -35,9 +35,11 @@ def temporal_random_split_by_horizon(train_size=0.8, test_size=0.2, random_seed=
         raise ValueError(f"train_size must be between 0 and 1, got {train_size}")
     if not (0 < test_size <= 1):
         raise ValueError(f"test_size must be between 0 and 1, got {test_size}")
-    if train_size + test_size > 1:
+    if not (0 < vali_size <= 1):
+        raise ValueError(f"vali_size must be between 0 and 1, got {test_size}")
+    if train_size + vali_size > 1:
         raise ValueError(
-            f"train_size + test_size cannot exceed 1, got {train_size + test_size}"
+            f"train_size + vali_size cannot exceed 1, got {train_size + vali_size}"
         )
     if not isinstance(random_seed, int):
         raise TypeError(f"random_seed must be an integer, got {type(random_seed)}")
@@ -58,16 +60,23 @@ def temporal_random_split_by_horizon(train_size=0.8, test_size=0.2, random_seed=
 
     
     mid = n_days //2
+    three_quater = mid + mid//2
     
     first_half_days = unique_days[:mid]
-    second_half_days = unique_days[mid:]
+    second_half_days_test = unique_days[three_quater:]
+    second_half_days_vali = unique_days[mid:three_quater]
+    
 
     train_num_samples = int(mid * train_size)
     test_num_samples = int(mid * test_size)
+    vali_num_samples = int(mid * vali_size)
     train_samples_id = np.random.choice(first_half_days, size=train_num_samples, replace=False)
-    test_samples_id = np.random.choice(second_half_days, size=test_num_samples, replace=False)
+    test_samples_id = np.random.choice(second_half_days_test, size=test_num_samples, replace=False)
+    vali_samples_id = np.random.choice(second_half_days_vali, size=vali_num_samples, replace=False)
 
     train_samples = data[data["Date_id"].isin(train_samples_id)].drop(columns=["Date_id"])
     test_samples = data[data["Date_id"].isin(test_samples_id)].drop(columns=["Date_id"])
+    vali_samples = data[data["Date_id"].isin(vali_samples_id)].drop(columns=["Date_id"])
     
-    return train_samples,test_samples
+    
+    return train_samples,test_samples,vali_samples
