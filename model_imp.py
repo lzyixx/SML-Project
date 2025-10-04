@@ -10,7 +10,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 # load train and test dataset
-train_samples,test_samples,vali_samples = temporal_random_split_by_horizon(train_size=0.8, test_size=0.2, random_seed=42)
+train_samples,test_samples,vali_samples = temporal_random_split_by_horizon(train_size=0.8, test_size=0.1, vali_size=0.1,random_seed=42)
 
 X_train = train_samples.drop(columns=["UpDown_next"]).values
 y_train = train_samples["UpDown_next"].values
@@ -31,9 +31,9 @@ y_test = torch.tensor(y_test, dtype=torch.long)
 train_dataset = TensorDataset(X_train, y_train)
 test_dataset = TensorDataset(X_test, y_test)
 vali_dataset = TensorDataset(X_vali, y_vali)
-train_loader = DataLoader(train_dataset, batch_size=200, shuffle=False)
-test_loader = DataLoader(test_dataset, batch_size=20, shuffle=False)
-vali_loader = DataLoader(vali_dataset, batch_size=20, shuffle=False)
+train_loader = DataLoader(train_dataset, batch_size=300, shuffle=False)
+test_loader = DataLoader(test_dataset, batch_size=30, shuffle=False)
+vali_loader = DataLoader(vali_dataset, batch_size=30, shuffle=False)
 
 
 class StockNN(nn.Module):
@@ -62,7 +62,7 @@ criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr=0.05, weight_decay=1e-4)
 
 # using train and vali data totrain model and check performance 
-epochs = 500
+epochs = 300
 train_losses = []
 val_losses = []
 val_accs = []
@@ -106,7 +106,7 @@ for epoch in range(epochs):
 
 # plot loss figure
 plt.figure(figsize=(8, 5))
-plt.plot(range(1, epochs + 1), train_losses, marker='o', label='Train Loss')
+plt.plot(range(11, epochs + 1), train_losses[10:], marker='o', label='Train Loss')
 plt.xlabel('Epoch')
 plt.ylabel('Loss')
 plt.title('Training Loss Curve')
