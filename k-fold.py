@@ -21,8 +21,7 @@ def k_fold_with_direction(train_df,k,random_seed=42):
 
         yield fold_train,fold_val,fold + 1
 
-def seprate_train_test(test_region):
-    df = pd.read_csv("dataset.csv")
+def seprate_train_test(df,test_region):
 
     test_df = df[df["Direction_" + test_region] == 1]
     train_df = df[df["Direction_" + test_region] == 0]
@@ -30,7 +29,8 @@ def seprate_train_test(test_region):
     return train_df,test_df
 
 # how to use
-train_X,test_X = seprate_train_test("West")
+df = pd.read_csv("dataset.csv")
+train_X,test_X = seprate_train_test(df,"West")
 for train_df, val_df, fold in k_fold_with_direction(train_X, 5):
     print(len(train_df))
     print(len(val_df))
