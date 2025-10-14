@@ -1,0 +1,406 @@
+[2025-10-14 09:07:33] ==========================================================================================
+[2025-10-14 09:07:33] Starting experiment | HELD-OUT REGION: EAST
+[2025-10-14 09:07:33] ==========================================================================================
+[2025-10-14 09:07:33] Training regions: ['north', 'south', 'west']
+[2025-10-14 09:07:33] Train shape: (22203, 4677)
+[2025-10-14 09:07:33] ----------------------------------------------------------------------
+[2025-10-14 09:07:33] Outer fold 1/10
+[2025-10-14 09:07:46] [Outer 1] Combo 1/36 params={'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=286986.7264, MAE=163647.9667, R^2=0.8229
+[2025-10-14 09:07:59] [Outer 1] Combo 2/36 params={'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=288367.3233, MAE=164313.1370, R^2=0.8211
+[2025-10-14 09:08:12] [Outer 1] Combo 3/36 params={'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=285853.8903, MAE=163556.0815, R^2=0.8242
+[2025-10-14 09:08:25] [Outer 1] Combo 4/36 params={'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=288204.8729, MAE=164609.5024, R^2=0.8213
+[2025-10-14 09:08:31] [Outer 1] Combo 5/36 params={'num_leaves': 31, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=286866.2639, MAE=163630.0799, R^2=0.8230
+[2025-10-14 09:08:37] [Outer 1] Combo 6/36 params={'num_leaves': 31, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=288661.3951, MAE=164430.0541, R^2=0.8207
+[2025-10-14 09:08:42] [Outer 1] Combo 7/36 params={'num_leaves': 31, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=287489.1278, MAE=164263.8204, R^2=0.8222
+[2025-10-14 09:08:49] [Outer 1] Combo 8/36 params={'num_leaves': 31, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=288231.6058, MAE=164492.0733, R^2=0.8213
+[2025-10-14 09:08:53] [Outer 1] Combo 9/36 params={'num_leaves': 31, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=288649.8417, MAE=164676.7923, R^2=0.8208
+[2025-10-14 09:08:57] [Outer 1] Combo 10/36 params={'num_leaves': 31, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=288980.6507, MAE=165332.6743, R^2=0.8204
+[2025-10-14 09:09:02] [Outer 1] Combo 11/36 params={'num_leaves': 31, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=289097.7254, MAE=165189.9861, R^2=0.8202
+[2025-10-14 09:09:06] [Outer 1] Combo 12/36 params={'num_leaves': 31, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=289752.2760, MAE=165385.3884, R^2=0.8194
+[2025-10-14 09:09:21] [Outer 1] Combo 13/36 params={'num_leaves': 63, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=286262.8558, MAE=162578.7432, R^2=0.8238
+[2025-10-14 09:09:36] [Outer 1] Combo 14/36 params={'num_leaves': 63, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=290030.4339, MAE=164629.4605, R^2=0.8190
+[2025-10-14 09:09:51] [Outer 1] Combo 15/36 params={'num_leaves': 63, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=287645.0561, MAE=163308.6452, R^2=0.8220
+[2025-10-14 09:10:06] [Outer 1] Combo 16/36 params={'num_leaves': 63, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=291028.5987, MAE=164633.1335, R^2=0.8178
+[2025-10-14 09:10:11] [Outer 1] Combo 17/36 params={'num_leaves': 63, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=288028.8926, MAE=164019.1155, R^2=0.8216
+[2025-10-14 09:10:17] [Outer 1] Combo 18/36 params={'num_leaves': 63, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=289793.0250, MAE=164857.6779, R^2=0.8194
+[2025-10-14 09:10:23] [Outer 1] Combo 19/36 params={'num_leaves': 63, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=289214.3771, MAE=164264.4270, R^2=0.8201
+[2025-10-14 09:10:29] [Outer 1] Combo 20/36 params={'num_leaves': 63, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=291461.1242, MAE=165219.6459, R^2=0.8173
+[2025-10-14 09:10:33] [Outer 1] Combo 21/36 params={'num_leaves': 63, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=289469.7449, MAE=165082.1046, R^2=0.8197
+[2025-10-14 09:10:38] [Outer 1] Combo 22/36 params={'num_leaves': 63, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=290794.6126, MAE=165843.8619, R^2=0.8181
+[2025-10-14 09:10:43] [Outer 1] Combo 23/36 params={'num_leaves': 63, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=290309.5541, MAE=165457.0268, R^2=0.8187
+[2025-10-14 09:10:47] [Outer 1] Combo 24/36 params={'num_leaves': 63, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=292306.8073, MAE=166550.4381, R^2=0.8162
+[2025-10-14 09:11:04] [Outer 1] Combo 25/36 params={'num_leaves': 127, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=288041.6729, MAE=163050.6762, R^2=0.8216
+[2025-10-14 09:11:23] [Outer 1] Combo 26/36 params={'num_leaves': 127, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=292036.8009, MAE=165140.1688, R^2=0.8166
+[2025-10-14 09:11:41] [Outer 1] Combo 27/36 params={'num_leaves': 127, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=289234.1853, MAE=163377.2921, R^2=0.8200
+[2025-10-14 09:12:01] [Outer 1] Combo 28/36 params={'num_leaves': 127, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=293315.5536, MAE=165654.3662, R^2=0.8150
+[2025-10-14 09:12:07] [Outer 1] Combo 29/36 params={'num_leaves': 127, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=289883.9375, MAE=164253.7683, R^2=0.8193
+[2025-10-14 09:12:14] [Outer 1] Combo 30/36 params={'num_leaves': 127, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=292560.2752, MAE=165758.4738, R^2=0.8159
+[2025-10-14 09:12:20] [Outer 1] Combo 31/36 params={'num_leaves': 127, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=290707.0750, MAE=164547.2719, R^2=0.8182
+[2025-10-14 09:12:27] [Outer 1] Combo 32/36 params={'num_leaves': 127, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=293822.0686, MAE=166191.5577, R^2=0.8143
+[2025-10-14 09:12:33] [Outer 1] Combo 33/36 params={'num_leaves': 127, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=291097.5811, MAE=165481.5250, R^2=0.8177
+[2025-10-14 09:12:38] [Outer 1] Combo 34/36 params={'num_leaves': 127, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=293886.2940, MAE=166378.5504, R^2=0.8142
+[2025-10-14 09:12:44] [Outer 1] Combo 35/36 params={'num_leaves': 127, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=291839.6993, MAE=166014.1001, R^2=0.8168
+[2025-10-14 09:12:49] [Outer 1] Combo 36/36 params={'num_leaves': 127, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=295532.9398, MAE=167173.0386, R^2=0.8121
+[2025-10-14 09:12:49] [Outer 1] Best inner params: {'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 0.8} (mean RMSE=285853.8903)
+[2025-10-14 09:12:54] [Outer 1] Validation -> RMSE=251799.4074, MAE=151053.3320, R^2=0.8400
+[2025-10-14 09:12:54] ----------------------------------------------------------------------
+[2025-10-14 09:12:54] Outer fold 2/10
+[2025-10-14 09:13:07] [Outer 2] Combo 1/36 params={'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=280833.5395, MAE=161297.1445, R^2=0.8269
+[2025-10-14 09:13:21] [Outer 2] Combo 2/36 params={'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=281980.7456, MAE=162695.4562, R^2=0.8254
+[2025-10-14 09:13:33] [Outer 2] Combo 3/36 params={'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=282420.2111, MAE=162753.4127, R^2=0.8249
+[2025-10-14 09:13:46] [Outer 2] Combo 4/36 params={'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=284030.1899, MAE=163473.6425, R^2=0.8229
+[2025-10-14 09:13:52] [Outer 2] Combo 5/36 params={'num_leaves': 31, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=281501.3535, MAE=161608.2252, R^2=0.8260
+[2025-10-14 09:13:58] [Outer 2] Combo 6/36 params={'num_leaves': 31, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=281622.5654, MAE=163028.0568, R^2=0.8259
+[2025-10-14 09:14:03] [Outer 2] Combo 7/36 params={'num_leaves': 31, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=282124.8544, MAE=162804.6760, R^2=0.8253
+[2025-10-14 09:14:09] [Outer 2] Combo 8/36 params={'num_leaves': 31, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=283044.7800, MAE=163677.6576, R^2=0.8241
+[2025-10-14 09:14:13] [Outer 2] Combo 9/36 params={'num_leaves': 31, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=282715.5979, MAE=162990.3599, R^2=0.8245
+[2025-10-14 09:14:18] [Outer 2] Combo 10/36 params={'num_leaves': 31, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=282940.3557, MAE=163676.6417, R^2=0.8242
+[2025-10-14 09:14:23] [Outer 2] Combo 11/36 params={'num_leaves': 31, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=283534.9954, MAE=163821.0821, R^2=0.8235
+[2025-10-14 09:14:27] [Outer 2] Combo 12/36 params={'num_leaves': 31, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=284789.0405, MAE=164655.8674, R^2=0.8219
+[2025-10-14 09:14:41] [Outer 2] Combo 13/36 params={'num_leaves': 63, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=280509.7443, MAE=160870.9103, R^2=0.8272
+[2025-10-14 09:14:56] [Outer 2] Combo 14/36 params={'num_leaves': 63, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=282931.0022, MAE=162522.7090, R^2=0.8242
+[2025-10-14 09:15:11] [Outer 2] Combo 15/36 params={'num_leaves': 63, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=283262.7664, MAE=162166.6132, R^2=0.8238
+[2025-10-14 09:15:26] [Outer 2] Combo 16/36 params={'num_leaves': 63, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=285225.7150, MAE=163382.9302, R^2=0.8214
+[2025-10-14 09:15:33] [Outer 2] Combo 17/36 params={'num_leaves': 63, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=282077.7785, MAE=161872.9514, R^2=0.8253
+[2025-10-14 09:15:39] [Outer 2] Combo 18/36 params={'num_leaves': 63, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=283848.2330, MAE=163294.8089, R^2=0.8231
+[2025-10-14 09:15:45] [Outer 2] Combo 19/36 params={'num_leaves': 63, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=284927.2360, MAE=163024.4494, R^2=0.8218
+[2025-10-14 09:15:51] [Outer 2] Combo 20/36 params={'num_leaves': 63, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=285336.9367, MAE=163946.4497, R^2=0.8212
+[2025-10-14 09:15:56] [Outer 2] Combo 21/36 params={'num_leaves': 63, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=281383.8668, MAE=162473.2680, R^2=0.8262
+[2025-10-14 09:16:00] [Outer 2] Combo 22/36 params={'num_leaves': 63, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=283718.2765, MAE=163948.7511, R^2=0.8232
+[2025-10-14 09:16:04] [Outer 2] Combo 23/36 params={'num_leaves': 63, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=285118.7914, MAE=164049.4894, R^2=0.8215
+[2025-10-14 09:16:09] [Outer 2] Combo 24/36 params={'num_leaves': 63, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=285974.3701, MAE=164604.6886, R^2=0.8204
+[2025-10-14 09:16:26] [Outer 2] Combo 25/36 params={'num_leaves': 127, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=281740.2623, MAE=160942.1690, R^2=0.8257
+[2025-10-14 09:16:44] [Outer 2] Combo 26/36 params={'num_leaves': 127, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=285378.1389, MAE=163133.1949, R^2=0.8212
+[2025-10-14 09:17:02] [Outer 2] Combo 27/36 params={'num_leaves': 127, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=284524.0108, MAE=161807.6997, R^2=0.8223
+[2025-10-14 09:17:22] [Outer 2] Combo 28/36 params={'num_leaves': 127, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=288092.9389, MAE=164161.2101, R^2=0.8178
+[2025-10-14 09:17:28] [Outer 2] Combo 29/36 params={'num_leaves': 127, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=282344.2073, MAE=161673.6076, R^2=0.8250
+[2025-10-14 09:17:35] [Outer 2] Combo 30/36 params={'num_leaves': 127, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=286402.8948, MAE=164039.9142, R^2=0.8199
+[2025-10-14 09:17:42] [Outer 2] Combo 31/36 params={'num_leaves': 127, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=286426.0213, MAE=163212.5964, R^2=0.8199
+[2025-10-14 09:17:49] [Outer 2] Combo 32/36 params={'num_leaves': 127, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=288350.9472, MAE=164330.4819, R^2=0.8174
+[2025-10-14 09:17:54] [Outer 2] Combo 33/36 params={'num_leaves': 127, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=286179.3209, MAE=163708.2579, R^2=0.8202
+[2025-10-14 09:17:59] [Outer 2] Combo 34/36 params={'num_leaves': 127, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=287146.7546, MAE=164925.7022, R^2=0.8190
+[2025-10-14 09:18:04] [Outer 2] Combo 35/36 params={'num_leaves': 127, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=286974.7090, MAE=164193.3667, R^2=0.8192
+[2025-10-14 09:18:09] [Outer 2] Combo 36/36 params={'num_leaves': 127, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=290070.6257, MAE=165311.3161, R^2=0.8152
+[2025-10-14 09:18:09] [Outer 2] Best inner params: {'num_leaves': 63, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 0.8} (mean RMSE=280509.7443)
+[2025-10-14 09:18:16] [Outer 2] Validation -> RMSE=287196.0905, MAE=162779.1507, R^2=0.8295
+[2025-10-14 09:18:16] ----------------------------------------------------------------------
+[2025-10-14 09:18:16] Outer fold 3/10
+[2025-10-14 09:18:29] [Outer 3] Combo 1/36 params={'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=285013.0005, MAE=162579.0394, R^2=0.8230
+[2025-10-14 09:18:42] [Outer 3] Combo 2/36 params={'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=287925.0533, MAE=164311.4627, R^2=0.8194
+[2025-10-14 09:18:54] [Outer 3] Combo 3/36 params={'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=286157.5579, MAE=163111.9883, R^2=0.8216
+[2025-10-14 09:19:08] [Outer 3] Combo 4/36 params={'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=287917.6394, MAE=164015.7466, R^2=0.8194
+[2025-10-14 09:19:13] [Outer 3] Combo 5/36 params={'num_leaves': 31, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=285601.4755, MAE=162815.7013, R^2=0.8223
+[2025-10-14 09:19:19] [Outer 3] Combo 6/36 params={'num_leaves': 31, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=287880.8811, MAE=163791.8746, R^2=0.8194
+[2025-10-14 09:19:25] [Outer 3] Combo 7/36 params={'num_leaves': 31, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=286801.2768, MAE=163675.0900, R^2=0.8208
+[2025-10-14 09:19:31] [Outer 3] Combo 8/36 params={'num_leaves': 31, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=287873.8942, MAE=163859.7150, R^2=0.8194
+[2025-10-14 09:19:36] [Outer 3] Combo 9/36 params={'num_leaves': 31, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=288046.0287, MAE=163884.0334, R^2=0.8192
+[2025-10-14 09:19:40] [Outer 3] Combo 10/36 params={'num_leaves': 31, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=288238.7367, MAE=164442.2367, R^2=0.8189
+[2025-10-14 09:19:45] [Outer 3] Combo 11/36 params={'num_leaves': 31, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=287457.4737, MAE=164632.9726, R^2=0.8200
+[2025-10-14 09:19:49] [Outer 3] Combo 12/36 params={'num_leaves': 31, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=287663.4012, MAE=164584.0888, R^2=0.8197
+[2025-10-14 09:20:05] [Outer 3] Combo 13/36 params={'num_leaves': 63, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=284775.1867, MAE=161454.1286, R^2=0.8233
+[2025-10-14 09:20:24] [Outer 3] Combo 14/36 params={'num_leaves': 63, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=287673.6344, MAE=162310.8429, R^2=0.8197
+[2025-10-14 09:20:39] [Outer 3] Combo 15/36 params={'num_leaves': 63, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=286756.1193, MAE=162890.9780, R^2=0.8209
+[2025-10-14 09:20:56] [Outer 3] Combo 16/36 params={'num_leaves': 63, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=288780.7266, MAE=164081.4319, R^2=0.8183
+[2025-10-14 09:21:02] [Outer 3] Combo 17/36 params={'num_leaves': 63, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=285306.0490, MAE=162343.7590, R^2=0.8227
+[2025-10-14 09:21:08] [Outer 3] Combo 18/36 params={'num_leaves': 63, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=288440.8760, MAE=163606.4941, R^2=0.8187
+[2025-10-14 09:21:14] [Outer 3] Combo 19/36 params={'num_leaves': 63, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=287634.1824, MAE=163751.1664, R^2=0.8198
+[2025-10-14 09:21:21] [Outer 3] Combo 20/36 params={'num_leaves': 63, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=288964.7539, MAE=164561.6429, R^2=0.8181
+[2025-10-14 09:21:25] [Outer 3] Combo 21/36 params={'num_leaves': 63, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=287519.1716, MAE=163570.7948, R^2=0.8199
+[2025-10-14 09:21:30] [Outer 3] Combo 22/36 params={'num_leaves': 63, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=290374.8322, MAE=164895.3474, R^2=0.8163
+[2025-10-14 09:21:35] [Outer 3] Combo 23/36 params={'num_leaves': 63, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=289852.4762, MAE=165241.2521, R^2=0.8170
+[2025-10-14 09:21:39] [Outer 3] Combo 24/36 params={'num_leaves': 63, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=290160.7561, MAE=165917.0717, R^2=0.8166
+[2025-10-14 09:21:58] [Outer 3] Combo 25/36 params={'num_leaves': 127, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=285892.0664, MAE=161927.6285, R^2=0.8219
+[2025-10-14 09:22:16] [Outer 3] Combo 26/36 params={'num_leaves': 127, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=289249.6237, MAE=163703.3676, R^2=0.8177
+[2025-10-14 09:22:37] [Outer 3] Combo 27/36 params={'num_leaves': 127, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=289261.7531, MAE=163620.6356, R^2=0.8177
+[2025-10-14 09:22:58] [Outer 3] Combo 28/36 params={'num_leaves': 127, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=291031.3482, MAE=165109.7503, R^2=0.8155
+[2025-10-14 09:23:05] [Outer 3] Combo 29/36 params={'num_leaves': 127, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=286762.9520, MAE=162674.6152, R^2=0.8208
+[2025-10-14 09:23:12] [Outer 3] Combo 30/36 params={'num_leaves': 127, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=290419.0107, MAE=164445.7049, R^2=0.8162
+[2025-10-14 09:23:19] [Outer 3] Combo 31/36 params={'num_leaves': 127, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=289705.5734, MAE=164286.2561, R^2=0.8172
+[2025-10-14 09:23:26] [Outer 3] Combo 32/36 params={'num_leaves': 127, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=291924.3852, MAE=165807.8569, R^2=0.8143
+[2025-10-14 09:23:32] [Outer 3] Combo 33/36 params={'num_leaves': 127, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=288321.2635, MAE=164011.6003, R^2=0.8189
+[2025-10-14 09:23:37] [Outer 3] Combo 34/36 params={'num_leaves': 127, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=291719.3325, MAE=165442.3220, R^2=0.8146
+[2025-10-14 09:23:43] [Outer 3] Combo 35/36 params={'num_leaves': 127, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=292054.7183, MAE=166537.1334, R^2=0.8142
+[2025-10-14 09:23:48] [Outer 3] Combo 36/36 params={'num_leaves': 127, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=293294.8898, MAE=166700.9206, R^2=0.8126
+[2025-10-14 09:23:48] [Outer 3] Best inner params: {'num_leaves': 63, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 0.8} (mean RMSE=284775.1867)
+[2025-10-14 09:23:53] [Outer 3] Validation -> RMSE=265642.1255, MAE=153144.5451, R^2=0.8439
+[2025-10-14 09:23:53] ----------------------------------------------------------------------
+[2025-10-14 09:23:53] Outer fold 4/10
+[2025-10-14 09:24:06] [Outer 4] Combo 1/36 params={'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=282622.8125, MAE=162029.4720, R^2=0.8241
+[2025-10-14 09:24:19] [Outer 4] Combo 2/36 params={'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=284147.5256, MAE=163334.1453, R^2=0.8222
+[2025-10-14 09:24:32] [Outer 4] Combo 3/36 params={'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=282183.3510, MAE=162124.8462, R^2=0.8246
+[2025-10-14 09:24:45] [Outer 4] Combo 4/36 params={'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=284069.0339, MAE=163643.0739, R^2=0.8223
+[2025-10-14 09:24:50] [Outer 4] Combo 5/36 params={'num_leaves': 31, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=282706.4134, MAE=162795.5183, R^2=0.8240
+[2025-10-14 09:24:56] [Outer 4] Combo 6/36 params={'num_leaves': 31, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=283513.9031, MAE=162577.8026, R^2=0.8230
+[2025-10-14 09:25:02] [Outer 4] Combo 7/36 params={'num_leaves': 31, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=282527.2337, MAE=162924.3743, R^2=0.8242
+[2025-10-14 09:25:08] [Outer 4] Combo 8/36 params={'num_leaves': 31, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=284102.3089, MAE=163334.9131, R^2=0.8222
+[2025-10-14 09:25:12] [Outer 4] Combo 9/36 params={'num_leaves': 31, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=284589.6015, MAE=164042.5711, R^2=0.8216
+[2025-10-14 09:25:17] [Outer 4] Combo 10/36 params={'num_leaves': 31, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=285817.7779, MAE=164578.9472, R^2=0.8201
+[2025-10-14 09:25:21] [Outer 4] Combo 11/36 params={'num_leaves': 31, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=284150.4109, MAE=163634.2565, R^2=0.8222
+[2025-10-14 09:25:26] [Outer 4] Combo 12/36 params={'num_leaves': 31, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=286027.2717, MAE=164279.2396, R^2=0.8198
+[2025-10-14 09:25:39] [Outer 4] Combo 13/36 params={'num_leaves': 63, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=281789.2894, MAE=161303.9203, R^2=0.8251
+[2025-10-14 09:25:56] [Outer 4] Combo 14/36 params={'num_leaves': 63, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=284331.5234, MAE=162329.8332, R^2=0.8220
+[2025-10-14 09:26:12] [Outer 4] Combo 15/36 params={'num_leaves': 63, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=283601.1763, MAE=161706.2731, R^2=0.8229
+[2025-10-14 09:26:28] [Outer 4] Combo 16/36 params={'num_leaves': 63, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=286349.6097, MAE=163379.9112, R^2=0.8194
+[2025-10-14 09:26:33] [Outer 4] Combo 17/36 params={'num_leaves': 63, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=283645.0182, MAE=162015.3795, R^2=0.8228
+[2025-10-14 09:26:40] [Outer 4] Combo 18/36 params={'num_leaves': 63, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=284989.0243, MAE=162801.2066, R^2=0.8211
+[2025-10-14 09:26:46] [Outer 4] Combo 19/36 params={'num_leaves': 63, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=284235.7936, MAE=162684.7302, R^2=0.8221
+[2025-10-14 09:26:52] [Outer 4] Combo 20/36 params={'num_leaves': 63, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=286446.2077, MAE=163880.0187, R^2=0.8193
+[2025-10-14 09:26:57] [Outer 4] Combo 21/36 params={'num_leaves': 63, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=284241.7353, MAE=163574.0404, R^2=0.8221
+[2025-10-14 09:27:01] [Outer 4] Combo 22/36 params={'num_leaves': 63, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=287533.7518, MAE=164448.8196, R^2=0.8179
+[2025-10-14 09:27:06] [Outer 4] Combo 23/36 params={'num_leaves': 63, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=285651.2063, MAE=163626.7120, R^2=0.8203
+[2025-10-14 09:27:11] [Outer 4] Combo 24/36 params={'num_leaves': 63, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=287753.7371, MAE=165256.1207, R^2=0.8176
+[2025-10-14 09:27:26] [Outer 4] Combo 25/36 params={'num_leaves': 127, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=283111.0882, MAE=161117.8346, R^2=0.8235
+[2025-10-14 09:27:46] [Outer 4] Combo 26/36 params={'num_leaves': 127, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=287515.1405, MAE=163128.0366, R^2=0.8179
+[2025-10-14 09:28:02] [Outer 4] Combo 27/36 params={'num_leaves': 127, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=285790.2401, MAE=162193.1001, R^2=0.8201
+[2025-10-14 09:28:23] [Outer 4] Combo 28/36 params={'num_leaves': 127, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=289171.5146, MAE=164306.3456, R^2=0.8158
+[2025-10-14 09:28:29] [Outer 4] Combo 29/36 params={'num_leaves': 127, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=284798.7672, MAE=162608.5003, R^2=0.8214
+[2025-10-14 09:28:36] [Outer 4] Combo 30/36 params={'num_leaves': 127, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=288277.7812, MAE=163546.4929, R^2=0.8170
+[2025-10-14 09:28:43] [Outer 4] Combo 31/36 params={'num_leaves': 127, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=287282.3924, MAE=163789.5442, R^2=0.8182
+[2025-10-14 09:28:50] [Outer 4] Combo 32/36 params={'num_leaves': 127, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=290132.4681, MAE=164973.0032, R^2=0.8146
+[2025-10-14 09:28:56] [Outer 4] Combo 33/36 params={'num_leaves': 127, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=286338.2609, MAE=163802.2998, R^2=0.8194
+[2025-10-14 09:29:01] [Outer 4] Combo 34/36 params={'num_leaves': 127, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=289077.9260, MAE=164522.1139, R^2=0.8160
+[2025-10-14 09:29:06] [Outer 4] Combo 35/36 params={'num_leaves': 127, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=288755.1141, MAE=164510.3088, R^2=0.8163
+[2025-10-14 09:29:11] [Outer 4] Combo 36/36 params={'num_leaves': 127, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=291410.3642, MAE=165281.6511, R^2=0.8130
+[2025-10-14 09:29:11] [Outer 4] Best inner params: {'num_leaves': 63, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 0.8} (mean RMSE=281789.2894)
+[2025-10-14 09:29:17] [Outer 4] Validation -> RMSE=295408.6026, MAE=162494.7216, R^2=0.8243
+[2025-10-14 09:29:17] ----------------------------------------------------------------------
+[2025-10-14 09:29:17] Outer fold 5/10
+[2025-10-14 09:29:30] [Outer 5] Combo 1/36 params={'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=284016.3536, MAE=162978.6107, R^2=0.8221
+[2025-10-14 09:29:44] [Outer 5] Combo 2/36 params={'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=285315.2893, MAE=163641.8847, R^2=0.8204
+[2025-10-14 09:29:56] [Outer 5] Combo 3/36 params={'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=284526.5941, MAE=162969.8427, R^2=0.8215
+[2025-10-14 09:30:09] [Outer 5] Combo 4/36 params={'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=285845.8238, MAE=164038.5525, R^2=0.8198
+[2025-10-14 09:30:14] [Outer 5] Combo 5/36 params={'num_leaves': 31, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=284717.3496, MAE=163371.6685, R^2=0.8212
+[2025-10-14 09:30:20] [Outer 5] Combo 6/36 params={'num_leaves': 31, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=285721.0312, MAE=163482.0719, R^2=0.8199
+[2025-10-14 09:30:26] [Outer 5] Combo 7/36 params={'num_leaves': 31, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=284775.4897, MAE=163336.6540, R^2=0.8211
+[2025-10-14 09:30:32] [Outer 5] Combo 8/36 params={'num_leaves': 31, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=286297.8203, MAE=163899.9643, R^2=0.8192
+[2025-10-14 09:30:36] [Outer 5] Combo 9/36 params={'num_leaves': 31, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=285260.9158, MAE=164368.1673, R^2=0.8205
+[2025-10-14 09:30:41] [Outer 5] Combo 10/36 params={'num_leaves': 31, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=287254.7290, MAE=164930.2203, R^2=0.8180
+[2025-10-14 09:30:45] [Outer 5] Combo 11/36 params={'num_leaves': 31, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=285880.1072, MAE=164572.9178, R^2=0.8197
+[2025-10-14 09:30:50] [Outer 5] Combo 12/36 params={'num_leaves': 31, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=287449.2694, MAE=165156.1467, R^2=0.8177
+[2025-10-14 09:31:05] [Outer 5] Combo 13/36 params={'num_leaves': 63, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=283702.2679, MAE=162266.3825, R^2=0.8225
+[2025-10-14 09:31:22] [Outer 5] Combo 14/36 params={'num_leaves': 63, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=286631.0589, MAE=163346.4649, R^2=0.8188
+[2025-10-14 09:31:37] [Outer 5] Combo 15/36 params={'num_leaves': 63, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=285560.4305, MAE=162999.7690, R^2=0.8201
+[2025-10-14 09:31:54] [Outer 5] Combo 16/36 params={'num_leaves': 63, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=287856.5925, MAE=164166.4272, R^2=0.8172
+[2025-10-14 09:32:00] [Outer 5] Combo 17/36 params={'num_leaves': 63, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=285407.7176, MAE=163003.9336, R^2=0.8203
+[2025-10-14 09:32:06] [Outer 5] Combo 18/36 params={'num_leaves': 63, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=287631.2560, MAE=163902.7749, R^2=0.8175
+[2025-10-14 09:32:12] [Outer 5] Combo 19/36 params={'num_leaves': 63, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=286984.5497, MAE=164037.3371, R^2=0.8183
+[2025-10-14 09:32:18] [Outer 5] Combo 20/36 params={'num_leaves': 63, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=288641.9510, MAE=164802.4512, R^2=0.8162
+[2025-10-14 09:32:22] [Outer 5] Combo 21/36 params={'num_leaves': 63, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=286956.2106, MAE=165112.9080, R^2=0.8184
+[2025-10-14 09:32:27] [Outer 5] Combo 22/36 params={'num_leaves': 63, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=287866.0243, MAE=165167.7522, R^2=0.8171
+[2025-10-14 09:32:32] [Outer 5] Combo 23/36 params={'num_leaves': 63, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=287313.8314, MAE=165085.4985, R^2=0.8179
+[2025-10-14 09:32:36] [Outer 5] Combo 24/36 params={'num_leaves': 63, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=288904.2055, MAE=165028.0535, R^2=0.8159
+[2025-10-14 09:32:54] [Outer 5] Combo 25/36 params={'num_leaves': 127, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=285427.0101, MAE=162529.6095, R^2=0.8203
+[2025-10-14 09:33:12] [Outer 5] Combo 26/36 params={'num_leaves': 127, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=287967.9198, MAE=163961.7074, R^2=0.8170
+[2025-10-14 09:33:31] [Outer 5] Combo 27/36 params={'num_leaves': 127, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=286479.8064, MAE=162690.3994, R^2=0.8190
+[2025-10-14 09:33:50] [Outer 5] Combo 28/36 params={'num_leaves': 127, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=289543.1053, MAE=164468.5020, R^2=0.8151
+[2025-10-14 09:33:56] [Outer 5] Combo 29/36 params={'num_leaves': 127, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=287156.2149, MAE=163625.2461, R^2=0.8181
+[2025-10-14 09:34:03] [Outer 5] Combo 30/36 params={'num_leaves': 127, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=289121.4560, MAE=164772.0346, R^2=0.8156
+[2025-10-14 09:34:10] [Outer 5] Combo 31/36 params={'num_leaves': 127, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=288307.3555, MAE=164359.8857, R^2=0.8167
+[2025-10-14 09:34:17] [Outer 5] Combo 32/36 params={'num_leaves': 127, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=290287.8898, MAE=165301.3151, R^2=0.8141
+[2025-10-14 09:34:22] [Outer 5] Combo 33/36 params={'num_leaves': 127, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=287135.7629, MAE=164407.5123, R^2=0.8181
+[2025-10-14 09:34:27] [Outer 5] Combo 34/36 params={'num_leaves': 127, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=290228.9740, MAE=166118.1952, R^2=0.8142
+[2025-10-14 09:34:33] [Outer 5] Combo 35/36 params={'num_leaves': 127, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=289050.2406, MAE=165376.0813, R^2=0.8157
+[2025-10-14 09:34:38] [Outer 5] Combo 36/36 params={'num_leaves': 127, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=290995.4005, MAE=166379.0384, R^2=0.8132
+[2025-10-14 09:34:38] [Outer 5] Best inner params: {'num_leaves': 63, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 0.8} (mean RMSE=283702.2679)
+[2025-10-14 09:34:46] [Outer 5] Validation -> RMSE=278742.7578, MAE=155742.7499, R^2=0.8446
+[2025-10-14 09:34:46] ----------------------------------------------------------------------
+[2025-10-14 09:34:46] Outer fold 6/10
+[2025-10-14 09:34:59] [Outer 6] Combo 1/36 params={'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=279584.4151, MAE=162299.5868, R^2=0.8290
+[2025-10-14 09:35:11] [Outer 6] Combo 2/36 params={'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=281640.7900, MAE=163704.1098, R^2=0.8264
+[2025-10-14 09:35:24] [Outer 6] Combo 3/36 params={'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=278389.7767, MAE=161929.2767, R^2=0.8304
+[2025-10-14 09:35:38] [Outer 6] Combo 4/36 params={'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=280525.5470, MAE=163023.6766, R^2=0.8278
+[2025-10-14 09:35:44] [Outer 6] Combo 5/36 params={'num_leaves': 31, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=279747.2132, MAE=162098.8174, R^2=0.8288
+[2025-10-14 09:35:49] [Outer 6] Combo 6/36 params={'num_leaves': 31, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=281918.3242, MAE=163303.4042, R^2=0.8261
+[2025-10-14 09:35:55] [Outer 6] Combo 7/36 params={'num_leaves': 31, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=279453.3509, MAE=162524.7367, R^2=0.8291
+[2025-10-14 09:36:01] [Outer 6] Combo 8/36 params={'num_leaves': 31, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=280500.3834, MAE=163069.3914, R^2=0.8278
+[2025-10-14 09:36:05] [Outer 6] Combo 9/36 params={'num_leaves': 31, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=281578.2625, MAE=164317.5220, R^2=0.8265
+[2025-10-14 09:36:09] [Outer 6] Combo 10/36 params={'num_leaves': 31, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=283300.3670, MAE=164225.5170, R^2=0.8244
+[2025-10-14 09:36:14] [Outer 6] Combo 11/36 params={'num_leaves': 31, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=281861.5517, MAE=163546.1358, R^2=0.8261
+[2025-10-14 09:36:18] [Outer 6] Combo 12/36 params={'num_leaves': 31, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=281267.8392, MAE=164531.0646, R^2=0.8269
+[2025-10-14 09:36:34] [Outer 6] Combo 13/36 params={'num_leaves': 63, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=279574.2084, MAE=161355.3773, R^2=0.8290
+[2025-10-14 09:36:50] [Outer 6] Combo 14/36 params={'num_leaves': 63, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=281839.9376, MAE=162588.8808, R^2=0.8262
+[2025-10-14 09:37:05] [Outer 6] Combo 15/36 params={'num_leaves': 63, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=280099.1576, MAE=161735.8272, R^2=0.8283
+[2025-10-14 09:37:20] [Outer 6] Combo 16/36 params={'num_leaves': 63, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=281837.5081, MAE=162983.4326, R^2=0.8262
+[2025-10-14 09:37:26] [Outer 6] Combo 17/36 params={'num_leaves': 63, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=280201.0300, MAE=161879.7688, R^2=0.8282
+[2025-10-14 09:37:32] [Outer 6] Combo 18/36 params={'num_leaves': 63, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=282425.4608, MAE=162895.4169, R^2=0.8255
+[2025-10-14 09:37:38] [Outer 6] Combo 19/36 params={'num_leaves': 63, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=281308.2834, MAE=162941.8259, R^2=0.8268
+[2025-10-14 09:37:44] [Outer 6] Combo 20/36 params={'num_leaves': 63, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=282070.8784, MAE=163249.6955, R^2=0.8259
+[2025-10-14 09:37:48] [Outer 6] Combo 21/36 params={'num_leaves': 63, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=282781.7046, MAE=163819.1045, R^2=0.8250
+[2025-10-14 09:37:53] [Outer 6] Combo 22/36 params={'num_leaves': 63, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=285102.5852, MAE=164793.3540, R^2=0.8221
+[2025-10-14 09:37:58] [Outer 6] Combo 23/36 params={'num_leaves': 63, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=282064.8455, MAE=163817.2691, R^2=0.8259
+[2025-10-14 09:38:02] [Outer 6] Combo 24/36 params={'num_leaves': 63, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=283773.2331, MAE=165007.7992, R^2=0.8238
+[2025-10-14 09:38:18] [Outer 6] Combo 25/36 params={'num_leaves': 127, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=280823.0411, MAE=161285.3877, R^2=0.8274
+[2025-10-14 09:38:34] [Outer 6] Combo 26/36 params={'num_leaves': 127, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=283634.6074, MAE=162854.6681, R^2=0.8240
+[2025-10-14 09:38:55] [Outer 6] Combo 27/36 params={'num_leaves': 127, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=282878.4344, MAE=162468.2128, R^2=0.8249
+[2025-10-14 09:39:16] [Outer 6] Combo 28/36 params={'num_leaves': 127, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=285258.7025, MAE=163777.7961, R^2=0.8219
+[2025-10-14 09:39:22] [Outer 6] Combo 29/36 params={'num_leaves': 127, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=282219.3630, MAE=162142.9903, R^2=0.8257
+[2025-10-14 09:39:30] [Outer 6] Combo 30/36 params={'num_leaves': 127, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=284716.6827, MAE=163244.1936, R^2=0.8226
+[2025-10-14 09:39:37] [Outer 6] Combo 31/36 params={'num_leaves': 127, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=283450.2566, MAE=163200.5149, R^2=0.8242
+[2025-10-14 09:39:44] [Outer 6] Combo 32/36 params={'num_leaves': 127, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=286249.4961, MAE=164853.5142, R^2=0.8207
+[2025-10-14 09:39:50] [Outer 6] Combo 33/36 params={'num_leaves': 127, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=282983.1956, MAE=163586.3051, R^2=0.8248
+[2025-10-14 09:39:55] [Outer 6] Combo 34/36 params={'num_leaves': 127, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=285185.7589, MAE=164496.5461, R^2=0.8220
+[2025-10-14 09:40:01] [Outer 6] Combo 35/36 params={'num_leaves': 127, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=285504.6501, MAE=164713.2314, R^2=0.8216
+[2025-10-14 09:40:07] [Outer 6] Combo 36/36 params={'num_leaves': 127, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=287026.5829, MAE=166025.7708, R^2=0.8197
+[2025-10-14 09:40:07] [Outer 6] Best inner params: {'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 0.8} (mean RMSE=278389.7767)
+[2025-10-14 09:40:11] [Outer 6] Validation -> RMSE=293360.1681, MAE=158421.9437, R^2=0.8167
+[2025-10-14 09:40:11] ----------------------------------------------------------------------
+[2025-10-14 09:40:11] Outer fold 7/10
+[2025-10-14 09:40:25] [Outer 7] Combo 1/36 params={'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=282311.2358, MAE=161483.2261, R^2=0.8266
+[2025-10-14 09:40:39] [Outer 7] Combo 2/36 params={'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=284923.6390, MAE=162884.8385, R^2=0.8234
+[2025-10-14 09:40:52] [Outer 7] Combo 3/36 params={'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=283437.6036, MAE=161620.6124, R^2=0.8251
+[2025-10-14 09:41:06] [Outer 7] Combo 4/36 params={'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=284845.2370, MAE=162847.3793, R^2=0.8234
+[2025-10-14 09:41:11] [Outer 7] Combo 5/36 params={'num_leaves': 31, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=284206.8241, MAE=162548.6081, R^2=0.8242
+[2025-10-14 09:41:17] [Outer 7] Combo 6/36 params={'num_leaves': 31, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=284329.3625, MAE=162947.0681, R^2=0.8241
+[2025-10-14 09:41:22] [Outer 7] Combo 7/36 params={'num_leaves': 31, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=284436.2887, MAE=162133.1769, R^2=0.8239
+[2025-10-14 09:41:28] [Outer 7] Combo 8/36 params={'num_leaves': 31, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=285304.4683, MAE=162946.0604, R^2=0.8229
+[2025-10-14 09:41:32] [Outer 7] Combo 9/36 params={'num_leaves': 31, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=285828.1963, MAE=163607.7499, R^2=0.8222
+[2025-10-14 09:41:36] [Outer 7] Combo 10/36 params={'num_leaves': 31, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=286112.5137, MAE=163956.5867, R^2=0.8219
+[2025-10-14 09:41:41] [Outer 7] Combo 11/36 params={'num_leaves': 31, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=283887.1439, MAE=162654.6808, R^2=0.8246
+[2025-10-14 09:41:45] [Outer 7] Combo 12/36 params={'num_leaves': 31, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=285863.9800, MAE=163698.9613, R^2=0.8222
+[2025-10-14 09:41:59] [Outer 7] Combo 13/36 params={'num_leaves': 63, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=283221.9618, MAE=161091.4279, R^2=0.8254
+[2025-10-14 09:42:14] [Outer 7] Combo 14/36 params={'num_leaves': 63, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=286753.3377, MAE=162664.9228, R^2=0.8211
+[2025-10-14 09:42:29] [Outer 7] Combo 15/36 params={'num_leaves': 63, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=285373.3719, MAE=161536.7619, R^2=0.8227
+[2025-10-14 09:42:44] [Outer 7] Combo 16/36 params={'num_leaves': 63, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=286669.6390, MAE=162593.0055, R^2=0.8211
+[2025-10-14 09:42:49] [Outer 7] Combo 17/36 params={'num_leaves': 63, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=284697.6743, MAE=162066.6922, R^2=0.8236
+[2025-10-14 09:42:55] [Outer 7] Combo 18/36 params={'num_leaves': 63, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=287058.5407, MAE=163166.3563, R^2=0.8207
+[2025-10-14 09:43:01] [Outer 7] Combo 19/36 params={'num_leaves': 63, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=286369.0692, MAE=162420.4653, R^2=0.8215
+[2025-10-14 09:43:07] [Outer 7] Combo 20/36 params={'num_leaves': 63, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=287111.9081, MAE=163116.9549, R^2=0.8206
+[2025-10-14 09:43:11] [Outer 7] Combo 21/36 params={'num_leaves': 63, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=286684.7110, MAE=163684.3476, R^2=0.8211
+[2025-10-14 09:43:16] [Outer 7] Combo 22/36 params={'num_leaves': 63, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=287872.6394, MAE=164525.9649, R^2=0.8197
+[2025-10-14 09:43:20] [Outer 7] Combo 23/36 params={'num_leaves': 63, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=287357.6437, MAE=163646.9010, R^2=0.8203
+[2025-10-14 09:43:25] [Outer 7] Combo 24/36 params={'num_leaves': 63, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=287996.2170, MAE=164119.9972, R^2=0.8195
+[2025-10-14 09:43:41] [Outer 7] Combo 25/36 params={'num_leaves': 127, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=285171.1126, MAE=161025.8627, R^2=0.8230
+[2025-10-14 09:43:59] [Outer 7] Combo 26/36 params={'num_leaves': 127, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=289159.2605, MAE=163435.3208, R^2=0.8180
+[2025-10-14 09:44:17] [Outer 7] Combo 27/36 params={'num_leaves': 127, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=286741.6070, MAE=161524.7272, R^2=0.8210
+[2025-10-14 09:44:35] [Outer 7] Combo 28/36 params={'num_leaves': 127, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=290466.0437, MAE=163746.3390, R^2=0.8163
+[2025-10-14 09:44:41] [Outer 7] Combo 29/36 params={'num_leaves': 127, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=285862.8637, MAE=161818.6380, R^2=0.8221
+[2025-10-14 09:44:48] [Outer 7] Combo 30/36 params={'num_leaves': 127, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=289969.3825, MAE=164095.3636, R^2=0.8170
+[2025-10-14 09:44:55] [Outer 7] Combo 31/36 params={'num_leaves': 127, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=287447.9267, MAE=162234.6746, R^2=0.8201
+[2025-10-14 09:45:02] [Outer 7] Combo 32/36 params={'num_leaves': 127, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=291102.4839, MAE=164204.9681, R^2=0.8155
+[2025-10-14 09:45:07] [Outer 7] Combo 33/36 params={'num_leaves': 127, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=287134.0080, MAE=163029.4170, R^2=0.8206
+[2025-10-14 09:45:13] [Outer 7] Combo 34/36 params={'num_leaves': 127, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=290574.8826, MAE=164557.8787, R^2=0.8163
+[2025-10-14 09:45:18] [Outer 7] Combo 35/36 params={'num_leaves': 127, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=289645.0696, MAE=163635.0981, R^2=0.8174
+[2025-10-14 09:45:23] [Outer 7] Combo 36/36 params={'num_leaves': 127, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=291345.3702, MAE=164919.6379, R^2=0.8152
+[2025-10-14 09:45:23] [Outer 7] Best inner params: {'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 0.8} (mean RMSE=282311.2358)
+[2025-10-14 09:45:28] [Outer 7] Validation -> RMSE=272659.5185, MAE=162555.7674, R^2=0.8341
+[2025-10-14 09:45:28] ----------------------------------------------------------------------
+[2025-10-14 09:45:28] Outer fold 8/10
+[2025-10-14 09:45:39] [Outer 8] Combo 1/36 params={'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=283513.3552, MAE=162640.8265, R^2=0.8239
+[2025-10-14 09:45:51] [Outer 8] Combo 2/36 params={'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=286095.5657, MAE=163792.0285, R^2=0.8207
+[2025-10-14 09:46:04] [Outer 8] Combo 3/36 params={'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=283231.9562, MAE=162194.9346, R^2=0.8243
+[2025-10-14 09:46:16] [Outer 8] Combo 4/36 params={'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=285224.7697, MAE=163997.2744, R^2=0.8218
+[2025-10-14 09:46:21] [Outer 8] Combo 5/36 params={'num_leaves': 31, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=283853.7818, MAE=163233.0578, R^2=0.8235
+[2025-10-14 09:46:26] [Outer 8] Combo 6/36 params={'num_leaves': 31, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=286231.4008, MAE=164295.7596, R^2=0.8206
+[2025-10-14 09:46:31] [Outer 8] Combo 7/36 params={'num_leaves': 31, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=283367.3992, MAE=162816.8763, R^2=0.8241
+[2025-10-14 09:46:37] [Outer 8] Combo 8/36 params={'num_leaves': 31, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=285407.7210, MAE=163881.2535, R^2=0.8216
+[2025-10-14 09:46:41] [Outer 8] Combo 9/36 params={'num_leaves': 31, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=285029.4744, MAE=163829.8402, R^2=0.8221
+[2025-10-14 09:46:45] [Outer 8] Combo 10/36 params={'num_leaves': 31, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=287151.1560, MAE=165168.2258, R^2=0.8194
+[2025-10-14 09:46:49] [Outer 8] Combo 11/36 params={'num_leaves': 31, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=284809.3330, MAE=164140.8078, R^2=0.8223
+[2025-10-14 09:46:53] [Outer 8] Combo 12/36 params={'num_leaves': 31, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=286302.2385, MAE=164745.0973, R^2=0.8205
+[2025-10-14 09:47:07] [Outer 8] Combo 13/36 params={'num_leaves': 63, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=283452.5715, MAE=161486.4625, R^2=0.8240
+[2025-10-14 09:47:21] [Outer 8] Combo 14/36 params={'num_leaves': 63, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=285918.1302, MAE=162830.7956, R^2=0.8210
+[2025-10-14 09:47:36] [Outer 8] Combo 15/36 params={'num_leaves': 63, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=284490.7123, MAE=161830.5119, R^2=0.8227
+[2025-10-14 09:47:50] [Outer 8] Combo 16/36 params={'num_leaves': 63, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=287372.2517, MAE=163934.5645, R^2=0.8191
+[2025-10-14 09:47:55] [Outer 8] Combo 17/36 params={'num_leaves': 63, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=284057.3944, MAE=162503.2142, R^2=0.8233
+[2025-10-14 09:48:01] [Outer 8] Combo 18/36 params={'num_leaves': 63, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=287156.0176, MAE=163830.7775, R^2=0.8194
+[2025-10-14 09:48:06] [Outer 8] Combo 19/36 params={'num_leaves': 63, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=285187.4540, MAE=163042.1080, R^2=0.8219
+[2025-10-14 09:48:12] [Outer 8] Combo 20/36 params={'num_leaves': 63, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=287700.0261, MAE=164237.7523, R^2=0.8187
+[2025-10-14 09:48:16] [Outer 8] Combo 21/36 params={'num_leaves': 63, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=285382.5044, MAE=163820.3032, R^2=0.8216
+[2025-10-14 09:48:21] [Outer 8] Combo 22/36 params={'num_leaves': 63, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=286788.1295, MAE=164354.3920, R^2=0.8199
+[2025-10-14 09:48:25] [Outer 8] Combo 23/36 params={'num_leaves': 63, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=286910.3757, MAE=163919.8265, R^2=0.8197
+[2025-10-14 09:48:30] [Outer 8] Combo 24/36 params={'num_leaves': 63, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=289194.3632, MAE=165603.0518, R^2=0.8168
+[2025-10-14 09:48:45] [Outer 8] Combo 25/36 params={'num_leaves': 127, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=285433.4987, MAE=161612.2497, R^2=0.8216
+[2025-10-14 09:49:04] [Outer 8] Combo 26/36 params={'num_leaves': 127, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=288619.5185, MAE=163763.3532, R^2=0.8176
+[2025-10-14 09:49:19] [Outer 8] Combo 27/36 params={'num_leaves': 127, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=286502.4547, MAE=162141.8576, R^2=0.8202
+[2025-10-14 09:49:39] [Outer 8] Combo 28/36 params={'num_leaves': 127, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=289547.7106, MAE=164381.5845, R^2=0.8164
+[2025-10-14 09:49:45] [Outer 8] Combo 29/36 params={'num_leaves': 127, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=285637.7634, MAE=162411.8720, R^2=0.8213
+[2025-10-14 09:49:52] [Outer 8] Combo 30/36 params={'num_leaves': 127, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=289772.9535, MAE=164568.0220, R^2=0.8161
+[2025-10-14 09:49:58] [Outer 8] Combo 31/36 params={'num_leaves': 127, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=286396.6308, MAE=162768.2215, R^2=0.8204
+[2025-10-14 09:50:05] [Outer 8] Combo 32/36 params={'num_leaves': 127, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=290211.4251, MAE=164985.0271, R^2=0.8155
+[2025-10-14 09:50:10] [Outer 8] Combo 33/36 params={'num_leaves': 127, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=287416.9988, MAE=163880.2757, R^2=0.8191
+[2025-10-14 09:50:16] [Outer 8] Combo 34/36 params={'num_leaves': 127, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=290474.8687, MAE=165100.5512, R^2=0.8152
+[2025-10-14 09:50:21] [Outer 8] Combo 35/36 params={'num_leaves': 127, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=288079.3864, MAE=163816.2479, R^2=0.8182
+[2025-10-14 09:50:26] [Outer 8] Combo 36/36 params={'num_leaves': 127, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=291142.5536, MAE=165925.6887, R^2=0.8144
+[2025-10-14 09:50:26] [Outer 8] Best inner params: {'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 0.8} (mean RMSE=283231.9562)
+[2025-10-14 09:50:30] [Outer 8] Validation -> RMSE=286008.6340, MAE=162718.4134, R^2=0.8277
+[2025-10-14 09:50:30] ----------------------------------------------------------------------
+[2025-10-14 09:50:30] Outer fold 9/10
+[2025-10-14 09:50:43] [Outer 9] Combo 1/36 params={'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=282129.0237, MAE=162359.0411, R^2=0.8268
+[2025-10-14 09:50:57] [Outer 9] Combo 2/36 params={'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=283457.2276, MAE=163146.6337, R^2=0.8252
+[2025-10-14 09:51:11] [Outer 9] Combo 3/36 params={'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=282434.4408, MAE=162434.7362, R^2=0.8264
+[2025-10-14 09:51:25] [Outer 9] Combo 4/36 params={'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=283660.5303, MAE=163603.1781, R^2=0.8249
+[2025-10-14 09:51:31] [Outer 9] Combo 5/36 params={'num_leaves': 31, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=282215.0070, MAE=162141.9587, R^2=0.8267
+[2025-10-14 09:51:38] [Outer 9] Combo 6/36 params={'num_leaves': 31, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=283838.9121, MAE=162733.2787, R^2=0.8247
+[2025-10-14 09:51:44] [Outer 9] Combo 7/36 params={'num_leaves': 31, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=281919.9288, MAE=162635.7937, R^2=0.8270
+[2025-10-14 09:51:51] [Outer 9] Combo 8/36 params={'num_leaves': 31, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=283364.2756, MAE=163659.1704, R^2=0.8253
+[2025-10-14 09:51:55] [Outer 9] Combo 9/36 params={'num_leaves': 31, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=283792.8639, MAE=163769.7423, R^2=0.8248
+[2025-10-14 09:52:00] [Outer 9] Combo 10/36 params={'num_leaves': 31, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=284151.5939, MAE=163384.6834, R^2=0.8243
+[2025-10-14 09:52:05] [Outer 9] Combo 11/36 params={'num_leaves': 31, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=283622.2121, MAE=163985.0617, R^2=0.8250
+[2025-10-14 09:52:10] [Outer 9] Combo 12/36 params={'num_leaves': 31, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=284202.9436, MAE=164359.3992, R^2=0.8242
+[2025-10-14 09:52:27] [Outer 9] Combo 13/36 params={'num_leaves': 63, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=281948.3838, MAE=161188.2238, R^2=0.8270
+[2025-10-14 09:52:45] [Outer 9] Combo 14/36 params={'num_leaves': 63, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=283909.7785, MAE=162830.9941, R^2=0.8246
+[2025-10-14 09:53:02] [Outer 9] Combo 15/36 params={'num_leaves': 63, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=283365.3222, MAE=162037.2403, R^2=0.8253
+[2025-10-14 09:53:20] [Outer 9] Combo 16/36 params={'num_leaves': 63, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=285418.6873, MAE=163553.7950, R^2=0.8227
+[2025-10-14 09:53:26] [Outer 9] Combo 17/36 params={'num_leaves': 63, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=282675.2725, MAE=161952.3400, R^2=0.8261
+[2025-10-14 09:53:33] [Outer 9] Combo 18/36 params={'num_leaves': 63, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=284281.5539, MAE=163291.3378, R^2=0.8241
+[2025-10-14 09:53:39] [Outer 9] Combo 19/36 params={'num_leaves': 63, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=283984.3046, MAE=163006.6248, R^2=0.8245
+[2025-10-14 09:53:46] [Outer 9] Combo 20/36 params={'num_leaves': 63, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=285867.4619, MAE=164326.8134, R^2=0.8222
+[2025-10-14 09:53:51] [Outer 9] Combo 21/36 params={'num_leaves': 63, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=285059.9842, MAE=163557.2145, R^2=0.8232
+[2025-10-14 09:53:56] [Outer 9] Combo 22/36 params={'num_leaves': 63, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=285864.6767, MAE=165082.3285, R^2=0.8222
+[2025-10-14 09:54:00] [Outer 9] Combo 23/36 params={'num_leaves': 63, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=286641.5656, MAE=164667.3138, R^2=0.8212
+[2025-10-14 09:54:05] [Outer 9] Combo 24/36 params={'num_leaves': 63, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=287160.6132, MAE=164962.2000, R^2=0.8206
+[2025-10-14 09:54:24] [Outer 9] Combo 25/36 params={'num_leaves': 127, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=284033.6440, MAE=161708.3725, R^2=0.8244
+[2025-10-14 09:54:44] [Outer 9] Combo 26/36 params={'num_leaves': 127, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=287602.1168, MAE=163777.0922, R^2=0.8200
+[2025-10-14 09:55:05] [Outer 9] Combo 27/36 params={'num_leaves': 127, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=285790.6903, MAE=162842.7462, R^2=0.8222
+[2025-10-14 09:55:27] [Outer 9] Combo 28/36 params={'num_leaves': 127, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=289149.3541, MAE=164984.3450, R^2=0.8181
+[2025-10-14 09:55:34] [Outer 9] Combo 29/36 params={'num_leaves': 127, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=285265.5320, MAE=162516.8532, R^2=0.8229
+[2025-10-14 09:55:41] [Outer 9] Combo 30/36 params={'num_leaves': 127, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=288577.4160, MAE=164396.5188, R^2=0.8188
+[2025-10-14 09:55:48] [Outer 9] Combo 31/36 params={'num_leaves': 127, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=286753.4819, MAE=163895.1230, R^2=0.8210
+[2025-10-14 09:55:57] [Outer 9] Combo 32/36 params={'num_leaves': 127, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=289243.2129, MAE=165752.5709, R^2=0.8179
+[2025-10-14 09:56:02] [Outer 9] Combo 33/36 params={'num_leaves': 127, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=286232.4775, MAE=164076.6452, R^2=0.8217
+[2025-10-14 09:56:08] [Outer 9] Combo 34/36 params={'num_leaves': 127, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=289227.7319, MAE=164987.7979, R^2=0.8179
+[2025-10-14 09:56:13] [Outer 9] Combo 35/36 params={'num_leaves': 127, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=289130.8677, MAE=166137.4570, R^2=0.8181
+[2025-10-14 09:56:20] [Outer 9] Combo 36/36 params={'num_leaves': 127, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=289848.0316, MAE=166592.2410, R^2=0.8172
+[2025-10-14 09:56:20] [Outer 9] Best inner params: {'num_leaves': 31, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 0.8} (mean RMSE=281919.9288)
+[2025-10-14 09:56:21] [Outer 9] Validation -> RMSE=266725.1754, MAE=155771.4641, R^2=0.8411
+[2025-10-14 09:56:21] ----------------------------------------------------------------------
+[2025-10-14 09:56:21] Outer fold 10/10
+[2025-10-14 09:56:34] [Outer 10] Combo 1/36 params={'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=281147.1411, MAE=161141.2106, R^2=0.8293
+[2025-10-14 09:56:48] [Outer 10] Combo 2/36 params={'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=283364.7568, MAE=162088.6678, R^2=0.8266
+[2025-10-14 09:57:00] [Outer 10] Combo 3/36 params={'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=281490.5972, MAE=161133.5830, R^2=0.8289
+[2025-10-14 09:57:14] [Outer 10] Combo 4/36 params={'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=283255.3906, MAE=162144.6457, R^2=0.8268
+[2025-10-14 09:57:20] [Outer 10] Combo 5/36 params={'num_leaves': 31, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=281958.0013, MAE=161388.8661, R^2=0.8283
+[2025-10-14 09:57:26] [Outer 10] Combo 6/36 params={'num_leaves': 31, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=283435.7285, MAE=162081.3408, R^2=0.8265
+[2025-10-14 09:57:32] [Outer 10] Combo 7/36 params={'num_leaves': 31, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=282276.7853, MAE=161589.3727, R^2=0.8279
+[2025-10-14 09:57:38] [Outer 10] Combo 8/36 params={'num_leaves': 31, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=282482.5751, MAE=161906.4092, R^2=0.8277
+[2025-10-14 09:57:42] [Outer 10] Combo 9/36 params={'num_leaves': 31, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=283126.4095, MAE=161876.2648, R^2=0.8269
+[2025-10-14 09:57:47] [Outer 10] Combo 10/36 params={'num_leaves': 31, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=284384.3259, MAE=162982.8206, R^2=0.8254
+[2025-10-14 09:57:52] [Outer 10] Combo 11/36 params={'num_leaves': 31, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=284865.4286, MAE=163305.4880, R^2=0.8248
+[2025-10-14 09:57:56] [Outer 10] Combo 12/36 params={'num_leaves': 31, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=283560.9587, MAE=162731.8597, R^2=0.8264
+[2025-10-14 09:58:13] [Outer 10] Combo 13/36 params={'num_leaves': 63, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=281290.9741, MAE=159930.8300, R^2=0.8291
+[2025-10-14 09:58:30] [Outer 10] Combo 14/36 params={'num_leaves': 63, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=284074.7894, MAE=161800.8583, R^2=0.8258
+[2025-10-14 09:58:47] [Outer 10] Combo 15/36 params={'num_leaves': 63, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=283411.3747, MAE=161124.1894, R^2=0.8266
+[2025-10-14 09:59:03] [Outer 10] Combo 16/36 params={'num_leaves': 63, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=285734.2826, MAE=162682.5261, R^2=0.8237
+[2025-10-14 09:59:09] [Outer 10] Combo 17/36 params={'num_leaves': 63, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=282520.4636, MAE=160778.5651, R^2=0.8277
+[2025-10-14 09:59:16] [Outer 10] Combo 18/36 params={'num_leaves': 63, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=284378.1841, MAE=161945.7241, R^2=0.8254
+[2025-10-14 09:59:22] [Outer 10] Combo 19/36 params={'num_leaves': 63, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=284033.9130, MAE=161732.2073, R^2=0.8258
+[2025-10-14 09:59:29] [Outer 10] Combo 20/36 params={'num_leaves': 63, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=285128.8223, MAE=162384.9563, R^2=0.8245
+[2025-10-14 09:59:34] [Outer 10] Combo 21/36 params={'num_leaves': 63, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=283784.5131, MAE=162427.5706, R^2=0.8261
+[2025-10-14 09:59:38] [Outer 10] Combo 22/36 params={'num_leaves': 63, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=284388.8061, MAE=162784.4889, R^2=0.8254
+[2025-10-14 09:59:43] [Outer 10] Combo 23/36 params={'num_leaves': 63, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=285403.8192, MAE=162876.4659, R^2=0.8241
+[2025-10-14 09:59:48] [Outer 10] Combo 24/36 params={'num_leaves': 63, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=286207.4342, MAE=163622.1677, R^2=0.8231
+[2025-10-14 10:00:06] [Outer 10] Combo 25/36 params={'num_leaves': 127, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=282872.9311, MAE=160324.9500, R^2=0.8272
+[2025-10-14 10:00:26] [Outer 10] Combo 26/36 params={'num_leaves': 127, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=286177.8711, MAE=162197.4936, R^2=0.8232
+[2025-10-14 10:00:45] [Outer 10] Combo 27/36 params={'num_leaves': 127, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=285078.7822, MAE=161207.5653, R^2=0.8245
+[2025-10-14 10:01:05] [Outer 10] Combo 28/36 params={'num_leaves': 127, 'learning_rate': 0.01, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=288387.7568, MAE=163354.9303, R^2=0.8204
+[2025-10-14 10:01:12] [Outer 10] Combo 29/36 params={'num_leaves': 127, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=283520.9470, MAE=161031.1825, R^2=0.8264
+[2025-10-14 10:01:19] [Outer 10] Combo 30/36 params={'num_leaves': 127, 'learning_rate': 0.05, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=286463.4077, MAE=162610.8384, R^2=0.8228
+[2025-10-14 10:01:26] [Outer 10] Combo 31/36 params={'num_leaves': 127, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=286034.9353, MAE=162124.0308, R^2=0.8234
+[2025-10-14 10:01:34] [Outer 10] Combo 32/36 params={'num_leaves': 127, 'learning_rate': 0.05, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=288793.5029, MAE=163872.9703, R^2=0.8199
+[2025-10-14 10:01:39] [Outer 10] Combo 33/36 params={'num_leaves': 127, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 0.8} | Inner means -> RMSE=285844.2653, MAE=162311.3540, R^2=0.8236
+[2025-10-14 10:01:45] [Outer 10] Combo 34/36 params={'num_leaves': 127, 'learning_rate': 0.1, 'min_child_samples': 20, 'feature_fraction': 1.0} | Inner means -> RMSE=288334.9309, MAE=164083.5381, R^2=0.8205
+[2025-10-14 10:01:50] [Outer 10] Combo 35/36 params={'num_leaves': 127, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 0.8} | Inner means -> RMSE=287673.0007, MAE=163720.6006, R^2=0.8213
+[2025-10-14 10:01:56] [Outer 10] Combo 36/36 params={'num_leaves': 127, 'learning_rate': 0.1, 'min_child_samples': 40, 'feature_fraction': 1.0} | Inner means -> RMSE=290520.9246, MAE=165616.9467, R^2=0.8178
+[2025-10-14 10:01:56] [Outer 10] Best inner params: {'num_leaves': 31, 'learning_rate': 0.01, 'min_child_samples': 20, 'feature_fraction': 0.8} (mean RMSE=281147.1411)
+[2025-10-14 10:02:00] [Outer 10] Validation -> RMSE=264586.1620, MAE=160964.1102, R^2=0.8308
+[2025-10-14 10:02:00] Outer summary -> RMSE mean=276212.8642±13531.7228, MAE mean=158564.6198±4168.0987, R^2 mean=0.8333±0.0087
