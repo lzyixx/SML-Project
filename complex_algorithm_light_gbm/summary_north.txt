@@ -1,0 +1,18 @@
+=== Experiment: Held-out region = north ===
+
+Per-outer-fold metrics (validation on training regions):
+Fold  1: RMSE=298702.966950, MAE=170418.578984, R2=0.824899, best_params={"num_leaves": 31, "learning_rate": 0.05, "min_child_samples": 20, "feature_fraction": 0.8}
+Fold  2: RMSE=270336.223377, MAE=169143.607436, R2=0.842803, best_params={"num_leaves": 31, "learning_rate": 0.01, "min_child_samples": 40, "feature_fraction": 0.8}
+Fold  3: RMSE=266221.397531, MAE=168600.736010, R2=0.839602, best_params={"num_leaves": 31, "learning_rate": 0.01, "min_child_samples": 40, "feature_fraction": 0.8}
+Fold  4: RMSE=269860.064575, MAE=167882.449731, R2=0.830765, best_params={"num_leaves": 63, "learning_rate": 0.01, "min_child_samples": 20, "feature_fraction": 0.8}
+Fold  5: RMSE=336037.620176, MAE=169338.401590, R2=0.796666, best_params={"num_leaves": 63, "learning_rate": 0.01, "min_child_samples": 20, "feature_fraction": 0.8}
+Fold  6: RMSE=287608.503781, MAE=171135.805962, R2=0.828432, best_params={"num_leaves": 63, "learning_rate": 0.01, "min_child_samples": 20, "feature_fraction": 0.8}
+Fold  7: RMSE=282483.820008, MAE=172136.250231, R2=0.844922, best_params={"num_leaves": 63, "learning_rate": 0.01, "min_child_samples": 20, "feature_fraction": 0.8}
+Fold  8: RMSE=325169.238139, MAE=168251.340902, R2=0.796058, best_params={"num_leaves": 31, "learning_rate": 0.05, "min_child_samples": 40, "feature_fraction": 0.8}
+Fold  9: RMSE=302010.278711, MAE=175945.791927, R2=0.802032, best_params={"num_leaves": 31, "learning_rate": 0.05, "min_child_samples": 40, "feature_fraction": 0.8}
+Fold 10: RMSE=299857.277324, MAE=172725.675882, R2=0.805376, best_params={"num_leaves": 31, "learning_rate": 0.01, "min_child_samples": 20, "feature_fraction": 0.8}
+
+Outer-CV aggregates:
+RMSE mean=293828.739057, std=22241.436466
+MAE  mean=170557.863865, std=2374.222957
+R2   mean=0.821156, std=0.018377
