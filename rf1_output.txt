@@ -1,0 +1,1233 @@
+Dataset summary:
+- samples: 25475, features: 99
+  Eastern Metropolitan: 3272
+  Western Metropolitan: 5815
+  Southern Metropolitan: 8524
+  Northern Metropolitan: 7864
+
+Cross-region Random Forest evaluation:
+
+=== Test region: Eastern Metropolitan ===
+Final params: max_depth=None, min_samples_leaf=1, max_features=0.5
+Test metrics -> RMSE=358686.62, MAE=240659.29, R2=0.3708
+Inner-CV average RMSE across folds (top 5 combos):
+  max_depth=None, min_samples_leaf=1, max_features=0.5 -> avg RMSE=296061.70 ± 2847.55 (n=10)
+  max_depth=24, min_samples_leaf=1, max_features=0.5 -> avg RMSE=296168.71 ± 2859.42 (n=10)
+  max_depth=24, min_samples_leaf=1, max_features=sqrt -> avg RMSE=296626.88 ± 2391.41 (n=10)
+  max_depth=None, min_samples_leaf=1, max_features=sqrt -> avg RMSE=296735.30 ± 2420.75 (n=10)
+  max_depth=24, min_samples_leaf=5, max_features=0.5 -> avg RMSE=297426.80 ± 2445.89 (n=10)
+Outer 10-fold validation (mean ± std): RMSE=290052.65 ± 15290.48, MAE=163952.00 ± 4806.35, R2=0.8162 ± 0.0100
+Parameter selection frequency across outer folds:
+  max_depth=None, min_samples_leaf=1, max_features=sqrt: 2 folds
+  max_depth=None, min_samples_leaf=1, max_features=0.5: 5 folds
+  max_depth=24, min_samples_leaf=1, max_features=sqrt: 1 folds
+  max_depth=24, min_samples_leaf=1, max_features=0.5: 2 folds
+Outer fold details:
+  Fold 00: params=(max_depth=None, min_samples_leaf=1, max_features=sqrt), RMSE=266715.99, MAE=157032.56, R2=0.8205
+    Inner 3-fold RMSE per param:
+      max_depth=None, min_samples_leaf=1, max_features=1.0 -> folds [322686.95, 314085.39, 294784.00] | avg=310518.78
+      max_depth=None, min_samples_leaf=1, max_features=sqrt -> folds [310080.38, 305911.61, 282023.46] | avg=299338.48
+      max_depth=None, min_samples_leaf=1, max_features=0.5 -> folds [310198.11, 306080.26, 283614.09] | avg=299964.15
+      max_depth=None, min_samples_leaf=5, max_features=1.0 -> folds [323730.63, 314173.68, 291977.82] | avg=309960.71
+      max_depth=None, min_samples_leaf=5, max_features=sqrt -> folds [317354.13, 315770.03, 287883.90] | avg=307002.69
+      max_depth=None, min_samples_leaf=5, max_features=0.5 -> folds [311280.22, 306060.49, 282771.13] | avg=300037.28
+      max_depth=None, min_samples_leaf=10, max_features=1.0 -> folds [329369.91, 322030.00, 298987.56] | avg=316795.83
+      max_depth=None, min_samples_leaf=10, max_features=sqrt -> folds [326450.76, 326415.22, 297804.65] | avg=316890.21
+      max_depth=None, min_samples_leaf=10, max_features=0.5 -> folds [318442.44, 312411.72, 288640.61] | avg=306498.26
+      max_depth=12, min_samples_leaf=1, max_features=1.0 -> folds [324383.77, 317783.69, 296714.29] | avg=312960.58
+      max_depth=12, min_samples_leaf=1, max_features=sqrt -> folds [316848.78, 316020.65, 289609.16] | avg=307492.86
+      max_depth=12, min_samples_leaf=1, max_features=0.5 -> folds [313839.32, 307424.57, 286222.75] | avg=302495.55
+      max_depth=12, min_samples_leaf=5, max_features=1.0 -> folds [325380.93, 316855.14, 294485.20] | avg=312240.42
+      max_depth=12, min_samples_leaf=5, max_features=sqrt -> folds [320941.56, 321287.92, 293231.11] | avg=311820.20
+      max_depth=12, min_samples_leaf=5, max_features=0.5 -> folds [314078.33, 307401.15, 284813.22] | avg=302097.57
+      max_depth=12, min_samples_leaf=10, max_features=1.0 -> folds [330414.75, 323524.71, 300341.09] | avg=318093.52
+      max_depth=12, min_samples_leaf=10, max_features=sqrt -> folds [330465.74, 330360.13, 301743.87] | avg=320856.58
+      max_depth=12, min_samples_leaf=10, max_features=0.5 -> folds [319344.85, 313863.39, 289932.81] | avg=307713.68
+      max_depth=24, min_samples_leaf=1, max_features=1.0 -> folds [323503.12, 314505.33, 294763.16] | avg=310923.87
+      max_depth=24, min_samples_leaf=1, max_features=sqrt -> folds [310518.04, 306338.80, 282259.37] | avg=299705.41
+      max_depth=24, min_samples_leaf=1, max_features=0.5 -> folds [310509.10, 305386.58, 283345.67] | avg=299747.12
+      max_depth=24, min_samples_leaf=5, max_features=1.0 -> folds [323657.36, 314152.97, 291996.39] | avg=309935.57
+      max_depth=24, min_samples_leaf=5, max_features=sqrt -> folds [317680.65, 315480.31, 287807.05] | avg=306989.34
+      max_depth=24, min_samples_leaf=5, max_features=0.5 -> folds [311045.89, 306018.49, 282924.45] | avg=299996.27
+      max_depth=24, min_samples_leaf=10, max_features=1.0 -> folds [329370.55, 322030.00, 298987.56] | avg=316796.04
+      max_depth=24, min_samples_leaf=10, max_features=sqrt -> folds [326529.63, 326429.92, 297754.43] | avg=316904.66
+      max_depth=24, min_samples_leaf=10, max_features=0.5 -> folds [318442.44, 312347.86, 288640.61] | avg=306476.97
+  Fold 01: params=(max_depth=None, min_samples_leaf=1, max_features=0.5), RMSE=303336.07, MAE=168701.47, R2=0.8098
+    Inner 3-fold RMSE per param:
+      max_depth=None, min_samples_leaf=1, max_features=1.0 -> folds [317373.78, 308704.88, 306206.69] | avg=310761.78
+      max_depth=None, min_samples_leaf=1, max_features=sqrt -> folds [298882.56, 299947.13, 293602.91] | avg=297477.53
+      max_depth=None, min_samples_leaf=1, max_features=0.5 -> folds [299781.88, 295810.56, 294254.61] | avg=296615.68
+      max_depth=None, min_samples_leaf=5, max_features=1.0 -> folds [311249.94, 309570.13, 305154.86] | avg=308658.31
+      max_depth=None, min_samples_leaf=5, max_features=sqrt -> folds [308144.85, 307026.39, 301897.13] | avg=305689.46
+      max_depth=None, min_samples_leaf=5, max_features=0.5 -> folds [301712.42, 298373.39, 295446.77] | avg=298510.86
+      max_depth=None, min_samples_leaf=10, max_features=1.0 -> folds [317539.18, 315161.24, 309256.85] | avg=313985.75
+      max_depth=None, min_samples_leaf=10, max_features=sqrt -> folds [316301.50, 317229.78, 311585.15] | avg=315038.81
+      max_depth=None, min_samples_leaf=10, max_features=0.5 -> folds [309697.09, 304987.21, 301911.97] | avg=305532.09
+      max_depth=12, min_samples_leaf=1, max_features=1.0 -> folds [319147.81, 311237.76, 308988.95] | avg=313124.84
+      max_depth=12, min_samples_leaf=1, max_features=sqrt -> folds [307727.65, 307767.91, 301079.04] | avg=305524.87
+      max_depth=12, min_samples_leaf=1, max_features=0.5 -> folds [304168.24, 298696.30, 297844.09] | avg=300236.21
+      max_depth=12, min_samples_leaf=5, max_features=1.0 -> folds [313665.51, 312241.75, 307128.63] | avg=311011.96
+      max_depth=12, min_samples_leaf=5, max_features=sqrt -> folds [312237.83, 313874.71, 306961.21] | avg=311024.58
+      max_depth=12, min_samples_leaf=5, max_features=0.5 -> folds [304216.67, 301478.16, 298134.82] | avg=301276.55
+      max_depth=12, min_samples_leaf=10, max_features=1.0 -> folds [318649.31, 316952.01, 310411.66] | avg=315337.66
+      max_depth=12, min_samples_leaf=10, max_features=sqrt -> folds [321438.89, 318842.24, 314083.14] | avg=318121.43
+      max_depth=12, min_samples_leaf=10, max_features=0.5 -> folds [310434.71, 307690.06, 304022.08] | avg=307382.28
+      max_depth=24, min_samples_leaf=1, max_features=1.0 -> folds [317179.33, 309145.15, 307069.21] | avg=311131.23
+      max_depth=24, min_samples_leaf=1, max_features=sqrt -> folds [299548.64, 299165.98, 294206.71] | avg=297640.44
+      max_depth=24, min_samples_leaf=1, max_features=0.5 -> folds [300620.54, 297105.47, 296181.94] | avg=297969.31
+      max_depth=24, min_samples_leaf=5, max_features=1.0 -> folds [311244.79, 309553.91, 305107.05] | avg=308635.25
+      max_depth=24, min_samples_leaf=5, max_features=sqrt -> folds [307501.64, 307124.94, 301984.67] | avg=305537.08
+      max_depth=24, min_samples_leaf=5, max_features=0.5 -> folds [301628.85, 298678.20, 295724.92] | avg=298677.32
+      max_depth=24, min_samples_leaf=10, max_features=1.0 -> folds [317539.18, 315161.24, 309256.85] | avg=313985.75
+      max_depth=24, min_samples_leaf=10, max_features=sqrt -> folds [316336.43, 317333.47, 311535.37] | avg=315068.42
+      max_depth=24, min_samples_leaf=10, max_features=0.5 -> folds [309697.09, 304987.21, 301911.97] | avg=305532.09
+  Fold 02: params=(max_depth=None, min_samples_leaf=1, max_features=0.5), RMSE=282741.90, MAE=162434.26, R2=0.8232
+    Inner 3-fold RMSE per param:
+      max_depth=None, min_samples_leaf=1, max_features=1.0 -> folds [300291.44, 308150.10, 312333.38] | avg=306924.97
+      max_depth=None, min_samples_leaf=1, max_features=sqrt -> folds [289597.51, 292012.90, 305694.46] | avg=295768.29
+      max_depth=None, min_samples_leaf=1, max_features=0.5 -> folds [288720.55, 291673.45, 303609.40] | avg=294667.80
+      max_depth=None, min_samples_leaf=5, max_features=1.0 -> folds [300365.27, 306497.92, 311233.86] | avg=306032.35
+      max_depth=None, min_samples_leaf=5, max_features=sqrt -> folds [297026.17, 303553.55, 314242.26] | avg=304940.66
+      max_depth=None, min_samples_leaf=5, max_features=0.5 -> folds [290868.33, 293423.82, 304955.40] | avg=296415.85
+      max_depth=None, min_samples_leaf=10, max_features=1.0 -> folds [306812.89, 312754.83, 319464.90] | avg=313010.87
+      max_depth=None, min_samples_leaf=10, max_features=sqrt -> folds [305248.32, 314927.34, 323757.58] | avg=314644.41
+      max_depth=None, min_samples_leaf=10, max_features=0.5 -> folds [297211.59, 301008.24, 312592.69] | avg=303604.17
+      max_depth=12, min_samples_leaf=1, max_features=1.0 -> folds [301648.81, 311256.28, 315587.18] | avg=309497.43
+      max_depth=12, min_samples_leaf=1, max_features=sqrt -> folds [295612.22, 300361.08, 315640.47] | avg=303871.26
+      max_depth=12, min_samples_leaf=1, max_features=0.5 -> folds [290955.01, 293155.97, 308152.50] | avg=297421.16
+      max_depth=12, min_samples_leaf=5, max_features=1.0 -> folds [302185.39, 308330.85, 313595.48] | avg=308037.24
+      max_depth=12, min_samples_leaf=5, max_features=sqrt -> folds [302013.31, 308034.62, 320040.91] | avg=310029.61
+      max_depth=12, min_samples_leaf=5, max_features=0.5 -> folds [292510.65, 295375.99, 307713.21] | avg=298533.29
+      max_depth=12, min_samples_leaf=10, max_features=1.0 -> folds [307834.05, 313942.46, 320851.61] | avg=314209.37
+      max_depth=12, min_samples_leaf=10, max_features=sqrt -> folds [308501.24, 318819.47, 326638.06] | avg=317986.26
+      max_depth=12, min_samples_leaf=10, max_features=0.5 -> folds [298842.74, 302247.24, 314073.45] | avg=305054.48
+      max_depth=24, min_samples_leaf=1, max_features=1.0 -> folds [299971.90, 309493.76, 312100.65] | avg=307188.77
+      max_depth=24, min_samples_leaf=1, max_features=sqrt -> folds [289846.02, 291962.87, 305731.39] | avg=295846.76
+      max_depth=24, min_samples_leaf=1, max_features=0.5 -> folds [290612.08, 291430.50, 304341.70] | avg=295461.43
+      max_depth=24, min_samples_leaf=5, max_features=1.0 -> folds [300361.35, 306506.38, 311250.85] | avg=306039.53
+      max_depth=24, min_samples_leaf=5, max_features=sqrt -> folds [296560.18, 303726.25, 313933.48] | avg=304739.97
+      max_depth=24, min_samples_leaf=5, max_features=0.5 -> folds [291156.69, 293489.60, 304938.08] | avg=296528.13
+      max_depth=24, min_samples_leaf=10, max_features=1.0 -> folds [306812.89, 312754.83, 319464.90] | avg=313010.87
+      max_depth=24, min_samples_leaf=10, max_features=sqrt -> folds [305328.75, 314715.30, 323807.46] | avg=314617.17
+      max_depth=24, min_samples_leaf=10, max_features=0.5 -> folds [297211.59, 301008.24, 312592.69] | avg=303604.17
+  Fold 03: params=(max_depth=24, min_samples_leaf=1, max_features=0.5), RMSE=309338.58, MAE=169371.75, R2=0.8073
+    Inner 3-fold RMSE per param:
+      max_depth=None, min_samples_leaf=1, max_features=1.0 -> folds [299243.98, 291139.86, 316691.40] | avg=302358.41
+      max_depth=None, min_samples_leaf=1, max_features=sqrt -> folds [288673.63, 277813.03, 309844.51] | avg=292110.39
+      max_depth=None, min_samples_leaf=1, max_features=0.5 -> folds [287827.60, 275845.08, 308881.90] | avg=290851.53
+      max_depth=None, min_samples_leaf=5, max_features=1.0 -> folds [300248.74, 292768.16, 318078.29] | avg=303698.39
+      max_depth=None, min_samples_leaf=5, max_features=sqrt -> folds [298720.90, 288402.15, 317636.97] | avg=301586.67
+      max_depth=None, min_samples_leaf=5, max_features=0.5 -> folds [290643.32, 279392.54, 311394.65] | avg=293810.17
+      max_depth=None, min_samples_leaf=10, max_features=1.0 -> folds [307057.95, 299908.09, 323823.09] | avg=310263.04
+      max_depth=None, min_samples_leaf=10, max_features=sqrt -> folds [309342.76, 297019.93, 326525.27] | avg=310962.65
+      max_depth=None, min_samples_leaf=10, max_features=0.5 -> folds [296993.42, 287314.07, 316262.73] | avg=300190.07
+      max_depth=12, min_samples_leaf=1, max_features=1.0 -> folds [300659.79, 294161.63, 320649.70] | avg=305157.04
+      max_depth=12, min_samples_leaf=1, max_features=sqrt -> folds [297201.69, 285055.47, 317032.09] | avg=299763.08
+      max_depth=12, min_samples_leaf=1, max_features=0.5 -> folds [290548.48, 277919.03, 311809.34] | avg=293425.62
+      max_depth=12, min_samples_leaf=5, max_features=1.0 -> folds [301700.21, 294948.75, 320597.20] | avg=305748.72
+      max_depth=12, min_samples_leaf=5, max_features=sqrt -> folds [302361.20, 294601.69, 322459.28] | avg=306474.06
+      max_depth=12, min_samples_leaf=5, max_features=0.5 -> folds [293140.59, 280551.05, 312597.10] | avg=295429.58
+      max_depth=12, min_samples_leaf=10, max_features=1.0 -> folds [308002.49, 300897.09, 325281.91] | avg=311393.83
+      max_depth=12, min_samples_leaf=10, max_features=sqrt -> folds [312251.75, 300577.31, 329587.22] | avg=314138.76
+      max_depth=12, min_samples_leaf=10, max_features=0.5 -> folds [298786.17, 288311.57, 317872.92] | avg=301656.88
+      max_depth=24, min_samples_leaf=1, max_features=1.0 -> folds [298729.35, 291129.89, 316569.00] | avg=302142.75
+      max_depth=24, min_samples_leaf=1, max_features=sqrt -> folds [287046.46, 276922.71, 311493.38] | avg=291820.85
+      max_depth=24, min_samples_leaf=1, max_features=0.5 -> folds [288394.49, 274096.61, 307834.06] | avg=290108.39
+      max_depth=24, min_samples_leaf=5, max_features=1.0 -> folds [300178.27, 292738.23, 318146.83] | avg=303687.78
+      max_depth=24, min_samples_leaf=5, max_features=sqrt -> folds [298931.37, 287856.06, 317364.84] | avg=301384.09
+      max_depth=24, min_samples_leaf=5, max_features=0.5 -> folds [290205.01, 278946.67, 311214.77] | avg=293455.49
+      max_depth=24, min_samples_leaf=10, max_features=1.0 -> folds [307056.39, 299908.09, 323823.47] | avg=310262.65
+      max_depth=24, min_samples_leaf=10, max_features=sqrt -> folds [309490.72, 296990.81, 326483.79] | avg=310988.44
+      max_depth=24, min_samples_leaf=10, max_features=0.5 -> folds [296993.42, 287331.43, 316259.23] | avg=300194.69
+  Fold 04: params=(max_depth=None, min_samples_leaf=1, max_features=0.5), RMSE=291737.08, MAE=160647.07, R2=0.8297
+    Inner 3-fold RMSE per param:
+      max_depth=None, min_samples_leaf=1, max_features=1.0 -> folds [292511.48, 296993.24, 324075.67] | avg=304526.80
+      max_depth=None, min_samples_leaf=1, max_features=sqrt -> folds [279648.99, 288193.60, 319678.51] | avg=295840.37
+      max_depth=None, min_samples_leaf=1, max_features=0.5 -> folds [279712.36, 287027.77, 315558.63] | avg=294099.59
+      max_depth=None, min_samples_leaf=5, max_features=1.0 -> folds [292124.90, 296801.57, 325166.50] | avg=304697.65
+      max_depth=None, min_samples_leaf=5, max_features=sqrt -> folds [285374.15, 296604.84, 328646.94] | avg=303541.97
+      max_depth=None, min_samples_leaf=5, max_features=0.5 -> folds [280618.85, 288880.75, 319297.61] | avg=296265.74
+      max_depth=None, min_samples_leaf=10, max_features=1.0 -> folds [296459.24, 303159.17, 333195.40] | avg=310937.94
+      max_depth=None, min_samples_leaf=10, max_features=sqrt -> folds [293867.55, 307442.04, 338812.21] | avg=313373.93
+      max_depth=None, min_samples_leaf=10, max_features=0.5 -> folds [285848.04, 296125.05, 325733.66] | avg=302568.92
+      max_depth=12, min_samples_leaf=1, max_features=1.0 -> folds [294501.56, 299187.63, 326939.61] | avg=306876.26
+      max_depth=12, min_samples_leaf=1, max_features=sqrt -> folds [286660.01, 295870.16, 328911.21] | avg=303813.79
+      max_depth=12, min_samples_leaf=1, max_features=0.5 -> folds [283658.05, 289491.91, 319440.09] | avg=297530.02
+      max_depth=12, min_samples_leaf=5, max_features=1.0 -> folds [294814.50, 298694.16, 327147.49] | avg=306885.38
+      max_depth=12, min_samples_leaf=5, max_features=sqrt -> folds [290762.15, 301518.51, 334554.20] | avg=308944.95
+      max_depth=12, min_samples_leaf=5, max_features=0.5 -> folds [283104.35, 290379.74, 321837.70] | avg=298440.60
+      max_depth=12, min_samples_leaf=10, max_features=1.0 -> folds [298056.17, 304139.93, 334318.38] | avg=312171.49
+      max_depth=12, min_samples_leaf=10, max_features=sqrt -> folds [296604.95, 308071.14, 342128.44] | avg=315601.51
+      max_depth=12, min_samples_leaf=10, max_features=0.5 -> folds [286778.06, 296931.80, 327847.80] | avg=303852.56
+      max_depth=24, min_samples_leaf=1, max_features=1.0 -> folds [291953.41, 297212.88, 324376.56] | avg=304514.28
+      max_depth=24, min_samples_leaf=1, max_features=sqrt -> folds [278380.27, 288006.20, 318777.67] | avg=295054.71
+      max_depth=24, min_samples_leaf=1, max_features=0.5 -> folds [280493.71, 286541.05, 315618.44] | avg=294217.74
+      max_depth=24, min_samples_leaf=5, max_features=1.0 -> folds [292137.99, 296781.37, 325179.85] | avg=304699.74
+      max_depth=24, min_samples_leaf=5, max_features=sqrt -> folds [285696.91, 297409.37, 329016.06] | avg=304040.78
+      max_depth=24, min_samples_leaf=5, max_features=0.5 -> folds [281170.93, 288827.88, 318891.23] | avg=296296.68
+      max_depth=24, min_samples_leaf=10, max_features=1.0 -> folds [296459.11, 303159.17, 333195.40] | avg=310937.90
+      max_depth=24, min_samples_leaf=10, max_features=sqrt -> folds [293913.58, 307293.37, 338801.96] | avg=313336.30
+      max_depth=24, min_samples_leaf=10, max_features=0.5 -> folds [285851.36, 296009.81, 325733.66] | avg=302531.61
+  Fold 05: params=(max_depth=None, min_samples_leaf=1, max_features=sqrt), RMSE=309032.73, MAE=164605.13, R2=0.7966
+    Inner 3-fold RMSE per param:
+      max_depth=None, min_samples_leaf=1, max_features=1.0 -> folds [308814.48, 300770.79, 309104.08] | avg=306229.78
+      max_depth=None, min_samples_leaf=1, max_features=sqrt -> folds [297587.92, 295807.96, 291128.29] | avg=294841.39
+      max_depth=None, min_samples_leaf=1, max_features=0.5 -> folds [297189.36, 294262.27, 296079.38] | avg=295843.67
+      max_depth=None, min_samples_leaf=5, max_features=1.0 -> folds [305879.38, 298926.57, 310713.95] | avg=305173.30
+      max_depth=None, min_samples_leaf=5, max_features=sqrt -> folds [307327.52, 303504.27, 299522.84] | avg=303451.54
+      max_depth=None, min_samples_leaf=5, max_features=0.5 -> folds [297186.85, 292929.64, 297810.88] | avg=295975.79
+      max_depth=None, min_samples_leaf=10, max_features=1.0 -> folds [313718.51, 306820.76, 315022.08] | avg=311853.79
+      max_depth=None, min_samples_leaf=10, max_features=sqrt -> folds [316838.72, 314386.76, 308010.41] | avg=313078.63
+      max_depth=None, min_samples_leaf=10, max_features=0.5 -> folds [305085.90, 300253.33, 302656.38] | avg=302665.20
+      max_depth=12, min_samples_leaf=1, max_features=1.0 -> folds [312191.13, 302586.14, 311527.76] | avg=308768.34
+      max_depth=12, min_samples_leaf=1, max_features=sqrt -> folds [306720.53, 302862.43, 300057.38] | avg=303213.45
+      max_depth=12, min_samples_leaf=1, max_features=0.5 -> folds [300834.16, 295714.79, 297711.64] | avg=298086.87
+      max_depth=12, min_samples_leaf=5, max_features=1.0 -> folds [308886.58, 300784.38, 312336.21] | avg=307335.72
+      max_depth=12, min_samples_leaf=5, max_features=sqrt -> folds [312710.87, 309711.98, 304032.15] | avg=308818.33
+      max_depth=12, min_samples_leaf=5, max_features=0.5 -> folds [301693.85, 295734.97, 298907.99] | avg=298778.94
+      max_depth=12, min_samples_leaf=10, max_features=1.0 -> folds [315288.20, 307893.37, 316008.10] | avg=313063.22
+      max_depth=12, min_samples_leaf=10, max_features=sqrt -> folds [320924.46, 316677.43, 310146.57] | avg=315916.15
+      max_depth=12, min_samples_leaf=10, max_features=0.5 -> folds [306546.06, 300982.02, 302959.92] | avg=303496.00
+      max_depth=24, min_samples_leaf=1, max_features=1.0 -> folds [308661.41, 300186.25, 309413.48] | avg=306087.05
+      max_depth=24, min_samples_leaf=1, max_features=sqrt -> folds [297476.95, 297004.48, 291190.14] | avg=295223.86
+      max_depth=24, min_samples_leaf=1, max_features=0.5 -> folds [296684.26, 293133.47, 295875.72] | avg=295231.15
+      max_depth=24, min_samples_leaf=5, max_features=1.0 -> folds [305855.66, 298911.84, 310744.35] | avg=305170.62
+      max_depth=24, min_samples_leaf=5, max_features=sqrt -> folds [307150.35, 304103.80, 299076.05] | avg=303443.40
+      max_depth=24, min_samples_leaf=5, max_features=0.5 -> folds [297579.62, 292646.40, 297827.12] | avg=296017.71
+      max_depth=24, min_samples_leaf=10, max_features=1.0 -> folds [313718.51, 306820.45, 315022.08] | avg=311853.68
+      max_depth=24, min_samples_leaf=10, max_features=sqrt -> folds [316843.99, 314286.80, 307990.81] | avg=313040.53
+      max_depth=24, min_samples_leaf=10, max_features=0.5 -> folds [305085.90, 300214.02, 302783.26] | avg=302694.39
+  Fold 06: params=(max_depth=None, min_samples_leaf=1, max_features=0.5), RMSE=282194.58, MAE=168473.03, R2=0.8223
+    Inner 3-fold RMSE per param:
+      max_depth=None, min_samples_leaf=1, max_features=1.0 -> folds [302185.64, 314106.61, 311165.78] | avg=309152.68
+      max_depth=None, min_samples_leaf=1, max_features=sqrt -> folds [291850.40, 305849.57, 299539.14] | avg=299079.71
+      max_depth=None, min_samples_leaf=1, max_features=0.5 -> folds [288968.44, 304219.88, 299968.29] | avg=297718.87
+      max_depth=None, min_samples_leaf=5, max_features=1.0 -> folds [301375.14, 315096.22, 311549.26] | avg=309340.21
+      max_depth=None, min_samples_leaf=5, max_features=sqrt -> folds [298209.64, 315459.49, 305625.52] | avg=306431.55
+      max_depth=None, min_samples_leaf=5, max_features=0.5 -> folds [290142.71, 308433.12, 298870.76] | avg=299148.86
+      max_depth=None, min_samples_leaf=10, max_features=1.0 -> folds [308800.29, 324224.95, 317623.94] | avg=316883.06
+      max_depth=None, min_samples_leaf=10, max_features=sqrt -> folds [308372.20, 326598.78, 314410.87] | avg=316460.62
+      max_depth=None, min_samples_leaf=10, max_features=0.5 -> folds [298000.27, 316281.58, 304651.79] | avg=306311.21
+      max_depth=12, min_samples_leaf=1, max_features=1.0 -> folds [303295.42, 317246.06, 312952.45] | avg=311164.64
+      max_depth=12, min_samples_leaf=1, max_features=sqrt -> folds [298802.83, 316113.45, 307237.83] | avg=307384.70
+      max_depth=12, min_samples_leaf=1, max_features=0.5 -> folds [290298.91, 308476.85, 302815.58] | avg=300530.44
+      max_depth=12, min_samples_leaf=5, max_features=1.0 -> folds [303112.33, 317548.13, 313074.33] | avg=311244.93
+      max_depth=12, min_samples_leaf=5, max_features=sqrt -> folds [304262.09, 322323.16, 309695.07] | avg=312093.44
+      max_depth=12, min_samples_leaf=5, max_features=0.5 -> folds [292558.28, 310131.18, 300968.33] | avg=301219.26
+      max_depth=12, min_samples_leaf=10, max_features=1.0 -> folds [309764.27, 325719.33, 318593.02] | avg=318025.54
+      max_depth=12, min_samples_leaf=10, max_features=sqrt -> folds [311107.38, 330205.03, 317787.05] | avg=319699.82
+      max_depth=12, min_samples_leaf=10, max_features=0.5 -> folds [298833.50, 318057.32, 305543.87] | avg=307478.23
+      max_depth=24, min_samples_leaf=1, max_features=1.0 -> folds [302009.80, 313912.58, 311630.73] | avg=309184.37
+      max_depth=24, min_samples_leaf=1, max_features=sqrt -> folds [291555.66, 304238.08, 300444.73] | avg=298746.16
+      max_depth=24, min_samples_leaf=1, max_features=0.5 -> folds [288645.34, 305338.14, 300655.85] | avg=298213.11
+      max_depth=24, min_samples_leaf=5, max_features=1.0 -> folds [301300.82, 315076.61, 311617.47] | avg=309331.64
+      max_depth=24, min_samples_leaf=5, max_features=sqrt -> folds [298188.28, 315344.77, 305228.85] | avg=306253.97
+      max_depth=24, min_samples_leaf=5, max_features=0.5 -> folds [289986.70, 308059.60, 298858.30] | avg=298968.20
+      max_depth=24, min_samples_leaf=10, max_features=1.0 -> folds [308800.25, 324223.17, 317623.94] | avg=316882.45
+      max_depth=24, min_samples_leaf=10, max_features=sqrt -> folds [308481.42, 326597.55, 314266.03] | avg=316448.33
+      max_depth=24, min_samples_leaf=10, max_features=0.5 -> folds [298000.27, 316281.58, 304651.79] | avg=306311.21
+  Fold 07: params=(max_depth=None, min_samples_leaf=1, max_features=0.5), RMSE=301223.76, MAE=169024.31, R2=0.8089
+    Inner 3-fold RMSE per param:
+      max_depth=None, min_samples_leaf=1, max_features=1.0 -> folds [299423.74, 296165.82, 319818.27] | avg=305135.95
+      max_depth=None, min_samples_leaf=1, max_features=sqrt -> folds [294832.55, 276747.80, 314685.96] | avg=295422.10
+      max_depth=None, min_samples_leaf=1, max_features=0.5 -> folds [292058.74, 280287.72, 309655.14] | avg=294000.53
+      max_depth=None, min_samples_leaf=5, max_features=1.0 -> folds [297766.08, 289720.97, 322134.78] | avg=303207.28
+      max_depth=None, min_samples_leaf=5, max_features=sqrt -> folds [301377.09, 282189.75, 324278.82] | avg=302615.22
+      max_depth=None, min_samples_leaf=5, max_features=0.5 -> folds [292198.64, 277521.75, 313675.27] | avg=294465.22
+      max_depth=None, min_samples_leaf=10, max_features=1.0 -> folds [302587.57, 297467.80, 329443.28] | avg=309832.88
+      max_depth=None, min_samples_leaf=10, max_features=sqrt -> folds [309067.27, 292007.12, 335261.33] | avg=312111.91
+      max_depth=None, min_samples_leaf=10, max_features=0.5 -> folds [298199.31, 283838.22, 321422.40] | avg=301153.31
+      max_depth=12, min_samples_leaf=1, max_features=1.0 -> folds [301358.98, 297531.08, 323015.32] | avg=307301.79
+      max_depth=12, min_samples_leaf=1, max_features=sqrt -> folds [302428.43, 283592.55, 321610.22] | avg=302543.73
+      max_depth=12, min_samples_leaf=1, max_features=0.5 -> folds [295683.88, 281881.89, 313604.09] | avg=297056.62
+      max_depth=12, min_samples_leaf=5, max_features=1.0 -> folds [299911.53, 291542.77, 324717.17] | avg=305390.49
+      max_depth=12, min_samples_leaf=5, max_features=sqrt -> folds [306548.65, 287293.06, 328563.87] | avg=307468.53
+      max_depth=12, min_samples_leaf=5, max_features=0.5 -> folds [294673.80, 278776.98, 315569.22] | avg=296340.00
+      max_depth=12, min_samples_leaf=10, max_features=1.0 -> folds [303692.92, 298467.43, 331047.59] | avg=311069.31
+      max_depth=12, min_samples_leaf=10, max_features=sqrt -> folds [311862.52, 293174.57, 338221.26] | avg=314419.45
+      max_depth=12, min_samples_leaf=10, max_features=0.5 -> folds [299512.20, 284997.08, 322554.02] | avg=302354.43
+      max_depth=24, min_samples_leaf=1, max_features=1.0 -> folds [298558.01, 295145.04, 319554.75] | avg=304419.27
+      max_depth=24, min_samples_leaf=1, max_features=sqrt -> folds [294511.58, 276219.41, 315756.42] | avg=295495.80
+      max_depth=24, min_samples_leaf=1, max_features=0.5 -> folds [292464.83, 281213.51, 310988.69] | avg=294889.01
+      max_depth=24, min_samples_leaf=5, max_features=1.0 -> folds [297755.82, 289677.64, 322180.12] | avg=303204.52
+      max_depth=24, min_samples_leaf=5, max_features=sqrt -> folds [300637.46, 282177.71, 325084.46] | avg=302633.21
+      max_depth=24, min_samples_leaf=5, max_features=0.5 -> folds [292310.56, 277516.30, 313742.44] | avg=294523.10
+      max_depth=24, min_samples_leaf=10, max_features=1.0 -> folds [302587.57, 297467.80, 329442.74] | avg=309832.70
+      max_depth=24, min_samples_leaf=10, max_features=sqrt -> folds [309010.99, 291997.54, 335249.72] | avg=312086.08
+      max_depth=24, min_samples_leaf=10, max_features=0.5 -> folds [298199.31, 283838.22, 321422.40] | avg=301153.31
+  Fold 08: params=(max_depth=24, min_samples_leaf=1, max_features=0.5), RMSE=283133.25, MAE=157306.21, R2=0.8209
+    Inner 3-fold RMSE per param:
+      max_depth=None, min_samples_leaf=1, max_features=1.0 -> folds [296638.72, 310222.32, 313455.70] | avg=306772.24
+      max_depth=None, min_samples_leaf=1, max_features=sqrt -> folds [284320.99, 298909.38, 309034.33] | avg=297421.57
+      max_depth=None, min_samples_leaf=1, max_features=0.5 -> folds [285031.81, 300827.48, 304113.63] | avg=296657.64
+      max_depth=None, min_samples_leaf=5, max_features=1.0 -> folds [298047.80, 309844.46, 315656.45] | avg=307849.57
+      max_depth=None, min_samples_leaf=5, max_features=sqrt -> folds [295724.83, 306627.50, 317547.85] | avg=306633.40
+      max_depth=None, min_samples_leaf=5, max_features=0.5 -> folds [287997.94, 302061.80, 306320.28] | avg=298793.34
+      max_depth=None, min_samples_leaf=10, max_features=1.0 -> folds [303990.87, 317332.99, 323331.22] | avg=314885.03
+      max_depth=None, min_samples_leaf=10, max_features=sqrt -> folds [303063.68, 317689.96, 327480.69] | avg=316078.11
+      max_depth=None, min_samples_leaf=10, max_features=0.5 -> folds [293657.53, 308147.61, 313917.34] | avg=305240.83
+      max_depth=12, min_samples_leaf=1, max_features=1.0 -> folds [298799.22, 313684.40, 316917.01] | avg=309800.21
+      max_depth=12, min_samples_leaf=1, max_features=sqrt -> folds [292065.05, 308826.43, 316757.73] | avg=305883.07
+      max_depth=12, min_samples_leaf=1, max_features=0.5 -> folds [288804.89, 304749.01, 307005.79] | avg=300186.56
+      max_depth=12, min_samples_leaf=5, max_features=1.0 -> folds [300186.80, 311743.47, 317532.52] | avg=309820.93
+      max_depth=12, min_samples_leaf=5, max_features=sqrt -> folds [299616.84, 314257.15, 323542.75] | avg=312472.25
+      max_depth=12, min_samples_leaf=5, max_features=0.5 -> folds [290011.70, 304888.76, 307784.62] | avg=300895.03
+      max_depth=12, min_samples_leaf=10, max_features=1.0 -> folds [305393.45, 318424.61, 324518.77] | avg=316112.28
+      max_depth=12, min_samples_leaf=10, max_features=sqrt -> folds [306156.04, 321634.05, 330737.37] | avg=319509.15
+      max_depth=12, min_samples_leaf=10, max_features=0.5 -> folds [294836.86, 309929.80, 314363.05] | avg=306376.57
+      max_depth=24, min_samples_leaf=1, max_features=1.0 -> folds [296176.39, 310800.53, 313159.61] | avg=306712.18
+      max_depth=24, min_samples_leaf=1, max_features=sqrt -> folds [284766.79, 298360.95, 309865.34] | avg=297664.36
+      max_depth=24, min_samples_leaf=1, max_features=0.5 -> folds [284241.47, 301258.79, 304227.29] | avg=296575.85
+      max_depth=24, min_samples_leaf=5, max_features=1.0 -> folds [298037.82, 309837.57, 315590.42] | avg=307821.94
+      max_depth=24, min_samples_leaf=5, max_features=sqrt -> folds [295564.04, 306561.29, 317433.96] | avg=306519.76
+      max_depth=24, min_samples_leaf=5, max_features=0.5 -> folds [287694.18, 302034.37, 306449.97] | avg=298726.17
+      max_depth=24, min_samples_leaf=10, max_features=1.0 -> folds [303997.01, 317333.96, 323331.22] | avg=314887.40
+      max_depth=24, min_samples_leaf=10, max_features=sqrt -> folds [303002.03, 317689.96, 327529.78] | avg=316073.92
+      max_depth=24, min_samples_leaf=10, max_features=0.5 -> folds [293690.56, 308147.61, 313917.34] | avg=305251.84
+  Fold 09: params=(max_depth=24, min_samples_leaf=1, max_features=sqrt), RMSE=271072.54, MAE=161924.26, R2=0.8224
+    Inner 3-fold RMSE per param:
+      max_depth=None, min_samples_leaf=1, max_features=1.0 -> folds [321879.21, 296675.55, 317836.63] | avg=312130.46
+      max_depth=None, min_samples_leaf=1, max_features=sqrt -> folds [311894.14, 283547.11, 304718.37] | avg=300053.20
+      max_depth=None, min_samples_leaf=1, max_features=0.5 -> folds [311304.48, 286040.85, 303247.15] | avg=300197.50
+      max_depth=None, min_samples_leaf=5, max_features=1.0 -> folds [322696.85, 295194.30, 315562.87] | avg=311151.34
+      max_depth=None, min_samples_leaf=5, max_features=sqrt -> folds [320528.44, 287522.36, 313207.90] | avg=307086.23
+      max_depth=None, min_samples_leaf=5, max_features=0.5 -> folds [311954.50, 285202.23, 305898.85] | avg=301018.53
+      max_depth=None, min_samples_leaf=10, max_features=1.0 -> folds [331102.05, 300562.81, 321449.84] | avg=317704.90
+      max_depth=None, min_samples_leaf=10, max_features=sqrt -> folds [328902.91, 296415.42, 322856.74] | avg=316058.36
+      max_depth=None, min_samples_leaf=10, max_features=0.5 -> folds [320637.91, 288554.93, 312269.08] | avg=307153.97
+      max_depth=12, min_samples_leaf=1, max_features=1.0 -> folds [324892.21, 298697.66, 320204.85] | avg=314598.24
+      max_depth=12, min_samples_leaf=1, max_features=sqrt -> folds [317880.12, 287740.80, 312054.51] | avg=305891.81
+      max_depth=12, min_samples_leaf=1, max_features=0.5 -> folds [313728.58, 285774.61, 306497.32] | avg=302000.17
+      max_depth=12, min_samples_leaf=5, max_features=1.0 -> folds [325308.58, 296820.29, 317486.11] | avg=313204.99
+      max_depth=12, min_samples_leaf=5, max_features=sqrt -> folds [324723.37, 291427.86, 317685.18] | avg=311278.81
+      max_depth=12, min_samples_leaf=5, max_features=0.5 -> folds [315220.78, 286666.60, 307325.48] | avg=303070.96
+      max_depth=12, min_samples_leaf=10, max_features=1.0 -> folds [332622.23, 301569.19, 322433.70] | avg=318875.04
+      max_depth=12, min_samples_leaf=10, max_features=sqrt -> folds [331563.28, 298533.04, 326981.86] | avg=319026.06
+      max_depth=12, min_samples_leaf=10, max_features=0.5 -> folds [322298.17, 289453.94, 313172.80] | avg=308308.31
+      max_depth=24, min_samples_leaf=1, max_features=1.0 -> folds [322230.94, 295985.17, 317511.25] | avg=311909.12
+      max_depth=24, min_samples_leaf=1, max_features=sqrt -> folds [311346.46, 283337.57, 302527.34] | avg=299070.46
+      max_depth=24, min_samples_leaf=1, max_features=0.5 -> folds [309784.81, 284502.97, 303534.34] | avg=299274.04
+      max_depth=24, min_samples_leaf=5, max_features=1.0 -> folds [322714.84, 295200.54, 315548.07] | avg=311154.48
+      max_depth=24, min_samples_leaf=5, max_features=sqrt -> folds [320124.63, 287094.48, 313275.74] | avg=306831.62
+      max_depth=24, min_samples_leaf=5, max_features=0.5 -> folds [312171.49, 285052.94, 306012.41] | avg=301078.95
+      max_depth=24, min_samples_leaf=10, max_features=1.0 -> folds [331102.76, 300562.81, 321446.06] | avg=317703.87
+      max_depth=24, min_samples_leaf=10, max_features=sqrt -> folds [328809.98, 296452.00, 322913.21] | avg=316058.40
+      max_depth=24, min_samples_leaf=10, max_features=0.5 -> folds [320637.91, 288554.93, 312269.08] | avg=307153.97
+
+=== Test region: Western Metropolitan ===
+Final params: max_depth=24, min_samples_leaf=1, max_features=0.5
+Test metrics -> RMSE=414917.93, MAE=324234.60, R2=-0.1757
+Inner-CV average RMSE across folds (top 5 combos):
+  max_depth=24, min_samples_leaf=1, max_features=0.5 -> avg RMSE=315094.61 ± 2976.53 (n=10)
+  max_depth=None, min_samples_leaf=1, max_features=0.5 -> avg RMSE=315119.17 ± 2982.76 (n=10)
+  max_depth=24, min_samples_leaf=5, max_features=0.5 -> avg RMSE=316454.68 ± 2228.45 (n=10)
+  max_depth=None, min_samples_leaf=5, max_features=0.5 -> avg RMSE=316482.55 ± 2193.38 (n=10)
+  max_depth=24, min_samples_leaf=1, max_features=sqrt -> avg RMSE=317438.58 ± 2226.67 (n=10)
+Outer 10-fold validation (mean ± std): RMSE=306592.36 ± 18333.37, MAE=176681.49 ± 4162.12, R2=0.8074 ± 0.0150
+Parameter selection frequency across outer folds:
+  max_depth=None, min_samples_leaf=1, max_features=0.5: 4 folds
+  max_depth=24, min_samples_leaf=1, max_features=0.5: 5 folds
+  max_depth=24, min_samples_leaf=5, max_features=0.5: 1 folds
+Outer fold details:
+  Fold 00: params=(max_depth=24, min_samples_leaf=5, max_features=0.5), RMSE=296584.10, MAE=178796.92, R2=0.8281
+    Inner 3-fold RMSE per param:
+      max_depth=None, min_samples_leaf=1, max_features=1.0 -> folds [339047.25, 319349.58, 321806.15] | avg=326734.33
+      max_depth=None, min_samples_leaf=1, max_features=sqrt -> folds [332614.60, 311417.25, 317563.57] | avg=320531.81
+      max_depth=None, min_samples_leaf=1, max_features=0.5 -> folds [334012.10, 309935.78, 314923.55] | avg=319623.81
+      max_depth=None, min_samples_leaf=5, max_features=1.0 -> folds [331872.77, 321509.66, 317725.33] | avg=323702.59
+      max_depth=None, min_samples_leaf=5, max_features=sqrt -> folds [337724.58, 320489.98, 324673.00] | avg=327629.18
+      max_depth=None, min_samples_leaf=5, max_features=0.5 -> folds [328217.38, 312416.40, 314546.15] | avg=318393.31
+      max_depth=None, min_samples_leaf=10, max_features=1.0 -> folds [337317.89, 328015.29, 322028.27] | avg=329120.48
+      max_depth=None, min_samples_leaf=10, max_features=sqrt -> folds [347416.22, 330803.04, 334547.18] | avg=337588.81
+      max_depth=None, min_samples_leaf=10, max_features=0.5 -> folds [333964.66, 319133.11, 320123.66] | avg=324407.14
+      max_depth=12, min_samples_leaf=1, max_features=1.0 -> folds [341475.24, 323731.47, 324813.50] | avg=330006.74
+      max_depth=12, min_samples_leaf=1, max_features=sqrt -> folds [337892.67, 320263.62, 323736.15] | avg=327297.48
+      max_depth=12, min_samples_leaf=1, max_features=0.5 -> folds [335065.52, 313083.38, 316660.33] | avg=321603.08
+      max_depth=12, min_samples_leaf=5, max_features=1.0 -> folds [334730.76, 325523.39, 321259.09] | avg=327171.08
+      max_depth=12, min_samples_leaf=5, max_features=sqrt -> folds [342285.70, 325433.91, 329149.70] | avg=332289.77
+      max_depth=12, min_samples_leaf=5, max_features=0.5 -> folds [330840.92, 314529.79, 316710.96] | avg=320693.89
+      max_depth=12, min_samples_leaf=10, max_features=1.0 -> folds [338916.01, 330486.10, 324206.43] | avg=331202.85
+      max_depth=12, min_samples_leaf=10, max_features=sqrt -> folds [349742.12, 333709.70, 337337.94] | avg=340263.25
+      max_depth=12, min_samples_leaf=10, max_features=0.5 -> folds [336007.82, 321353.51, 321616.53] | avg=326325.95
+      max_depth=24, min_samples_leaf=1, max_features=1.0 -> folds [338442.28, 318893.80, 322312.75] | avg=326549.61
+      max_depth=24, min_samples_leaf=1, max_features=sqrt -> folds [332670.16, 312956.62, 316724.39] | avg=320783.73
+      max_depth=24, min_samples_leaf=1, max_features=0.5 -> folds [332961.65, 309035.75, 314688.62] | avg=318895.34
+      max_depth=24, min_samples_leaf=5, max_features=1.0 -> folds [331886.76, 321505.58, 317702.65] | avg=323698.33
+      max_depth=24, min_samples_leaf=5, max_features=sqrt -> folds [337692.30, 320715.53, 324267.72] | avg=327558.52
+      max_depth=24, min_samples_leaf=5, max_features=0.5 -> folds [328101.33, 312212.15, 314717.11] | avg=318343.53
+      max_depth=24, min_samples_leaf=10, max_features=1.0 -> folds [337317.89, 328015.29, 322028.27] | avg=329120.48
+      max_depth=24, min_samples_leaf=10, max_features=sqrt -> folds [347416.22, 330653.79, 334563.78] | avg=337544.60
+      max_depth=24, min_samples_leaf=10, max_features=0.5 -> folds [333964.66, 319133.11, 320123.66] | avg=324407.14
+  Fold 01: params=(max_depth=24, min_samples_leaf=1, max_features=0.5), RMSE=302931.44, MAE=175090.34, R2=0.8139
+    Inner 3-fold RMSE per param:
+      max_depth=None, min_samples_leaf=1, max_features=1.0 -> folds [338303.93, 304642.71, 316065.15] | avg=319670.60
+      max_depth=None, min_samples_leaf=1, max_features=sqrt -> folds [337054.03, 302372.19, 311142.53] | avg=316856.25
+      max_depth=None, min_samples_leaf=1, max_features=0.5 -> folds [333205.98, 299256.55, 307782.99] | avg=313415.17
+      max_depth=None, min_samples_leaf=5, max_features=1.0 -> folds [336943.77, 307857.31, 317052.77] | avg=320617.95
+      max_depth=None, min_samples_leaf=5, max_features=sqrt -> folds [346971.97, 310064.40, 322758.25] | avg=326598.21
+      max_depth=None, min_samples_leaf=5, max_features=0.5 -> folds [334102.78, 300010.47, 312209.72] | avg=315440.99
+      max_depth=None, min_samples_leaf=10, max_features=1.0 -> folds [342834.44, 314742.57, 323951.89] | avg=327176.30
+      max_depth=None, min_samples_leaf=10, max_features=sqrt -> folds [357990.70, 318084.62, 333296.70] | avg=336457.34
+      max_depth=None, min_samples_leaf=10, max_features=0.5 -> folds [341867.02, 305528.85, 320889.91] | avg=322761.93
+      max_depth=12, min_samples_leaf=1, max_features=1.0 -> folds [342199.93, 308383.92, 320472.05] | avg=323685.30
+      max_depth=12, min_samples_leaf=1, max_features=sqrt -> folds [349394.89, 309641.53, 320278.46] | avg=326438.29
+      max_depth=12, min_samples_leaf=1, max_features=0.5 -> folds [337152.63, 300371.18, 311765.23] | avg=316429.68
+      max_depth=12, min_samples_leaf=5, max_features=1.0 -> folds [339643.77, 310816.86, 320238.68] | avg=323566.44
+      max_depth=12, min_samples_leaf=5, max_features=sqrt -> folds [354125.59, 313211.52, 327957.54] | avg=331764.88
+      max_depth=12, min_samples_leaf=5, max_features=0.5 -> folds [336625.13, 303105.61, 315723.69] | avg=318484.81
+      max_depth=12, min_samples_leaf=10, max_features=1.0 -> folds [344469.72, 316727.53, 325648.17] | avg=328948.48
+      max_depth=12, min_samples_leaf=10, max_features=sqrt -> folds [362747.53, 321652.21, 335081.98] | avg=339827.24
+      max_depth=12, min_samples_leaf=10, max_features=0.5 -> folds [343183.03, 308446.19, 322114.94] | avg=324581.39
+      max_depth=24, min_samples_leaf=1, max_features=1.0 -> folds [339016.63, 304446.86, 316072.51] | avg=319845.33
+      max_depth=24, min_samples_leaf=1, max_features=sqrt -> folds [337832.89, 302605.92, 310424.58] | avg=316954.46
+      max_depth=24, min_samples_leaf=1, max_features=0.5 -> folds [334264.86, 298134.80, 307199.61] | avg=313199.76
+      max_depth=24, min_samples_leaf=5, max_features=1.0 -> folds [336931.16, 307864.93, 317093.25] | avg=320629.78
+      max_depth=24, min_samples_leaf=5, max_features=sqrt -> folds [347510.28, 309814.38, 323081.68] | avg=326802.11
+      max_depth=24, min_samples_leaf=5, max_features=0.5 -> folds [334097.64, 300170.83, 312083.17] | avg=315450.55
+      max_depth=24, min_samples_leaf=10, max_features=1.0 -> folds [342834.44, 314742.83, 323951.06] | avg=327176.11
+      max_depth=24, min_samples_leaf=10, max_features=sqrt -> folds [358083.65, 318066.36, 333247.23] | avg=336465.75
+      max_depth=24, min_samples_leaf=10, max_features=0.5 -> folds [341867.02, 305528.85, 320871.91] | avg=322755.92
+  Fold 02: params=(max_depth=24, min_samples_leaf=1, max_features=0.5), RMSE=290548.89, MAE=170235.98, R2=0.8124
+    Inner 3-fold RMSE per param:
+      max_depth=None, min_samples_leaf=1, max_features=1.0 -> folds [312432.95, 315383.31, 340400.94] | avg=322739.07
+      max_depth=None, min_samples_leaf=1, max_features=sqrt -> folds [311263.26, 307107.58, 334966.62] | avg=317779.15
+      max_depth=None, min_samples_leaf=1, max_features=0.5 -> folds [307693.85, 305706.84, 333106.19] | avg=315502.29
+      max_depth=None, min_samples_leaf=5, max_features=1.0 -> folds [311572.64, 314566.86, 340973.33] | avg=322370.94
+      max_depth=None, min_samples_leaf=5, max_features=sqrt -> folds [319125.38, 318389.28, 344003.21] | avg=327172.62
+      max_depth=None, min_samples_leaf=5, max_features=0.5 -> folds [308621.72, 307862.71, 333410.95] | avg=316631.79
+      max_depth=None, min_samples_leaf=10, max_features=1.0 -> folds [316893.70, 321879.72, 345646.83] | avg=328140.08
+      max_depth=None, min_samples_leaf=10, max_features=sqrt -> folds [329771.70, 327858.78, 352706.19] | avg=336778.89
+      max_depth=None, min_samples_leaf=10, max_features=0.5 -> folds [315058.49, 315666.58, 340835.72] | avg=323853.60
+      max_depth=12, min_samples_leaf=1, max_features=1.0 -> folds [315851.13, 318303.04, 343762.80] | avg=325972.32
+      max_depth=12, min_samples_leaf=1, max_features=sqrt -> folds [315586.58, 315693.97, 341260.68] | avg=324180.41
+      max_depth=12, min_samples_leaf=1, max_features=0.5 -> folds [310290.56, 310017.20, 336722.36] | avg=319010.04
+      max_depth=12, min_samples_leaf=5, max_features=1.0 -> folds [314304.84, 317258.80, 343483.80] | avg=325015.81
+      max_depth=12, min_samples_leaf=5, max_features=sqrt -> folds [324528.89, 323208.38, 346786.59] | avg=331507.95
+      max_depth=12, min_samples_leaf=5, max_features=0.5 -> folds [310452.89, 311570.54, 336993.27] | avg=319672.23
+      max_depth=12, min_samples_leaf=10, max_features=1.0 -> folds [318747.21, 323466.80, 347237.29] | avg=329817.10
+      max_depth=12, min_samples_leaf=10, max_features=sqrt -> folds [331757.12, 331439.42, 355645.59] | avg=339614.04
+      max_depth=12, min_samples_leaf=10, max_features=0.5 -> folds [316899.85, 317525.78, 343035.98] | avg=325820.54
+      max_depth=24, min_samples_leaf=1, max_features=1.0 -> folds [311880.30, 315395.00, 340898.43] | avg=322724.58
+      max_depth=24, min_samples_leaf=1, max_features=sqrt -> folds [310625.60, 307805.91, 333617.65] | avg=317349.72
+      max_depth=24, min_samples_leaf=1, max_features=0.5 -> folds [306620.13, 306567.81, 332667.89] | avg=315285.28
+      max_depth=24, min_samples_leaf=5, max_features=1.0 -> folds [311542.53, 314565.55, 340936.89] | avg=322348.32
+      max_depth=24, min_samples_leaf=5, max_features=sqrt -> folds [318177.45, 318635.87, 343432.68] | avg=326748.67
+      max_depth=24, min_samples_leaf=5, max_features=0.5 -> folds [308713.04, 307748.51, 333483.90] | avg=316648.48
+      max_depth=24, min_samples_leaf=10, max_features=1.0 -> folds [316899.31, 321879.72, 345646.83] | avg=328141.95
+      max_depth=24, min_samples_leaf=10, max_features=sqrt -> folds [329791.55, 327722.55, 352685.49] | avg=336733.20
+      max_depth=24, min_samples_leaf=10, max_features=0.5 -> folds [315058.49, 315666.58, 340835.72] | avg=323853.60
+  Fold 03: params=(max_depth=None, min_samples_leaf=1, max_features=0.5), RMSE=327614.20, MAE=178639.10, R2=0.7863
+    Inner 3-fold RMSE per param:
+      max_depth=None, min_samples_leaf=1, max_features=1.0 -> folds [312191.48, 335511.31, 306707.61] | avg=318136.80
+      max_depth=None, min_samples_leaf=1, max_features=sqrt -> folds [305406.00, 333059.97, 302729.16] | avg=313731.71
+      max_depth=None, min_samples_leaf=1, max_features=0.5 -> folds [304841.86, 329349.39, 297772.69] | avg=310654.64
+      max_depth=None, min_samples_leaf=5, max_features=1.0 -> folds [312952.52, 336565.31, 303797.08] | avg=317771.64
+      max_depth=None, min_samples_leaf=5, max_features=sqrt -> folds [313707.03, 344288.51, 310075.03] | avg=322690.19
+      max_depth=None, min_samples_leaf=5, max_features=0.5 -> folds [307266.92, 332472.33, 299608.62] | avg=313115.96
+      max_depth=None, min_samples_leaf=10, max_features=1.0 -> folds [318063.63, 344715.06, 308092.20] | avg=323623.63
+      max_depth=None, min_samples_leaf=10, max_features=sqrt -> folds [324153.33, 354245.05, 320805.48] | avg=333067.95
+      max_depth=None, min_samples_leaf=10, max_features=0.5 -> folds [313967.26, 341402.42, 305484.45] | avg=320284.71
+      max_depth=12, min_samples_leaf=1, max_features=1.0 -> folds [315167.50, 339077.82, 310372.84] | avg=321539.39
+      max_depth=12, min_samples_leaf=1, max_features=sqrt -> folds [312036.43, 341402.95, 308525.07] | avg=320654.82
+      max_depth=12, min_samples_leaf=1, max_features=0.5 -> folds [307956.89, 333135.98, 303022.23] | avg=314705.03
+      max_depth=12, min_samples_leaf=5, max_features=1.0 -> folds [315450.22, 339151.31, 307621.48] | avg=320741.00
+      max_depth=12, min_samples_leaf=5, max_features=sqrt -> folds [319323.60, 348127.49, 317192.39] | avg=328214.50
+      max_depth=12, min_samples_leaf=5, max_features=0.5 -> folds [309725.66, 335718.20, 302764.02] | avg=316069.29
+      max_depth=12, min_samples_leaf=10, max_features=1.0 -> folds [319591.04, 346384.22, 310952.99] | avg=325642.75
+      max_depth=12, min_samples_leaf=10, max_features=sqrt -> folds [327092.58, 356727.39, 323600.24] | avg=335806.73
+      max_depth=12, min_samples_leaf=10, max_features=0.5 -> folds [314423.26, 343315.88, 307889.39] | avg=321876.18
+      max_depth=24, min_samples_leaf=1, max_features=1.0 -> folds [312386.46, 335637.25, 306014.56] | avg=318012.76
+      max_depth=24, min_samples_leaf=1, max_features=sqrt -> folds [306066.35, 334382.41, 303170.75] | avg=314539.84
+      max_depth=24, min_samples_leaf=1, max_features=0.5 -> folds [304318.95, 330296.02, 299064.45] | avg=311226.47
+      max_depth=24, min_samples_leaf=5, max_features=1.0 -> folds [312997.59, 336601.13, 303843.73] | avg=317814.15
+      max_depth=24, min_samples_leaf=5, max_features=sqrt -> folds [314292.03, 343808.59, 310615.71] | avg=322905.45
+      max_depth=24, min_samples_leaf=5, max_features=0.5 -> folds [306767.92, 332412.97, 299284.37] | avg=312821.76
+      max_depth=24, min_samples_leaf=10, max_features=1.0 -> folds [318063.63, 344714.38, 308092.82] | avg=323623.61
+      max_depth=24, min_samples_leaf=10, max_features=sqrt -> folds [324116.78, 354187.36, 320805.99] | avg=333036.71
+      max_depth=24, min_samples_leaf=10, max_features=0.5 -> folds [313967.26, 341402.42, 305492.81] | avg=320287.50
+  Fold 04: params=(max_depth=None, min_samples_leaf=1, max_features=0.5), RMSE=294917.48, MAE=175509.28, R2=0.8138
+    Inner 3-fold RMSE per param:
+      max_depth=None, min_samples_leaf=1, max_features=1.0 -> folds [336086.23, 313017.73, 315453.17] | avg=321519.04
+      max_depth=None, min_samples_leaf=1, max_features=sqrt -> folds [331426.58, 314414.23, 305793.52] | avg=317211.45
+      max_depth=None, min_samples_leaf=1, max_features=0.5 -> folds [328806.85, 310049.23, 304784.89] | avg=314546.99
+      max_depth=None, min_samples_leaf=5, max_features=1.0 -> folds [335258.34, 314173.26, 314943.92] | avg=321458.51
+      max_depth=None, min_samples_leaf=5, max_features=sqrt -> folds [342803.99, 320606.37, 317263.61] | avg=326891.32
+      max_depth=None, min_samples_leaf=5, max_features=0.5 -> folds [329802.80, 311819.42, 307688.79] | avg=316437.01
+      max_depth=None, min_samples_leaf=10, max_features=1.0 -> folds [342141.30, 320148.14, 321230.45] | avg=327839.96
+      max_depth=None, min_samples_leaf=10, max_features=sqrt -> folds [351917.24, 329724.97, 329327.22] | avg=336989.81
+      max_depth=None, min_samples_leaf=10, max_features=0.5 -> folds [337527.74, 318169.50, 313385.71] | avg=323027.65
+      max_depth=12, min_samples_leaf=1, max_features=1.0 -> folds [339148.16, 317143.58, 319071.50] | avg=325121.08
+      max_depth=12, min_samples_leaf=1, max_features=sqrt -> folds [338698.27, 321967.25, 318442.86] | avg=326369.46
+      max_depth=12, min_samples_leaf=1, max_features=0.5 -> folds [330038.34, 312419.25, 310680.39] | avg=317712.66
+      max_depth=12, min_samples_leaf=5, max_features=1.0 -> folds [337642.38, 317754.04, 318735.47] | avg=324710.63
+      max_depth=12, min_samples_leaf=5, max_features=sqrt -> folds [346232.02, 326214.43, 322857.38] | avg=331767.94
+      max_depth=12, min_samples_leaf=5, max_features=0.5 -> folds [332527.96, 314204.61, 309971.19] | avg=318901.25
+      max_depth=12, min_samples_leaf=10, max_features=1.0 -> folds [343570.09, 322659.08, 323048.35] | avg=329759.17
+      max_depth=12, min_samples_leaf=10, max_features=sqrt -> folds [355721.40, 331558.14, 332443.77] | avg=339907.77
+      max_depth=12, min_samples_leaf=10, max_features=0.5 -> folds [339543.04, 319737.60, 316400.06] | avg=325226.90
+      max_depth=24, min_samples_leaf=1, max_features=1.0 -> folds [336457.75, 312876.92, 315044.14] | avg=321459.60
+      max_depth=24, min_samples_leaf=1, max_features=sqrt -> folds [331865.87, 315231.64, 304657.60] | avg=317251.70
+      max_depth=24, min_samples_leaf=1, max_features=0.5 -> folds [328845.62, 309132.19, 306608.79] | avg=314862.20
+      max_depth=24, min_samples_leaf=5, max_features=1.0 -> folds [335246.27, 314171.77, 314947.82] | avg=321455.29
+      max_depth=24, min_samples_leaf=5, max_features=sqrt -> folds [342610.46, 320786.61, 317125.22] | avg=326840.76
+      max_depth=24, min_samples_leaf=5, max_features=0.5 -> folds [329407.91, 311894.56, 307981.95] | avg=316428.14
+      max_depth=24, min_samples_leaf=10, max_features=1.0 -> folds [342141.57, 320177.74, 321230.45] | avg=327849.92
+      max_depth=24, min_samples_leaf=10, max_features=sqrt -> folds [351878.84, 329854.68, 329327.22] | avg=337020.24
+      max_depth=24, min_samples_leaf=10, max_features=0.5 -> folds [337487.07, 318195.85, 313438.71] | avg=323040.55
+  Fold 05: params=(max_depth=None, min_samples_leaf=1, max_features=0.5), RMSE=316816.99, MAE=179938.92, R2=0.7984
+    Inner 3-fold RMSE per param:
+      max_depth=None, min_samples_leaf=1, max_features=1.0 -> folds [322368.12, 332035.19, 317529.64] | avg=323977.65
+      max_depth=None, min_samples_leaf=1, max_features=sqrt -> folds [314350.74, 333666.42, 304238.95] | avg=317418.70
+      max_depth=None, min_samples_leaf=1, max_features=0.5 -> folds [313932.67, 324018.12, 303959.09] | avg=313969.96
+      max_depth=None, min_samples_leaf=5, max_features=1.0 -> folds [319805.04, 337768.58, 311113.54] | avg=322895.72
+      max_depth=None, min_samples_leaf=5, max_features=sqrt -> folds [319745.12, 347569.52, 312023.87] | avg=326446.17
+      max_depth=None, min_samples_leaf=5, max_features=0.5 -> folds [312400.83, 332116.40, 304501.80] | avg=316339.68
+      max_depth=None, min_samples_leaf=10, max_features=1.0 -> folds [327310.96, 348009.60, 315502.62] | avg=330274.39
+      max_depth=None, min_samples_leaf=10, max_features=sqrt -> folds [328722.49, 358659.58, 320348.78] | avg=335910.28
+      max_depth=None, min_samples_leaf=10, max_features=0.5 -> folds [318625.80, 342831.80, 309991.99] | avg=323816.53
+      max_depth=12, min_samples_leaf=1, max_features=1.0 -> folds [325858.44, 336342.48, 320544.36] | avg=327581.76
+      max_depth=12, min_samples_leaf=1, max_features=sqrt -> folds [319389.40, 343395.83, 312755.43] | avg=325180.22
+      max_depth=12, min_samples_leaf=1, max_features=0.5 -> folds [315197.82, 330422.15, 307839.08] | avg=317819.68
+      max_depth=12, min_samples_leaf=5, max_features=1.0 -> folds [323242.33, 340329.22, 314523.98] | avg=326031.84
+      max_depth=12, min_samples_leaf=5, max_features=sqrt -> folds [324392.27, 352271.59, 316934.95] | avg=331199.61
+      max_depth=12, min_samples_leaf=5, max_features=0.5 -> folds [315360.22, 335549.74, 306578.48] | avg=319162.81
+      max_depth=12, min_samples_leaf=10, max_features=1.0 -> folds [329484.13, 349709.46, 317600.02] | avg=332264.54
+      max_depth=12, min_samples_leaf=10, max_features=sqrt -> folds [332133.38, 362529.34, 323263.59] | avg=339308.77
+      max_depth=12, min_samples_leaf=10, max_features=0.5 -> folds [320338.47, 343672.43, 311993.71] | avg=325334.87
+      max_depth=24, min_samples_leaf=1, max_features=1.0 -> folds [322257.51, 332467.83, 317373.71] | avg=324033.02
+      max_depth=24, min_samples_leaf=1, max_features=sqrt -> folds [313385.87, 332844.80, 304776.82] | avg=317002.50
+      max_depth=24, min_samples_leaf=1, max_features=0.5 -> folds [314300.64, 324649.43, 304418.94] | avg=314456.34
+      max_depth=24, min_samples_leaf=5, max_features=1.0 -> folds [319797.15, 337671.37, 311001.12] | avg=322823.21
+      max_depth=24, min_samples_leaf=5, max_features=sqrt -> folds [319848.66, 348277.75, 312438.76] | avg=326855.06
+      max_depth=24, min_samples_leaf=5, max_features=0.5 -> folds [312335.05, 332243.45, 304820.10] | avg=316466.20
+      max_depth=24, min_samples_leaf=10, max_features=1.0 -> folds [327312.62, 348010.87, 315502.62] | avg=330275.37
+      max_depth=24, min_samples_leaf=10, max_features=sqrt -> folds [328774.66, 358798.75, 320327.53] | avg=335966.98
+      max_depth=24, min_samples_leaf=10, max_features=0.5 -> folds [318625.80, 342902.03, 309991.99] | avg=323839.94
+  Fold 06: params=(max_depth=24, min_samples_leaf=1, max_features=0.5), RMSE=307169.44, MAE=175865.02, R2=0.8044
+    Inner 3-fold RMSE per param:
+      max_depth=None, min_samples_leaf=1, max_features=1.0 -> folds [320880.58, 320692.17, 324060.83] | avg=321877.86
+      max_depth=None, min_samples_leaf=1, max_features=sqrt -> folds [318416.55, 317296.85, 314468.67] | avg=316727.36
+      max_depth=None, min_samples_leaf=1, max_features=0.5 -> folds [314327.04, 315307.07, 314205.67] | avg=314613.26
+      max_depth=None, min_samples_leaf=5, max_features=1.0 -> folds [321210.01, 320310.75, 323263.73] | avg=321594.83
+      max_depth=None, min_samples_leaf=5, max_features=sqrt -> folds [327136.05, 325824.95, 324636.87] | avg=325865.96
+      max_depth=None, min_samples_leaf=5, max_features=0.5 -> folds [317061.89, 316031.35, 316592.56] | avg=316561.93
+      max_depth=None, min_samples_leaf=10, max_features=1.0 -> folds [328928.67, 325471.44, 330575.24] | avg=328325.12
+      max_depth=None, min_samples_leaf=10, max_features=sqrt -> folds [337783.75, 336773.41, 334910.20] | avg=336489.12
+      max_depth=None, min_samples_leaf=10, max_features=0.5 -> folds [323957.87, 324452.35, 323270.50] | avg=323893.57
+      max_depth=12, min_samples_leaf=1, max_features=1.0 -> folds [325242.67, 325232.75, 328915.62] | avg=326463.68
+      max_depth=12, min_samples_leaf=1, max_features=sqrt -> folds [326074.80, 325178.46, 323580.45] | avg=324944.57
+      max_depth=12, min_samples_leaf=1, max_features=0.5 -> folds [318010.23, 320360.07, 317973.88] | avg=318781.39
+      max_depth=12, min_samples_leaf=5, max_features=1.0 -> folds [324294.71, 324019.57, 326591.35] | avg=324968.54
+      max_depth=12, min_samples_leaf=5, max_features=sqrt -> folds [331265.52, 331862.74, 331163.70] | avg=331430.65
+      max_depth=12, min_samples_leaf=5, max_features=0.5 -> folds [318471.19, 319981.16, 319797.13] | avg=319416.49
+      max_depth=12, min_samples_leaf=10, max_features=1.0 -> folds [330591.14, 327680.07, 332690.05] | avg=330320.42
+      max_depth=12, min_samples_leaf=10, max_features=sqrt -> folds [339753.69, 339564.69, 339538.32] | avg=339618.90
+      max_depth=12, min_samples_leaf=10, max_features=0.5 -> folds [325081.21, 326344.86, 325558.32] | avg=325661.46
+      max_depth=24, min_samples_leaf=1, max_features=1.0 -> folds [320533.98, 320161.50, 324241.10] | avg=321645.53
+      max_depth=24, min_samples_leaf=1, max_features=sqrt -> folds [318410.74, 316972.27, 312467.07] | avg=315950.02
+      max_depth=24, min_samples_leaf=1, max_features=0.5 -> folds [314433.87, 314820.21, 313025.27] | avg=314093.11
+      max_depth=24, min_samples_leaf=5, max_features=1.0 -> folds [321164.54, 320325.46, 323268.29] | avg=321586.10
+      max_depth=24, min_samples_leaf=5, max_features=sqrt -> folds [327447.90, 325689.79, 325166.66] | avg=326101.45
+      max_depth=24, min_samples_leaf=5, max_features=0.5 -> folds [317321.78, 315973.26, 315925.38] | avg=316406.81
+      max_depth=24, min_samples_leaf=10, max_features=1.0 -> folds [328928.67, 325470.81, 330575.18] | avg=328324.89
+      max_depth=24, min_samples_leaf=10, max_features=sqrt -> folds [337783.02, 336877.76, 334829.78] | avg=336496.85
+      max_depth=24, min_samples_leaf=10, max_features=0.5 -> folds [323957.87, 324452.87, 323270.50] | avg=323893.75
+  Fold 07: params=(max_depth=24, min_samples_leaf=1, max_features=0.5), RMSE=336952.77, MAE=181516.30, R2=0.7875
+    Inner 3-fold RMSE per param:
+      max_depth=None, min_samples_leaf=1, max_features=1.0 -> folds [306470.35, 320024.83, 338096.42] | avg=321530.53
+      max_depth=None, min_samples_leaf=1, max_features=sqrt -> folds [308124.29, 313761.84, 325662.75] | avg=315849.63
+      max_depth=None, min_samples_leaf=1, max_features=0.5 -> folds [301652.03, 313259.92, 327652.21] | avg=314188.05
+      max_depth=None, min_samples_leaf=5, max_features=1.0 -> folds [308777.47, 316608.25, 335639.32] | avg=320341.68
+      max_depth=None, min_samples_leaf=5, max_features=sqrt -> folds [319616.05, 321372.52, 329316.94] | avg=323435.17
+      max_depth=None, min_samples_leaf=5, max_features=0.5 -> folds [307050.27, 312716.38, 326138.35] | avg=315301.67
+      max_depth=None, min_samples_leaf=10, max_features=1.0 -> folds [316208.72, 322758.99, 339774.77] | avg=326247.49
+      max_depth=None, min_samples_leaf=10, max_features=sqrt -> folds [328818.12, 331648.82, 338509.34] | avg=332992.10
+      max_depth=None, min_samples_leaf=10, max_features=0.5 -> folds [313043.32, 319765.08, 331447.26] | avg=321418.55
+      max_depth=12, min_samples_leaf=1, max_features=1.0 -> folds [308758.52, 323745.68, 340276.40] | avg=324260.20
+      max_depth=12, min_samples_leaf=1, max_features=sqrt -> folds [316137.33, 322388.88, 331875.92] | avg=323467.38
+      max_depth=12, min_samples_leaf=1, max_features=0.5 -> folds [303919.42, 317016.39, 330378.85] | avg=317104.88
+      max_depth=12, min_samples_leaf=5, max_features=1.0 -> folds [310731.00, 319939.35, 338241.52] | avg=322970.62
+      max_depth=12, min_samples_leaf=5, max_features=sqrt -> folds [324292.83, 325869.64, 334973.42] | avg=328378.63
+      max_depth=12, min_samples_leaf=5, max_features=0.5 -> folds [307377.60, 315190.52, 328286.70] | avg=316951.61
+      max_depth=12, min_samples_leaf=10, max_features=1.0 -> folds [317452.18, 324814.06, 341257.16] | avg=327841.13
+      max_depth=12, min_samples_leaf=10, max_features=sqrt -> folds [331462.40, 334926.45, 341504.42] | avg=335964.42
+      max_depth=12, min_samples_leaf=10, max_features=0.5 -> folds [313497.67, 320489.46, 332641.95] | avg=322209.69
+      max_depth=24, min_samples_leaf=1, max_features=1.0 -> folds [306356.36, 319759.59, 337934.08] | avg=321350.01
+      max_depth=24, min_samples_leaf=1, max_features=sqrt -> folds [309501.70, 313756.18, 324422.82] | avg=315893.57
+      max_depth=24, min_samples_leaf=1, max_features=0.5 -> folds [302774.98, 313525.61, 325971.37] | avg=314090.65
+      max_depth=24, min_samples_leaf=5, max_features=1.0 -> folds [308758.99, 316565.52, 335666.04] | avg=320330.19
+      max_depth=24, min_samples_leaf=5, max_features=sqrt -> folds [319409.72, 321828.89, 329451.78] | avg=323563.46
+      max_depth=24, min_samples_leaf=5, max_features=0.5 -> folds [306651.00, 312875.31, 326382.86] | avg=315303.05
+      max_depth=24, min_samples_leaf=10, max_features=1.0 -> folds [316208.72, 322758.32, 339774.77] | avg=326247.27
+      max_depth=24, min_samples_leaf=10, max_features=sqrt -> folds [328781.84, 331668.23, 338509.34] | avg=332986.47
+      max_depth=24, min_samples_leaf=10, max_features=0.5 -> folds [313043.32, 319765.08, 331476.73] | avg=321428.38
+  Fold 08: params=(max_depth=24, min_samples_leaf=1, max_features=0.5), RMSE=316601.91, MAE=181321.52, R2=0.7994
+    Inner 3-fold RMSE per param:
+      max_depth=None, min_samples_leaf=1, max_features=1.0 -> folds [336651.61, 318167.57, 319182.92] | avg=324667.37
+      max_depth=None, min_samples_leaf=1, max_features=sqrt -> folds [320731.55, 320380.04, 309197.41] | avg=316769.67
+      max_depth=None, min_samples_leaf=1, max_features=0.5 -> folds [318253.40, 314686.36, 308646.63] | avg=313862.13
+      max_depth=None, min_samples_leaf=5, max_features=1.0 -> folds [334116.92, 319526.83, 320286.22] | avg=324643.32
+      max_depth=None, min_samples_leaf=5, max_features=sqrt -> folds [327742.13, 328937.32, 319647.04] | avg=325442.16
+      max_depth=None, min_samples_leaf=5, max_features=0.5 -> folds [318397.04, 316368.86, 310852.21] | avg=315206.04
+      max_depth=None, min_samples_leaf=10, max_features=1.0 -> folds [337962.21, 327041.10, 324442.10] | avg=329815.14
+      max_depth=None, min_samples_leaf=10, max_features=sqrt -> folds [337263.34, 337039.45, 329189.54] | avg=334497.45
+      max_depth=None, min_samples_leaf=10, max_features=0.5 -> folds [324161.79, 323044.67, 318821.39] | avg=322009.28
+      max_depth=12, min_samples_leaf=1, max_features=1.0 -> folds [339649.75, 320577.17, 323155.61] | avg=327794.18
+      max_depth=12, min_samples_leaf=1, max_features=sqrt -> folds [325690.80, 325507.70, 319915.38] | avg=323704.63
+      max_depth=12, min_samples_leaf=1, max_features=0.5 -> folds [319791.87, 315874.41, 312697.82] | avg=316121.37
+      max_depth=12, min_samples_leaf=5, max_features=1.0 -> folds [336662.47, 321911.87, 323589.47] | avg=327387.93
+      max_depth=12, min_samples_leaf=5, max_features=sqrt -> folds [331994.91, 332171.63, 324696.81] | avg=329621.12
+      max_depth=12, min_samples_leaf=5, max_features=0.5 -> folds [320577.32, 318298.91, 315798.15] | avg=318224.79
+      max_depth=12, min_samples_leaf=10, max_features=1.0 -> folds [339525.03, 328350.20, 326323.93] | avg=331399.72
+      max_depth=12, min_samples_leaf=10, max_features=sqrt -> folds [339129.06, 339520.19, 333894.55] | avg=337514.60
+      max_depth=12, min_samples_leaf=10, max_features=0.5 -> folds [326374.48, 324747.56, 320697.82] | avg=323939.95
+      max_depth=24, min_samples_leaf=1, max_features=1.0 -> folds [337137.34, 318099.20, 319212.49] | avg=324816.34
+      max_depth=24, min_samples_leaf=1, max_features=sqrt -> folds [321542.92, 320256.90, 308600.10] | avg=316799.97
+      max_depth=24, min_samples_leaf=1, max_features=0.5 -> folds [317258.12, 313513.23, 309219.04] | avg=313330.13
+      max_depth=24, min_samples_leaf=5, max_features=1.0 -> folds [334109.28, 319551.24, 320256.29] | avg=324638.94
+      max_depth=24, min_samples_leaf=5, max_features=sqrt -> folds [327656.15, 328717.90, 319394.11] | avg=325256.05
+      max_depth=24, min_samples_leaf=5, max_features=0.5 -> folds [318338.33, 316538.70, 311028.50] | avg=315301.84
+      max_depth=24, min_samples_leaf=10, max_features=1.0 -> folds [337963.39, 327041.10, 324441.81] | avg=329815.43
+      max_depth=24, min_samples_leaf=10, max_features=sqrt -> folds [337272.27, 337022.63, 329189.54] | avg=334494.81
+      max_depth=24, min_samples_leaf=10, max_features=0.5 -> folds [324126.51, 323044.67, 318849.72] | avg=322006.97
+  Fold 09: params=(max_depth=None, min_samples_leaf=1, max_features=0.5), RMSE=275786.37, MAE=169901.49, R2=0.8295
+    Inner 3-fold RMSE per param:
+      max_depth=None, min_samples_leaf=1, max_features=1.0 -> folds [343825.64, 322259.55, 317106.75] | avg=327730.65
+      max_depth=None, min_samples_leaf=1, max_features=sqrt -> folds [336951.06, 320769.40, 307795.49] | avg=321838.65
+      max_depth=None, min_samples_leaf=1, max_features=0.5 -> folds [336153.19, 316374.28, 309918.60] | avg=320815.35
+      max_depth=None, min_samples_leaf=5, max_features=1.0 -> folds [343961.68, 323949.01, 313908.53] | avg=327273.07
+      max_depth=None, min_samples_leaf=5, max_features=sqrt -> folds [348211.42, 331515.32, 309637.95] | avg=329788.23
+      max_depth=None, min_samples_leaf=5, max_features=0.5 -> folds [337563.83, 319979.41, 306648.26] | avg=321397.16
+      max_depth=None, min_samples_leaf=10, max_features=1.0 -> folds [350562.06, 329607.54, 313923.21] | avg=331364.27
+      max_depth=None, min_samples_leaf=10, max_features=sqrt -> folds [358438.60, 342343.21, 317963.54] | avg=339581.79
+      max_depth=None, min_samples_leaf=10, max_features=0.5 -> folds [345904.03, 327234.27, 309555.17] | avg=327564.49
+      max_depth=12, min_samples_leaf=1, max_features=1.0 -> folds [347361.49, 328145.37, 318645.54] | avg=331384.13
+      max_depth=12, min_samples_leaf=1, max_features=sqrt -> folds [348763.69, 331132.17, 311646.65] | avg=330514.17
+      max_depth=12, min_samples_leaf=1, max_features=0.5 -> folds [340217.33, 322229.55, 310626.41] | avg=324357.76
+      max_depth=12, min_samples_leaf=5, max_features=1.0 -> folds [347162.24, 328350.32, 315770.92] | avg=330427.83
+      max_depth=12, min_samples_leaf=5, max_features=sqrt -> folds [354189.35, 338605.07, 314221.92] | avg=335672.11
+      max_depth=12, min_samples_leaf=5, max_features=0.5 -> folds [341506.76, 323327.74, 308151.72] | avg=324328.74
+      max_depth=12, min_samples_leaf=10, max_features=1.0 -> folds [352382.85, 332420.56, 315033.41] | avg=333278.94
+      max_depth=12, min_samples_leaf=10, max_features=sqrt -> folds [361274.86, 345606.68, 319650.75] | avg=342177.43
+      max_depth=12, min_samples_leaf=10, max_features=0.5 -> folds [347346.35, 328684.79, 310182.71] | avg=328737.95
+      max_depth=24, min_samples_leaf=1, max_features=1.0 -> folds [343766.52, 322496.66, 317272.66] | avg=327845.28
+      max_depth=24, min_samples_leaf=1, max_features=sqrt -> folds [338504.33, 320923.67, 306152.89] | avg=321860.30
+      max_depth=24, min_samples_leaf=1, max_features=0.5 -> folds [337053.41, 316891.46, 310575.73] | avg=321506.86
+      max_depth=24, min_samples_leaf=5, max_features=1.0 -> folds [343975.85, 323901.44, 313867.69] | avg=327248.33
+      max_depth=24, min_samples_leaf=5, max_features=sqrt -> folds [347948.10, 331406.47, 309650.06] | avg=329668.21
+      max_depth=24, min_samples_leaf=5, max_features=0.5 -> folds [337628.76, 319574.52, 306926.08] | avg=321376.45
+      max_depth=24, min_samples_leaf=10, max_features=1.0 -> folds [350562.06, 329607.54, 313923.21] | avg=331364.27
+      max_depth=24, min_samples_leaf=10, max_features=sqrt -> folds [358487.13, 342278.22, 318030.28] | avg=339598.55
+      max_depth=24, min_samples_leaf=10, max_features=0.5 -> folds [345919.20, 327234.27, 309555.17] | avg=327569.55
+
+=== Test region: Southern Metropolitan ===
+Final params: max_depth=24, min_samples_leaf=1, max_features=0.5
+Test metrics -> RMSE=602230.53, MAE=358442.87, R2=0.5065
+Inner-CV average RMSE across folds (top 5 combos):
+  max_depth=24, min_samples_leaf=1, max_features=0.5 -> avg RMSE=212599.80 ± 2827.93 (n=10)
+  max_depth=None, min_samples_leaf=1, max_features=0.5 -> avg RMSE=212660.31 ± 2614.29 (n=10)
+  max_depth=24, min_samples_leaf=5, max_features=0.5 -> avg RMSE=213792.91 ± 1893.89 (n=10)
+  max_depth=None, min_samples_leaf=5, max_features=0.5 -> avg RMSE=213819.97 ± 1899.45 (n=10)
+  max_depth=12, min_samples_leaf=1, max_features=0.5 -> avg RMSE=214165.64 ± 2499.43 (n=10)
+Outer 10-fold validation (mean ± std): RMSE=209255.05 ± 19973.36, MAE=124711.33 ± 4034.69, R2=0.7675 ± 0.0272
+Parameter selection frequency across outer folds:
+  max_depth=None, min_samples_leaf=1, max_features=0.5: 4 folds
+  max_depth=24, min_samples_leaf=1, max_features=0.5: 5 folds
+  max_depth=24, min_samples_leaf=5, max_features=0.5: 1 folds
+Outer fold details:
+  Fold 00: params=(max_depth=None, min_samples_leaf=1, max_features=0.5), RMSE=236606.64, MAE=127765.83, R2=0.7377
+    Inner 3-fold RMSE per param:
+      max_depth=None, min_samples_leaf=1, max_features=1.0 -> folds [213310.46, 211985.28, 223817.29] | avg=216371.01
+      max_depth=None, min_samples_leaf=1, max_features=sqrt -> folds [213828.16, 206185.85, 219038.72] | avg=213017.58
+      max_depth=None, min_samples_leaf=1, max_features=0.5 -> folds [207484.74, 203955.18, 215180.74] | avg=208873.56
+      max_depth=None, min_samples_leaf=5, max_features=1.0 -> folds [213995.86, 208537.19, 223864.67] | avg=215465.90
+      max_depth=None, min_samples_leaf=5, max_features=sqrt -> folds [220492.01, 209773.95, 225497.83] | avg=218587.93
+      max_depth=None, min_samples_leaf=5, max_features=0.5 -> folds [210471.74, 204229.53, 217246.05] | avg=210649.10
+      max_depth=None, min_samples_leaf=10, max_features=1.0 -> folds [218962.84, 213399.59, 229530.39] | avg=220630.94
+      max_depth=None, min_samples_leaf=10, max_features=sqrt -> folds [226824.79, 215388.40, 233583.34] | avg=225265.51
+      max_depth=None, min_samples_leaf=10, max_features=0.5 -> folds [215503.29, 208193.22, 222890.60] | avg=215529.04
+      max_depth=12, min_samples_leaf=1, max_features=1.0 -> folds [215637.52, 213361.19, 225859.61] | avg=218286.11
+      max_depth=12, min_samples_leaf=1, max_features=sqrt -> folds [221220.29, 210790.65, 223341.22] | avg=218450.72
+      max_depth=12, min_samples_leaf=1, max_features=0.5 -> folds [209734.20, 206113.30, 217397.16] | avg=211081.55
+      max_depth=12, min_samples_leaf=5, max_features=1.0 -> folds [215480.40, 209836.05, 225478.20] | avg=216931.55
+      max_depth=12, min_samples_leaf=5, max_features=sqrt -> folds [224398.60, 213314.32, 229780.27] | avg=222497.73
+      max_depth=12, min_samples_leaf=5, max_features=0.5 -> folds [211839.97, 205476.72, 218807.57] | avg=212041.42
+      max_depth=12, min_samples_leaf=10, max_features=1.0 -> folds [219591.63, 214206.34, 230367.03] | avg=221388.33
+      max_depth=12, min_samples_leaf=10, max_features=sqrt -> folds [229990.96, 217389.62, 235927.35] | avg=227769.31
+      max_depth=12, min_samples_leaf=10, max_features=0.5 -> folds [216533.54, 209220.55, 223751.87] | avg=216501.99
+      max_depth=24, min_samples_leaf=1, max_features=1.0 -> folds [213656.76, 211897.98, 224336.23] | avg=216630.33
+      max_depth=24, min_samples_leaf=1, max_features=sqrt -> folds [213556.72, 206239.53, 218194.82] | avg=212663.69
+      max_depth=24, min_samples_leaf=1, max_features=0.5 -> folds [207469.76, 204429.57, 215368.05] | avg=209089.13
+      max_depth=24, min_samples_leaf=5, max_features=1.0 -> folds [214036.59, 208520.28, 223878.90] | avg=215478.59
+      max_depth=24, min_samples_leaf=5, max_features=sqrt -> folds [220187.64, 210113.34, 225502.88] | avg=218601.29
+      max_depth=24, min_samples_leaf=5, max_features=0.5 -> folds [210486.02, 204440.30, 217150.94] | avg=210692.42
+      max_depth=24, min_samples_leaf=10, max_features=1.0 -> folds [218962.84, 213400.42, 229531.05] | avg=220631.44
+      max_depth=24, min_samples_leaf=10, max_features=sqrt -> folds [226841.32, 215355.20, 233596.92] | avg=225264.48
+      max_depth=24, min_samples_leaf=10, max_features=0.5 -> folds [215503.29, 208146.15, 222890.60] | avg=215513.35
+  Fold 01: params=(max_depth=None, min_samples_leaf=1, max_features=0.5), RMSE=199465.93, MAE=120553.92, R2=0.7851
+    Inner 3-fold RMSE per param:
+      max_depth=None, min_samples_leaf=1, max_features=1.0 -> folds [232709.69, 205252.71, 218804.52] | avg=218922.30
+      max_depth=None, min_samples_leaf=1, max_features=sqrt -> folds [233873.15, 204843.48, 215185.55] | avg=217967.40
+      max_depth=None, min_samples_leaf=1, max_features=0.5 -> folds [228844.73, 200107.66, 212634.52] | avg=213862.31
+      max_depth=None, min_samples_leaf=5, max_features=1.0 -> folds [233240.25, 208411.87, 216162.00] | avg=219271.37
+      max_depth=None, min_samples_leaf=5, max_features=sqrt -> folds [237200.62, 212539.45, 218652.01] | avg=222797.36
+      max_depth=None, min_samples_leaf=5, max_features=0.5 -> folds [229498.25, 203798.98, 211387.54] | avg=214894.92
+      max_depth=None, min_samples_leaf=10, max_features=1.0 -> folds [237586.68, 213641.21, 222632.95] | avg=224620.28
+      max_depth=None, min_samples_leaf=10, max_features=sqrt -> folds [242876.91, 220068.38, 225647.38] | avg=229530.89
+      max_depth=None, min_samples_leaf=10, max_features=0.5 -> folds [233819.18, 208539.54, 216804.60] | avg=219721.11
+      max_depth=12, min_samples_leaf=1, max_features=1.0 -> folds [233175.81, 206234.42, 222105.02] | avg=220505.08
+      max_depth=12, min_samples_leaf=1, max_features=sqrt -> folds [238910.89, 211677.74, 219567.81] | avg=223385.48
+      max_depth=12, min_samples_leaf=1, max_features=0.5 -> folds [229763.62, 202117.51, 214006.16] | avg=215295.76
+      max_depth=12, min_samples_leaf=5, max_features=1.0 -> folds [234211.90, 209967.24, 217472.83] | avg=220550.66
+      max_depth=12, min_samples_leaf=5, max_features=sqrt -> folds [241238.00, 216561.74, 221840.92] | avg=226546.89
+      max_depth=12, min_samples_leaf=5, max_features=0.5 -> folds [230525.34, 205833.15, 211998.86] | avg=216119.11
+      max_depth=12, min_samples_leaf=10, max_features=1.0 -> folds [238160.22, 214574.70, 223251.81] | avg=225328.91
+      max_depth=12, min_samples_leaf=10, max_features=sqrt -> folds [245328.71, 221514.77, 227636.95] | avg=231493.48
+      max_depth=12, min_samples_leaf=10, max_features=0.5 -> folds [234113.86, 209955.38, 217239.75] | avg=220436.33
+      max_depth=24, min_samples_leaf=1, max_features=1.0 -> folds [232503.94, 205212.87, 218459.87] | avg=218725.56
+      max_depth=24, min_samples_leaf=1, max_features=sqrt -> folds [233070.48, 205197.58, 214312.98] | avg=217527.01
+      max_depth=24, min_samples_leaf=1, max_features=0.5 -> folds [228548.49, 200748.97, 213259.57] | avg=214185.68
+      max_depth=24, min_samples_leaf=5, max_features=1.0 -> folds [233250.71, 208429.25, 216176.00] | avg=219285.32
+      max_depth=24, min_samples_leaf=5, max_features=sqrt -> folds [237173.32, 212601.30, 218755.31] | avg=222843.31
+      max_depth=24, min_samples_leaf=5, max_features=0.5 -> folds [229500.85, 203745.17, 211272.75] | avg=214839.59
+      max_depth=24, min_samples_leaf=10, max_features=1.0 -> folds [237586.68, 213641.21, 222632.95] | avg=224620.28
+      max_depth=24, min_samples_leaf=10, max_features=sqrt -> folds [242886.00, 220030.22, 225646.87] | avg=229521.03
+      max_depth=24, min_samples_leaf=10, max_features=0.5 -> folds [233824.72, 208539.54, 216804.60] | avg=219722.95
+  Fold 02: params=(max_depth=24, min_samples_leaf=1, max_features=0.5), RMSE=227090.60, MAE=127555.53, R2=0.7509
+    Inner 3-fold RMSE per param:
+      max_depth=None, min_samples_leaf=1, max_features=1.0 -> folds [227986.23, 213042.67, 208552.04] | avg=216526.98
+      max_depth=None, min_samples_leaf=1, max_features=sqrt -> folds [226949.23, 209654.27, 205923.74] | avg=214175.75
+      max_depth=None, min_samples_leaf=1, max_features=0.5 -> folds [222761.78, 207111.70, 202319.55] | avg=210731.01
+      max_depth=None, min_samples_leaf=5, max_features=1.0 -> folds [228707.73, 213997.01, 209107.12] | avg=217270.62
+      max_depth=None, min_samples_leaf=5, max_features=sqrt -> folds [231765.94, 216612.88, 210235.62] | avg=219538.15
+      max_depth=None, min_samples_leaf=5, max_features=0.5 -> folds [224792.28, 208608.63, 204298.83] | avg=212566.58
+      max_depth=None, min_samples_leaf=10, max_features=1.0 -> folds [233961.92, 217689.51, 214121.81] | avg=221924.41
+      max_depth=None, min_samples_leaf=10, max_features=sqrt -> folds [238321.10, 224335.02, 216497.49] | avg=226384.54
+      max_depth=None, min_samples_leaf=10, max_features=0.5 -> folds [230289.79, 212184.57, 208158.88] | avg=216877.75
+      max_depth=12, min_samples_leaf=1, max_features=1.0 -> folds [229195.22, 215346.31, 210133.33] | avg=218224.95
+      max_depth=12, min_samples_leaf=1, max_features=sqrt -> folds [232444.39, 215843.71, 209768.26] | avg=219352.12
+      max_depth=12, min_samples_leaf=1, max_features=0.5 -> folds [224111.75, 209087.79, 203474.87] | avg=212224.80
+      max_depth=12, min_samples_leaf=5, max_features=1.0 -> folds [229605.05, 215240.47, 210352.89] | avg=218399.47
+      max_depth=12, min_samples_leaf=5, max_features=sqrt -> folds [234985.42, 220463.59, 214086.46] | avg=223178.49
+      max_depth=12, min_samples_leaf=5, max_features=0.5 -> folds [226784.08, 210466.20, 205090.80] | avg=214113.69
+      max_depth=12, min_samples_leaf=10, max_features=1.0 -> folds [234532.97, 218402.52, 214865.28] | avg=222600.26
+      max_depth=12, min_samples_leaf=10, max_features=sqrt -> folds [240779.43, 225945.48, 218215.35] | avg=228313.42
+      max_depth=12, min_samples_leaf=10, max_features=0.5 -> folds [231428.92, 213309.04, 209102.35] | avg=217946.77
+      max_depth=24, min_samples_leaf=1, max_features=1.0 -> folds [227904.42, 212739.76, 208134.45] | avg=216259.54
+      max_depth=24, min_samples_leaf=1, max_features=sqrt -> folds [226519.07, 208776.88, 205884.48] | avg=213726.81
+      max_depth=24, min_samples_leaf=1, max_features=0.5 -> folds [223428.05, 206400.97, 201462.12] | avg=210430.38
+      max_depth=24, min_samples_leaf=5, max_features=1.0 -> folds [228728.90, 213971.31, 209105.47] | avg=217268.56
+      max_depth=24, min_samples_leaf=5, max_features=sqrt -> folds [231858.32, 216674.54, 210128.88] | avg=219553.91
+      max_depth=24, min_samples_leaf=5, max_features=0.5 -> folds [224893.86, 208371.26, 204264.73] | avg=212509.95
+      max_depth=24, min_samples_leaf=10, max_features=1.0 -> folds [233961.92, 217689.51, 214121.62] | avg=221924.35
+      max_depth=24, min_samples_leaf=10, max_features=sqrt -> folds [238403.60, 224382.64, 216489.25] | avg=226425.16
+      max_depth=24, min_samples_leaf=10, max_features=0.5 -> folds [230289.79, 212184.57, 208143.55] | avg=216872.64
+  Fold 03: params=(max_depth=24, min_samples_leaf=1, max_features=0.5), RMSE=198037.40, MAE=122359.41, R2=0.7808
+    Inner 3-fold RMSE per param:
+      max_depth=None, min_samples_leaf=1, max_features=1.0 -> folds [212278.82, 220091.78, 229498.45] | avg=220623.02
+      max_depth=None, min_samples_leaf=1, max_features=sqrt -> folds [204415.44, 219733.73, 223785.81] | avg=215978.33
+      max_depth=None, min_samples_leaf=1, max_features=0.5 -> folds [203983.70, 213850.19, 220948.67] | avg=212927.52
+      max_depth=None, min_samples_leaf=5, max_features=1.0 -> folds [207607.80, 221012.84, 230558.50] | avg=219726.38
+      max_depth=None, min_samples_leaf=5, max_features=sqrt -> folds [209342.85, 224252.47, 232934.82] | avg=222176.71
+      max_depth=None, min_samples_leaf=5, max_features=0.5 -> folds [203075.31, 215443.42, 223728.65] | avg=214082.46
+      max_depth=None, min_samples_leaf=10, max_features=1.0 -> folds [213495.98, 225354.49, 236480.70] | avg=225110.39
+      max_depth=None, min_samples_leaf=10, max_features=sqrt -> folds [215564.91, 229439.18, 241344.94] | avg=228783.01
+      max_depth=None, min_samples_leaf=10, max_features=0.5 -> folds [207556.14, 221027.92, 229759.41] | avg=219447.83
+      max_depth=12, min_samples_leaf=1, max_features=1.0 -> folds [214490.83, 221118.42, 231080.13] | avg=222229.79
+      max_depth=12, min_samples_leaf=1, max_features=sqrt -> folds [210228.85, 224383.99, 229252.22] | avg=221288.36
+      max_depth=12, min_samples_leaf=1, max_features=0.5 -> folds [205326.43, 216339.48, 221541.14] | avg=214402.35
+      max_depth=12, min_samples_leaf=5, max_features=1.0 -> folds [209443.08, 222043.64, 231753.24] | avg=221079.99
+      max_depth=12, min_samples_leaf=5, max_features=sqrt -> folds [213417.58, 227739.39, 236631.08] | avg=225929.35
+      max_depth=12, min_samples_leaf=5, max_features=0.5 -> folds [205120.42, 217421.87, 224698.05] | avg=215746.78
+      max_depth=12, min_samples_leaf=10, max_features=1.0 -> folds [214397.14, 226009.05, 237255.34] | avg=225887.18
+      max_depth=12, min_samples_leaf=10, max_features=sqrt -> folds [218123.30, 232124.67, 243328.12] | avg=231192.03
+      max_depth=12, min_samples_leaf=10, max_features=0.5 -> folds [208487.38, 221433.70, 230856.83] | avg=220259.30
+      max_depth=24, min_samples_leaf=1, max_features=1.0 -> folds [212304.45, 219781.42, 229794.68] | avg=220626.85
+      max_depth=24, min_samples_leaf=1, max_features=sqrt -> folds [203819.56, 219283.72, 223026.98] | avg=215376.76
+      max_depth=24, min_samples_leaf=1, max_features=0.5 -> folds [202703.16, 213960.36, 220329.74] | avg=212331.09
+      max_depth=24, min_samples_leaf=5, max_features=1.0 -> folds [207591.55, 221029.16, 230594.21] | avg=219738.31
+      max_depth=24, min_samples_leaf=5, max_features=sqrt -> folds [209165.03, 224375.29, 232888.93] | avg=222143.08
+      max_depth=24, min_samples_leaf=5, max_features=0.5 -> folds [203208.53, 215393.98, 223778.36] | avg=214126.96
+      max_depth=24, min_samples_leaf=10, max_features=1.0 -> folds [213495.98, 225354.49, 236479.98] | avg=225110.15
+      max_depth=24, min_samples_leaf=10, max_features=sqrt -> folds [215514.84, 229385.26, 241283.21] | avg=228727.77
+      max_depth=24, min_samples_leaf=10, max_features=0.5 -> folds [207556.14, 221046.29, 229759.41] | avg=219453.95
+  Fold 04: params=(max_depth=24, min_samples_leaf=1, max_features=0.5), RMSE=178048.74, MAE=117206.54, R2=0.7929
+    Inner 3-fold RMSE per param:
+      max_depth=None, min_samples_leaf=1, max_features=1.0 -> folds [223407.68, 228477.56, 203889.27] | avg=218591.50
+      max_depth=None, min_samples_leaf=1, max_features=sqrt -> folds [223658.97, 229288.46, 200882.88] | avg=217943.44
+      max_depth=None, min_samples_leaf=1, max_features=0.5 -> folds [219549.11, 225237.47, 196324.71] | avg=213703.76
+      max_depth=None, min_samples_leaf=5, max_features=1.0 -> folds [225509.43, 231973.02, 204334.91] | avg=220605.79
+      max_depth=None, min_samples_leaf=5, max_features=sqrt -> folds [231345.28, 233641.12, 205960.81] | avg=223649.07
+      max_depth=None, min_samples_leaf=5, max_features=0.5 -> folds [221319.97, 227259.54, 197518.95] | avg=215366.15
+      max_depth=None, min_samples_leaf=10, max_features=1.0 -> folds [234380.57, 237326.61, 208232.79] | avg=226646.66
+      max_depth=None, min_samples_leaf=10, max_features=sqrt -> folds [237553.27, 240857.29, 212929.17] | avg=230446.58
+      max_depth=None, min_samples_leaf=10, max_features=0.5 -> folds [228693.55, 232922.96, 202686.48] | avg=221434.33
+      max_depth=12, min_samples_leaf=1, max_features=1.0 -> folds [225208.14, 229804.63, 205539.21] | avg=220183.99
+      max_depth=12, min_samples_leaf=1, max_features=sqrt -> folds [229108.25, 235528.88, 203875.82] | avg=222837.65
+      max_depth=12, min_samples_leaf=1, max_features=0.5 -> folds [220527.89, 226603.76, 198427.71] | avg=215186.46
+      max_depth=12, min_samples_leaf=5, max_features=1.0 -> folds [226726.60, 232951.94, 205621.04] | avg=221766.53
+      max_depth=12, min_samples_leaf=5, max_features=sqrt -> folds [233924.03, 237746.55, 209767.93] | avg=227146.17
+      max_depth=12, min_samples_leaf=5, max_features=0.5 -> folds [222513.22, 228377.48, 199004.30] | avg=216631.67
+      max_depth=12, min_samples_leaf=10, max_features=1.0 -> folds [235110.37, 237955.22, 208805.20] | avg=227290.26
+      max_depth=12, min_samples_leaf=10, max_features=sqrt -> folds [240471.27, 242467.88, 214631.28] | avg=232523.48
+      max_depth=12, min_samples_leaf=10, max_features=0.5 -> folds [229053.30, 233439.94, 203469.44] | avg=221987.56
+      max_depth=24, min_samples_leaf=1, max_features=1.0 -> folds [223703.53, 228391.49, 203287.54] | avg=218460.85
+      max_depth=24, min_samples_leaf=1, max_features=sqrt -> folds [224811.68, 229861.97, 199363.10] | avg=218012.25
+      max_depth=24, min_samples_leaf=1, max_features=0.5 -> folds [218591.23, 225847.19, 196167.87] | avg=213535.43
+      max_depth=24, min_samples_leaf=5, max_features=1.0 -> folds [225495.36, 231944.73, 204337.14] | avg=220592.41
+      max_depth=24, min_samples_leaf=5, max_features=sqrt -> folds [231023.86, 233777.50, 205785.35] | avg=223528.90
+      max_depth=24, min_samples_leaf=5, max_features=0.5 -> folds [221037.55, 227205.02, 197605.11] | avg=215282.56
+      max_depth=24, min_samples_leaf=10, max_features=1.0 -> folds [234380.57, 237323.43, 208232.79] | avg=226645.60
+      max_depth=24, min_samples_leaf=10, max_features=sqrt -> folds [237497.78, 240814.25, 212967.96] | avg=230426.66
+      max_depth=24, min_samples_leaf=10, max_features=0.5 -> folds [228693.55, 232922.96, 202686.48] | avg=221434.33
+  Fold 05: params=(max_depth=None, min_samples_leaf=1, max_features=0.5), RMSE=192283.48, MAE=124535.26, R2=0.7958
+    Inner 3-fold RMSE per param:
+      max_depth=None, min_samples_leaf=1, max_features=1.0 -> folds [226775.75, 225531.16, 212002.28] | avg=221436.40
+      max_depth=None, min_samples_leaf=1, max_features=sqrt -> folds [228076.53, 219040.14, 207011.28] | avg=218042.65
+      max_depth=None, min_samples_leaf=1, max_features=0.5 -> folds [223375.39, 217282.92, 206472.77] | avg=215710.36
+      max_depth=None, min_samples_leaf=5, max_features=1.0 -> folds [229179.09, 224984.10, 208950.92] | avg=221038.04
+      max_depth=None, min_samples_leaf=5, max_features=sqrt -> folds [233350.44, 224236.44, 211160.19] | avg=222915.69
+      max_depth=None, min_samples_leaf=5, max_features=0.5 -> folds [225443.66, 217992.90, 204543.01] | avg=215993.19
+      max_depth=None, min_samples_leaf=10, max_features=1.0 -> folds [235096.69, 229901.98, 213618.42] | avg=226205.69
+      max_depth=None, min_samples_leaf=10, max_features=sqrt -> folds [240393.56, 230621.92, 218433.09] | avg=229816.19
+      max_depth=None, min_samples_leaf=10, max_features=0.5 -> folds [230916.29, 222728.16, 208985.70] | avg=220876.72
+      max_depth=12, min_samples_leaf=1, max_features=1.0 -> folds [228843.82, 227562.97, 213245.18] | avg=223217.32
+      max_depth=12, min_samples_leaf=1, max_features=sqrt -> folds [233350.55, 223476.79, 211490.38] | avg=222772.57
+      max_depth=12, min_samples_leaf=1, max_features=0.5 -> folds [225365.41, 219522.43, 208005.51] | avg=217631.12
+      max_depth=12, min_samples_leaf=5, max_features=1.0 -> folds [230561.43, 225876.07, 210625.60] | avg=222354.37
+      max_depth=12, min_samples_leaf=5, max_features=sqrt -> folds [237583.83, 227820.22, 214816.67] | avg=226740.24
+      max_depth=12, min_samples_leaf=5, max_features=0.5 -> folds [226016.27, 220266.42, 206734.66] | avg=217672.45
+      max_depth=12, min_samples_leaf=10, max_features=1.0 -> folds [235715.85, 230471.59, 214408.84] | avg=226865.43
+      max_depth=12, min_samples_leaf=10, max_features=sqrt -> folds [242385.54, 232395.34, 220288.24] | avg=231689.71
+      max_depth=12, min_samples_leaf=10, max_features=0.5 -> folds [231619.19, 223988.92, 209616.30] | avg=221741.47
+      max_depth=24, min_samples_leaf=1, max_features=1.0 -> folds [226766.74, 225283.50, 211507.78] | avg=221186.01
+      max_depth=24, min_samples_leaf=1, max_features=sqrt -> folds [228017.88, 217939.81, 206458.78] | avg=217472.16
+      max_depth=24, min_samples_leaf=1, max_features=0.5 -> folds [223456.56, 217339.55, 206882.24] | avg=215892.78
+      max_depth=24, min_samples_leaf=5, max_features=1.0 -> folds [229185.08, 224955.74, 208960.64] | avg=221033.82
+      max_depth=24, min_samples_leaf=5, max_features=sqrt -> folds [233267.26, 224297.14, 211474.00] | avg=223012.80
+      max_depth=24, min_samples_leaf=5, max_features=0.5 -> folds [225500.85, 218050.75, 204502.03] | avg=216017.88
+      max_depth=24, min_samples_leaf=10, max_features=1.0 -> folds [235097.11, 229901.98, 213618.83] | avg=226205.97
+      max_depth=24, min_samples_leaf=10, max_features=sqrt -> folds [240440.33, 230690.00, 218433.09] | avg=229854.48
+      max_depth=24, min_samples_leaf=10, max_features=0.5 -> folds [230888.64, 222728.16, 208985.70] | avg=220867.50
+  Fold 06: params=(max_depth=None, min_samples_leaf=1, max_features=0.5), RMSE=222079.63, MAE=129413.45, R2=0.7380
+    Inner 3-fold RMSE per param:
+      max_depth=None, min_samples_leaf=1, max_features=1.0 -> folds [218614.27, 223827.99, 219917.57] | avg=220786.61
+      max_depth=None, min_samples_leaf=1, max_features=sqrt -> folds [209125.71, 222857.21, 217816.65] | avg=216599.85
+      max_depth=None, min_samples_leaf=1, max_features=0.5 -> folds [208255.61, 219181.23, 212794.72] | avg=213410.52
+      max_depth=None, min_samples_leaf=5, max_features=1.0 -> folds [217961.34, 222206.84, 219120.43] | avg=219762.87
+      max_depth=None, min_samples_leaf=5, max_features=sqrt -> folds [216142.40, 227000.04, 223335.04] | avg=222159.16
+      max_depth=None, min_samples_leaf=5, max_features=0.5 -> folds [210349.94, 219661.94, 214478.71] | avg=214830.20
+      max_depth=None, min_samples_leaf=10, max_features=1.0 -> folds [222785.10, 227131.62, 223013.79] | avg=224310.17
+      max_depth=None, min_samples_leaf=10, max_features=sqrt -> folds [222330.44, 232825.19, 229882.76] | avg=228346.13
+      max_depth=None, min_samples_leaf=10, max_features=0.5 -> folds [215031.12, 224167.03, 218601.83] | avg=219266.66
+      max_depth=12, min_samples_leaf=1, max_features=1.0 -> folds [220733.58, 224981.57, 221252.13] | avg=222322.43
+      max_depth=12, min_samples_leaf=1, max_features=sqrt -> folds [214764.76, 227528.68, 222195.22] | avg=221496.22
+      max_depth=12, min_samples_leaf=1, max_features=0.5 -> folds [209946.80, 219712.98, 214152.81] | avg=214604.20
+      max_depth=12, min_samples_leaf=5, max_features=1.0 -> folds [219069.46, 223706.22, 220280.74] | avg=221018.81
+      max_depth=12, min_samples_leaf=5, max_features=sqrt -> folds [219510.86, 230566.92, 226349.27] | avg=225475.68
+      max_depth=12, min_samples_leaf=5, max_features=0.5 -> folds [211816.05, 221021.31, 215545.41] | avg=216127.59
+      max_depth=12, min_samples_leaf=10, max_features=1.0 -> folds [223361.60, 228105.83, 223695.50] | avg=225054.31
+      max_depth=12, min_samples_leaf=10, max_features=sqrt -> folds [223956.14, 235091.11, 231371.90] | avg=230139.72
+      max_depth=12, min_samples_leaf=10, max_features=0.5 -> folds [215217.71, 225164.41, 218911.75] | avg=219764.62
+      max_depth=24, min_samples_leaf=1, max_features=1.0 -> folds [218483.52, 223369.72, 220283.80] | avg=220712.35
+      max_depth=24, min_samples_leaf=1, max_features=sqrt -> folds [208826.26, 222587.36, 217018.64] | avg=216144.08
+      max_depth=24, min_samples_leaf=1, max_features=0.5 -> folds [208543.75, 219086.25, 212701.00] | avg=213443.67
+      max_depth=24, min_samples_leaf=5, max_features=1.0 -> folds [217976.30, 222225.61, 219112.74] | avg=219771.55
+      max_depth=24, min_samples_leaf=5, max_features=sqrt -> folds [215859.40, 226924.85, 223328.48] | avg=222037.58
+      max_depth=24, min_samples_leaf=5, max_features=0.5 -> folds [210394.77, 219521.47, 214458.64] | avg=214791.63
+      max_depth=24, min_samples_leaf=10, max_features=1.0 -> folds [222785.10, 227131.62, 223013.55] | avg=224310.09
+      max_depth=24, min_samples_leaf=10, max_features=sqrt -> folds [222364.93, 232822.46, 229879.22] | avg=228355.54
+      max_depth=24, min_samples_leaf=10, max_features=0.5 -> folds [215031.12, 224167.03, 218601.83] | avg=219266.66
+  Fold 07: params=(max_depth=24, min_samples_leaf=5, max_features=0.5), RMSE=189395.30, MAE=121948.44, R2=0.8058
+    Inner 3-fold RMSE per param:
+      max_depth=None, min_samples_leaf=1, max_features=1.0 -> folds [223639.40, 220484.43, 221465.35] | avg=221863.06
+      max_depth=None, min_samples_leaf=1, max_features=sqrt -> folds [221385.22, 221084.61, 214556.89] | avg=219008.91
+      max_depth=None, min_samples_leaf=1, max_features=0.5 -> folds [218845.28, 217270.00, 213543.86] | avg=216553.04
+      max_depth=None, min_samples_leaf=5, max_features=1.0 -> folds [223253.85, 220854.51, 215720.88] | avg=219943.08
+      max_depth=None, min_samples_leaf=5, max_features=sqrt -> folds [224695.65, 225824.63, 218017.90] | avg=222846.06
+      max_depth=None, min_samples_leaf=5, max_features=0.5 -> folds [218181.75, 218174.85, 210735.12] | avg=215697.24
+      max_depth=None, min_samples_leaf=10, max_features=1.0 -> folds [227005.03, 225943.70, 220745.97] | avg=224564.90
+      max_depth=None, min_samples_leaf=10, max_features=sqrt -> folds [231516.05, 231784.84, 226113.35] | avg=229804.75
+      max_depth=None, min_samples_leaf=10, max_features=0.5 -> folds [223044.49, 222495.12, 217043.17] | avg=220860.93
+      max_depth=12, min_samples_leaf=1, max_features=1.0 -> folds [224671.52, 221961.44, 222675.13] | avg=223102.70
+      max_depth=12, min_samples_leaf=1, max_features=sqrt -> folds [226976.48, 226417.90, 217843.30] | avg=223745.89
+      max_depth=12, min_samples_leaf=1, max_features=0.5 -> folds [219614.46, 218908.21, 214977.88] | avg=217833.52
+      max_depth=12, min_samples_leaf=5, max_features=1.0 -> folds [224209.71, 222061.67, 216882.12] | avg=221051.17
+      max_depth=12, min_samples_leaf=5, max_features=sqrt -> folds [228457.63, 229367.19, 221792.73] | avg=226539.18
+      max_depth=12, min_samples_leaf=5, max_features=0.5 -> folds [219733.74, 218884.64, 211809.90] | avg=216809.43
+      max_depth=12, min_samples_leaf=10, max_features=1.0 -> folds [227624.46, 226597.06, 221358.93] | avg=225193.48
+      max_depth=12, min_samples_leaf=10, max_features=sqrt -> folds [233649.16, 234151.62, 228855.58] | avg=232218.79
+      max_depth=12, min_samples_leaf=10, max_features=0.5 -> folds [223736.36, 223395.65, 217824.39] | avg=221652.13
+      max_depth=24, min_samples_leaf=1, max_features=1.0 -> folds [223597.33, 220063.13, 221498.32] | avg=221719.60
+      max_depth=24, min_samples_leaf=1, max_features=sqrt -> folds [222096.68, 221413.61, 214052.23] | avg=219187.51
+      max_depth=24, min_samples_leaf=1, max_features=0.5 -> folds [220032.90, 217703.31, 213952.84] | avg=217229.68
+      max_depth=24, min_samples_leaf=5, max_features=1.0 -> folds [223260.50, 220839.14, 215698.84] | avg=219932.83
+      max_depth=24, min_samples_leaf=5, max_features=sqrt -> folds [224741.55, 225779.75, 218574.73] | avg=223032.01
+      max_depth=24, min_samples_leaf=5, max_features=0.5 -> folds [218104.84, 218170.19, 210658.92] | avg=215644.65
+      max_depth=24, min_samples_leaf=10, max_features=1.0 -> folds [227005.03, 225943.70, 220745.97] | avg=224564.90
+      max_depth=24, min_samples_leaf=10, max_features=sqrt -> folds [231586.40, 231747.63, 226056.48] | avg=229796.84
+      max_depth=24, min_samples_leaf=10, max_features=0.5 -> folds [223044.49, 222495.12, 217043.17] | avg=220860.93
+  Fold 08: params=(max_depth=24, min_samples_leaf=1, max_features=0.5), RMSE=225141.99, MAE=127919.47, R2=0.7528
+    Inner 3-fold RMSE per param:
+      max_depth=None, min_samples_leaf=1, max_features=1.0 -> folds [204892.04, 203565.20, 230324.30] | avg=212927.18
+      max_depth=None, min_samples_leaf=1, max_features=sqrt -> folds [199916.50, 202995.62, 232711.27] | avg=211874.46
+      max_depth=None, min_samples_leaf=1, max_features=0.5 -> folds [198751.51, 199238.28, 228171.49] | avg=208720.43
+      max_depth=None, min_samples_leaf=5, max_features=1.0 -> folds [203579.28, 205451.93, 234507.37] | avg=214512.86
+      max_depth=None, min_samples_leaf=5, max_features=sqrt -> folds [205892.50, 208599.36, 241059.30] | avg=218517.05
+      max_depth=None, min_samples_leaf=5, max_features=0.5 -> folds [199094.16, 202472.52, 231792.83] | avg=211119.84
+      max_depth=None, min_samples_leaf=10, max_features=1.0 -> folds [208623.33, 208857.93, 242820.34] | avg=220100.53
+      max_depth=None, min_samples_leaf=10, max_features=sqrt -> folds [212071.38, 215673.17, 248644.34] | avg=225462.96
+      max_depth=None, min_samples_leaf=10, max_features=0.5 -> folds [203972.82, 206447.34, 238809.19] | avg=216409.78
+      max_depth=12, min_samples_leaf=1, max_features=1.0 -> folds [206299.94, 205980.96, 232027.05] | avg=214769.32
+      max_depth=12, min_samples_leaf=1, max_features=sqrt -> folds [204842.90, 209616.85, 238695.32] | avg=217718.36
+      max_depth=12, min_samples_leaf=1, max_features=0.5 -> folds [198987.07, 202358.89, 230237.51] | avg=210527.82
+      max_depth=12, min_samples_leaf=5, max_features=1.0 -> folds [204946.37, 207004.57, 235537.12] | avg=215829.36
+      max_depth=12, min_samples_leaf=5, max_features=sqrt -> folds [209287.41, 213014.68, 244716.66] | avg=222339.58
+      max_depth=12, min_samples_leaf=5, max_features=0.5 -> folds [201005.98, 203975.68, 233063.78] | avg=212681.82
+      max_depth=12, min_samples_leaf=10, max_features=1.0 -> folds [209417.57, 209734.12, 243494.66] | avg=220882.12
+      max_depth=12, min_samples_leaf=10, max_features=sqrt -> folds [214399.32, 217544.05, 250908.62] | avg=227617.33
+      max_depth=12, min_samples_leaf=10, max_features=0.5 -> folds [204463.95, 207746.09, 238988.60] | avg=217066.21
+      max_depth=24, min_samples_leaf=1, max_features=1.0 -> folds [205430.85, 203418.31, 230805.10] | avg=213218.09
+      max_depth=24, min_samples_leaf=1, max_features=sqrt -> folds [200245.97, 201551.88, 232797.22] | avg=211531.69
+      max_depth=24, min_samples_leaf=1, max_features=0.5 -> folds [198382.60, 198967.32, 228075.07] | avg=208474.99
+      max_depth=24, min_samples_leaf=5, max_features=1.0 -> folds [203565.90, 205449.93, 234469.78] | avg=214495.20
+      max_depth=24, min_samples_leaf=5, max_features=sqrt -> folds [205912.64, 208566.59, 240994.87] | avg=218491.37
+      max_depth=24, min_samples_leaf=5, max_features=0.5 -> folds [199033.49, 202460.21, 231637.35] | avg=211043.68
+      max_depth=24, min_samples_leaf=10, max_features=1.0 -> folds [208623.33, 208857.93, 242820.34] | avg=220100.53
+      max_depth=24, min_samples_leaf=10, max_features=sqrt -> folds [212097.35, 215648.84, 248663.20] | avg=225469.80
+      max_depth=24, min_samples_leaf=10, max_features=0.5 -> folds [203972.82, 206447.34, 238809.19] | avg=216409.78
+  Fold 09: params=(max_depth=24, min_samples_leaf=1, max_features=0.5), RMSE=224400.81, MAE=127855.43, R2=0.7357
+    Inner 3-fold RMSE per param:
+      max_depth=None, min_samples_leaf=1, max_features=1.0 -> folds [215266.54, 220160.31, 217827.24] | avg=217751.36
+      max_depth=None, min_samples_leaf=1, max_features=sqrt -> folds [210068.13, 218390.62, 213926.96] | avg=214128.57
+      max_depth=None, min_samples_leaf=1, max_features=0.5 -> folds [211259.44, 213641.42, 211431.02] | avg=212110.62
+      max_depth=None, min_samples_leaf=5, max_features=1.0 -> folds [216753.31, 216165.12, 219125.36] | avg=217347.93
+      max_depth=None, min_samples_leaf=5, max_features=sqrt -> folds [215243.72, 223282.91, 222079.73] | avg=220202.12
+      max_depth=None, min_samples_leaf=5, max_features=0.5 -> folds [211792.01, 212861.83, 214346.28] | avg=213000.04
+      max_depth=None, min_samples_leaf=10, max_features=1.0 -> folds [221389.56, 222430.91, 223136.18] | avg=222318.88
+      max_depth=None, min_samples_leaf=10, max_features=sqrt -> folds [222400.59, 230261.09, 229289.16] | avg=227316.95
+      max_depth=None, min_samples_leaf=10, max_features=0.5 -> folds [216746.41, 218770.24, 219307.34] | avg=218274.66
+      max_depth=12, min_samples_leaf=1, max_features=1.0 -> folds [217033.61, 222063.64, 219015.68] | avg=219370.98
+      max_depth=12, min_samples_leaf=1, max_features=sqrt -> folds [215745.45, 224496.68, 219213.63] | avg=219818.59
+      max_depth=12, min_samples_leaf=1, max_features=0.5 -> folds [211304.17, 214712.65, 212589.59] | avg=212868.80
+      max_depth=12, min_samples_leaf=5, max_features=1.0 -> folds [218234.65, 217769.78, 220531.92] | avg=218845.45
+      max_depth=12, min_samples_leaf=5, max_features=sqrt -> folds [219810.13, 226730.74, 225705.38] | avg=224082.08
+      max_depth=12, min_samples_leaf=5, max_features=0.5 -> folds [213428.99, 214481.65, 215766.93] | avg=214559.19
+      max_depth=12, min_samples_leaf=10, max_features=1.0 -> folds [222156.87, 223194.65, 223836.29] | avg=223062.60
+      max_depth=12, min_samples_leaf=10, max_features=sqrt -> folds [225279.88, 232445.42, 230902.37] | avg=229542.55
+      max_depth=12, min_samples_leaf=10, max_features=0.5 -> folds [217519.77, 219380.76, 220513.12] | avg=219137.88
+      max_depth=24, min_samples_leaf=1, max_features=1.0 -> folds [215229.83, 219809.54, 218032.10] | avg=217690.49
+      max_depth=24, min_samples_leaf=1, max_features=sqrt -> folds [209632.78, 217601.46, 214622.95] | avg=213952.40
+      max_depth=24, min_samples_leaf=1, max_features=0.5 -> folds [210067.04, 212582.47, 211505.98] | avg=211385.17
+      max_depth=24, min_samples_leaf=5, max_features=1.0 -> folds [216743.80, 216123.63, 219138.21] | avg=217335.22
+      max_depth=24, min_samples_leaf=5, max_features=sqrt -> folds [215157.73, 223390.31, 222242.38] | avg=220263.47
+      max_depth=24, min_samples_leaf=5, max_features=0.5 -> folds [211792.17, 212804.76, 214342.52] | avg=212979.82
+      max_depth=24, min_samples_leaf=10, max_features=1.0 -> folds [221389.56, 222430.91, 223136.06] | avg=222318.84
+      max_depth=24, min_samples_leaf=10, max_features=sqrt -> folds [222424.01, 230261.09, 229266.36] | avg=227317.15
+      max_depth=24, min_samples_leaf=10, max_features=0.5 -> folds [216768.12, 218770.24, 219307.34] | avg=218281.90
+
+=== Test region: Northern Metropolitan ===
+Final params: max_depth=None, min_samples_leaf=1, max_features=0.5
+Test metrics -> RMSE=335606.67, MAE=251037.57, R2=0.4109
+Inner-CV average RMSE across folds (top 5 combos):
+  max_depth=None, min_samples_leaf=1, max_features=0.5 -> avg RMSE=316918.76 ± 2856.88 (n=10)
+  max_depth=24, min_samples_leaf=1, max_features=0.5 -> avg RMSE=316944.70 ± 3116.27 (n=10)
+  max_depth=None, min_samples_leaf=1, max_features=sqrt -> avg RMSE=318859.92 ± 2809.47 (n=10)
+  max_depth=24, min_samples_leaf=1, max_features=sqrt -> avg RMSE=318903.09 ± 2973.70 (n=10)
+  max_depth=24, min_samples_leaf=5, max_features=0.5 -> avg RMSE=319388.29 ± 2845.13 (n=10)
+Outer 10-fold validation (mean ± std): RMSE=308277.76 ± 27227.42, MAE=179792.81 ± 8097.49, R2=0.8105 ± 0.0220
+Parameter selection frequency across outer folds:
+  max_depth=None, min_samples_leaf=1, max_features=0.5: 4 folds
+  max_depth=24, min_samples_leaf=1, max_features=sqrt: 1 folds
+  max_depth=24, min_samples_leaf=1, max_features=0.5: 5 folds
+Outer fold details:
+  Fold 00: params=(max_depth=24, min_samples_leaf=1, max_features=0.5), RMSE=360415.90, MAE=188122.65, R2=0.7711
+    Inner 3-fold RMSE per param:
+      max_depth=None, min_samples_leaf=1, max_features=1.0 -> folds [332551.92, 318111.38, 304016.00] | avg=318226.43
+      max_depth=None, min_samples_leaf=1, max_features=sqrt -> folds [331807.91, 311016.55, 301470.11] | avg=314764.86
+      max_depth=None, min_samples_leaf=1, max_features=0.5 -> folds [327857.68, 309229.33, 299507.84] | avg=312198.28
+      max_depth=None, min_samples_leaf=5, max_features=1.0 -> folds [336272.20, 321501.34, 306541.20] | avg=321438.25
+      max_depth=None, min_samples_leaf=5, max_features=sqrt -> folds [341181.20, 318394.99, 314284.23] | avg=324620.14
+      max_depth=None, min_samples_leaf=5, max_features=0.5 -> folds [332708.09, 312809.86, 302075.74] | avg=315864.56
+      max_depth=None, min_samples_leaf=10, max_features=1.0 -> folds [342266.18, 329134.72, 314925.54] | avg=328775.48
+      max_depth=None, min_samples_leaf=10, max_features=sqrt -> folds [350404.64, 327604.02, 326759.47] | avg=334922.71
+      max_depth=None, min_samples_leaf=10, max_features=0.5 -> folds [338481.73, 320446.85, 310633.73] | avg=323187.44
+      max_depth=12, min_samples_leaf=1, max_features=1.0 -> folds [335227.23, 319906.61, 305475.71] | avg=320203.18
+      max_depth=12, min_samples_leaf=1, max_features=sqrt -> folds [338486.02, 319093.99, 309581.90] | avg=322387.30
+      max_depth=12, min_samples_leaf=1, max_features=0.5 -> folds [329944.94, 312587.63, 300198.04] | avg=314243.54
+      max_depth=12, min_samples_leaf=5, max_features=1.0 -> folds [338362.78, 323273.70, 308380.24] | avg=323338.90
+      max_depth=12, min_samples_leaf=5, max_features=sqrt -> folds [344937.94, 323575.56, 319821.59] | avg=329445.03
+      max_depth=12, min_samples_leaf=5, max_features=0.5 -> folds [334340.74, 315038.63, 302859.91] | avg=317413.09
+      max_depth=12, min_samples_leaf=10, max_features=1.0 -> folds [343585.60, 330021.15, 315733.83] | avg=329780.19
+      max_depth=12, min_samples_leaf=10, max_features=sqrt -> folds [352770.96, 330332.68, 329302.31] | avg=337468.65
+      max_depth=12, min_samples_leaf=10, max_features=0.5 -> folds [340618.26, 320918.59, 311995.00] | avg=324510.62
+      max_depth=24, min_samples_leaf=1, max_features=1.0 -> folds [333062.10, 317802.12, 304713.14] | avg=318525.79
+      max_depth=24, min_samples_leaf=1, max_features=sqrt -> folds [332784.12, 310546.92, 300586.74] | avg=314639.26
+      max_depth=24, min_samples_leaf=1, max_features=0.5 -> folds [328453.13, 310434.85, 297426.49] | avg=312104.82
+      max_depth=24, min_samples_leaf=5, max_features=1.0 -> folds [336243.61, 321500.00, 306539.63] | avg=321427.74
+      max_depth=24, min_samples_leaf=5, max_features=sqrt -> folds [340939.01, 317975.70, 314554.25] | avg=324489.65
+      max_depth=24, min_samples_leaf=5, max_features=0.5 -> folds [332972.59, 312871.30, 301944.84] | avg=315929.57
+      max_depth=24, min_samples_leaf=10, max_features=1.0 -> folds [342266.18, 329134.72, 314925.54] | avg=328775.48
+      max_depth=24, min_samples_leaf=10, max_features=sqrt -> folds [350446.63, 327604.02, 326723.02] | avg=334924.56
+      max_depth=24, min_samples_leaf=10, max_features=0.5 -> folds [338469.00, 320446.85, 310647.46] | avg=323187.77
+  Fold 01: params=(max_depth=24, min_samples_leaf=1, max_features=sqrt), RMSE=296890.27, MAE=183201.00, R2=0.8151
+    Inner 3-fold RMSE per param:
+      max_depth=None, min_samples_leaf=1, max_features=1.0 -> folds [324751.53, 333264.62, 340492.34] | avg=332836.16
+      max_depth=None, min_samples_leaf=1, max_features=sqrt -> folds [314139.69, 328387.50, 321395.81] | avg=321307.67
+      max_depth=None, min_samples_leaf=1, max_features=0.5 -> folds [314384.34, 322913.27, 326128.72] | avg=321142.11
+      max_depth=None, min_samples_leaf=5, max_features=1.0 -> folds [320785.15, 334986.51, 342488.28] | avg=332753.31
+      max_depth=None, min_samples_leaf=5, max_features=sqrt -> folds [322766.40, 336506.33, 335016.73] | avg=331429.82
+      max_depth=None, min_samples_leaf=5, max_features=0.5 -> folds [311067.56, 326742.71, 332166.75] | avg=323325.67
+      max_depth=None, min_samples_leaf=10, max_features=1.0 -> folds [326309.24, 343189.46, 347798.66] | avg=339099.12
+      max_depth=None, min_samples_leaf=10, max_features=sqrt -> folds [334209.20, 345981.95, 347705.64] | avg=342632.27
+      max_depth=None, min_samples_leaf=10, max_features=0.5 -> folds [319079.88, 334782.25, 339471.26] | avg=331111.13
+      max_depth=12, min_samples_leaf=1, max_features=1.0 -> folds [325702.78, 335268.64, 345341.24] | avg=335437.55
+      max_depth=12, min_samples_leaf=1, max_features=sqrt -> folds [320727.87, 331155.47, 333899.99] | avg=328594.44
+      max_depth=12, min_samples_leaf=1, max_features=0.5 -> folds [315289.37, 326036.58, 332384.94] | avg=324570.30
+      max_depth=12, min_samples_leaf=5, max_features=1.0 -> folds [322887.42, 336379.90, 345608.74] | avg=334958.69
+      max_depth=12, min_samples_leaf=5, max_features=sqrt -> folds [326311.91, 339777.55, 341205.12] | avg=335764.86
+      max_depth=12, min_samples_leaf=5, max_features=0.5 -> folds [314833.19, 327746.18, 336140.34] | avg=326239.90
+      max_depth=12, min_samples_leaf=10, max_features=1.0 -> folds [327454.03, 343985.32, 349180.77] | avg=340206.71
+      max_depth=12, min_samples_leaf=10, max_features=sqrt -> folds [336606.71, 348408.23, 349980.59] | avg=344998.51
+      max_depth=12, min_samples_leaf=10, max_features=0.5 -> folds [320206.95, 336898.06, 341305.22] | avg=332803.41
+      max_depth=24, min_samples_leaf=1, max_features=1.0 -> folds [324713.71, 332812.58, 340341.78] | avg=332622.69
+      max_depth=24, min_samples_leaf=1, max_features=sqrt -> folds [313274.48, 326975.45, 322225.64] | avg=320825.19
+      max_depth=24, min_samples_leaf=1, max_features=0.5 -> folds [314970.96, 323987.13, 326714.44] | avg=321890.84
+      max_depth=24, min_samples_leaf=5, max_features=1.0 -> folds [320778.52, 334993.35, 342438.66] | avg=332736.84
+      max_depth=24, min_samples_leaf=5, max_features=sqrt -> folds [322620.67, 335861.48, 335053.39] | avg=331178.51
+      max_depth=24, min_samples_leaf=5, max_features=0.5 -> folds [311037.01, 326691.01, 331752.72] | avg=323160.25
+      max_depth=24, min_samples_leaf=10, max_features=1.0 -> folds [326309.24, 343189.46, 347798.66] | avg=339099.12
+      max_depth=24, min_samples_leaf=10, max_features=sqrt -> folds [334131.12, 345930.18, 347811.72] | avg=342624.34
+      max_depth=24, min_samples_leaf=10, max_features=0.5 -> folds [319115.40, 334782.25, 339617.94] | avg=331171.86
+  Fold 02: params=(max_depth=None, min_samples_leaf=1, max_features=0.5), RMSE=289475.73, MAE=175860.05, R2=0.8246
+    Inner 3-fold RMSE per param:
+      max_depth=None, min_samples_leaf=1, max_features=1.0 -> folds [323199.79, 314390.15, 341269.13] | avg=326286.36
+      max_depth=None, min_samples_leaf=1, max_features=sqrt -> folds [317459.03, 306982.95, 335646.06] | avg=320029.35
+      max_depth=None, min_samples_leaf=1, max_features=0.5 -> folds [314280.08, 308042.86, 332483.61] | avg=318268.85
+      max_depth=None, min_samples_leaf=5, max_features=1.0 -> folds [319725.89, 316668.93, 348195.15] | avg=328196.66
+      max_depth=None, min_samples_leaf=5, max_features=sqrt -> folds [326345.36, 315927.20, 349317.37] | avg=330529.98
+      max_depth=None, min_samples_leaf=5, max_features=0.5 -> folds [314707.67, 308879.85, 339725.95] | avg=321104.49
+      max_depth=None, min_samples_leaf=10, max_features=1.0 -> folds [325036.06, 322872.04, 359946.25] | avg=335951.45
+      max_depth=None, min_samples_leaf=10, max_features=sqrt -> folds [335572.38, 328817.59, 362817.68] | avg=342402.55
+      max_depth=None, min_samples_leaf=10, max_features=0.5 -> folds [321557.14, 316748.39, 350452.49] | avg=329586.01
+      max_depth=12, min_samples_leaf=1, max_features=1.0 -> folds [324842.86, 319325.81, 345012.44] | avg=329727.04
+      max_depth=12, min_samples_leaf=1, max_features=sqrt -> folds [322935.71, 317345.59, 344789.61] | avg=328356.97
+      max_depth=12, min_samples_leaf=1, max_features=0.5 -> folds [316590.57, 312745.79, 336350.00] | avg=321895.45
+      max_depth=12, min_samples_leaf=5, max_features=1.0 -> folds [321079.28, 320298.21, 350647.92] | avg=330675.14
+      max_depth=12, min_samples_leaf=5, max_features=sqrt -> folds [331186.42, 324081.06, 354395.91] | avg=336554.46
+      max_depth=12, min_samples_leaf=5, max_features=0.5 -> folds [317767.04, 312174.33, 342671.43] | avg=324204.27
+      max_depth=12, min_samples_leaf=10, max_features=1.0 -> folds [325712.14, 325141.44, 361132.66] | avg=337328.75
+      max_depth=12, min_samples_leaf=10, max_features=sqrt -> folds [338871.91, 331420.27, 365342.92] | avg=345211.70
+      max_depth=12, min_samples_leaf=10, max_features=0.5 -> folds [323040.36, 318953.11, 351241.29] | avg=331078.25
+      max_depth=24, min_samples_leaf=1, max_features=1.0 -> folds [324254.76, 314704.16, 340906.90] | avg=326621.94
+      max_depth=24, min_samples_leaf=1, max_features=sqrt -> folds [316318.78, 307209.42, 338643.32] | avg=320723.84
+      max_depth=24, min_samples_leaf=1, max_features=0.5 -> folds [315143.78, 308330.52, 332449.16] | avg=318641.15
+      max_depth=24, min_samples_leaf=5, max_features=1.0 -> folds [319754.95, 316666.48, 348219.46] | avg=328213.63
+      max_depth=24, min_samples_leaf=5, max_features=sqrt -> folds [326352.73, 316377.52, 349212.74] | avg=330647.66
+      max_depth=24, min_samples_leaf=5, max_features=0.5 -> folds [314612.54, 309223.67, 339397.40] | avg=321077.87
+      max_depth=24, min_samples_leaf=10, max_features=1.0 -> folds [325036.06, 322872.04, 359946.25] | avg=335951.45
+      max_depth=24, min_samples_leaf=10, max_features=sqrt -> folds [335631.97, 328675.99, 362891.91] | avg=342399.96
+      max_depth=24, min_samples_leaf=10, max_features=0.5 -> folds [321557.14, 316748.39, 350487.53] | avg=329597.69
+  Fold 03: params=(max_depth=None, min_samples_leaf=1, max_features=0.5), RMSE=324770.46, MAE=188908.24, R2=0.8047
+    Inner 3-fold RMSE per param:
+      max_depth=None, min_samples_leaf=1, max_features=1.0 -> folds [332096.92, 314980.59, 321277.87] | avg=322785.13
+      max_depth=None, min_samples_leaf=1, max_features=sqrt -> folds [327083.25, 309558.86, 313964.61] | avg=316868.91
+      max_depth=None, min_samples_leaf=1, max_features=0.5 -> folds [324771.77, 307750.35, 314696.16] | avg=315739.43
+      max_depth=None, min_samples_leaf=5, max_features=1.0 -> folds [332838.47, 316080.55, 323973.52] | avg=324297.51
+      max_depth=None, min_samples_leaf=5, max_features=sqrt -> folds [334796.52, 319289.74, 322630.52] | avg=325572.26
+      max_depth=None, min_samples_leaf=5, max_features=0.5 -> folds [325796.58, 311897.99, 316001.73] | avg=317898.77
+      max_depth=None, min_samples_leaf=10, max_features=1.0 -> folds [340209.68, 322020.19, 329305.38] | avg=330511.75
+      max_depth=None, min_samples_leaf=10, max_features=sqrt -> folds [345739.88, 329760.49, 334395.22] | avg=336631.86
+      max_depth=None, min_samples_leaf=10, max_features=0.5 -> folds [333242.64, 317576.93, 322900.04] | avg=324573.20
+      max_depth=12, min_samples_leaf=1, max_features=1.0 -> folds [334113.02, 318767.72, 324013.76] | avg=325631.50
+      max_depth=12, min_samples_leaf=1, max_features=sqrt -> folds [334005.19, 317156.97, 322340.22] | avg=324500.79
+      max_depth=12, min_samples_leaf=1, max_features=0.5 -> folds [326005.70, 312470.76, 316272.43] | avg=318249.63
+      max_depth=12, min_samples_leaf=5, max_features=1.0 -> folds [334760.33, 318604.01, 325584.74] | avg=326316.36
+      max_depth=12, min_samples_leaf=5, max_features=sqrt -> folds [340494.49, 324578.24, 328992.31] | avg=331355.01
+      max_depth=12, min_samples_leaf=5, max_features=0.5 -> folds [328745.42, 313641.12, 318587.31] | avg=320324.62
+      max_depth=12, min_samples_leaf=10, max_features=1.0 -> folds [340868.85, 323097.85, 330103.81] | avg=331356.84
+      max_depth=12, min_samples_leaf=10, max_features=sqrt -> folds [350141.64, 331609.14, 337526.50] | avg=339759.10
+      max_depth=12, min_samples_leaf=10, max_features=0.5 -> folds [334208.67, 319608.18, 324402.70] | avg=326073.18
+      max_depth=24, min_samples_leaf=1, max_features=1.0 -> folds [332999.27, 314989.74, 320864.43] | avg=322951.15
+      max_depth=24, min_samples_leaf=1, max_features=sqrt -> folds [325945.61, 309857.17, 314269.24] | avg=316690.67
+      max_depth=24, min_samples_leaf=1, max_features=0.5 -> folds [325279.70, 307185.50, 315004.08] | avg=315823.09
+      max_depth=24, min_samples_leaf=5, max_features=1.0 -> folds [332836.72, 316050.17, 323983.51] | avg=324290.13
+      max_depth=24, min_samples_leaf=5, max_features=sqrt -> folds [334522.35, 319097.36, 323052.42] | avg=325557.38
+      max_depth=24, min_samples_leaf=5, max_features=0.5 -> folds [325954.22, 311781.64, 316018.31] | avg=317918.06
+      max_depth=24, min_samples_leaf=10, max_features=1.0 -> folds [340209.68, 322020.16, 329305.38] | avg=330511.74
+      max_depth=24, min_samples_leaf=10, max_features=sqrt -> folds [345601.89, 329760.49, 334369.24] | avg=336577.21
+      max_depth=24, min_samples_leaf=10, max_features=0.5 -> folds [333242.64, 317576.93, 322900.04] | avg=324573.20
+  Fold 04: params=(max_depth=None, min_samples_leaf=1, max_features=0.5), RMSE=302769.75, MAE=173254.35, R2=0.8075
+    Inner 3-fold RMSE per param:
+      max_depth=None, min_samples_leaf=1, max_features=1.0 -> folds [336769.53, 324993.04, 317960.20] | avg=326574.26
+      max_depth=None, min_samples_leaf=1, max_features=sqrt -> folds [331195.29, 319980.20, 304015.82] | avg=318397.10
+      max_depth=None, min_samples_leaf=1, max_features=0.5 -> folds [329306.77, 316738.80, 303914.89] | avg=316653.49
+      max_depth=None, min_samples_leaf=5, max_features=1.0 -> folds [339665.52, 326724.37, 315520.66] | avg=327303.52
+      max_depth=None, min_samples_leaf=5, max_features=sqrt -> folds [342979.75, 328333.68, 313403.58] | avg=328239.00
+      max_depth=None, min_samples_leaf=5, max_features=0.5 -> folds [331965.96, 319955.32, 305554.42] | avg=319158.57
+      max_depth=None, min_samples_leaf=10, max_features=1.0 -> folds [346680.49, 334928.57, 323502.57] | avg=335037.21
+      max_depth=None, min_samples_leaf=10, max_features=sqrt -> folds [354338.57, 338673.52, 325584.44] | avg=339532.17
+      max_depth=None, min_samples_leaf=10, max_features=0.5 -> folds [339869.46, 327917.15, 313094.20] | avg=326960.27
+      max_depth=12, min_samples_leaf=1, max_features=1.0 -> folds [339938.61, 326226.56, 318531.14] | avg=328232.10
+      max_depth=12, min_samples_leaf=1, max_features=sqrt -> folds [340115.45, 326969.19, 312476.86] | avg=326520.50
+      max_depth=12, min_samples_leaf=1, max_features=0.5 -> folds [332157.61, 318497.13, 306997.33] | avg=319217.36
+      max_depth=12, min_samples_leaf=5, max_features=1.0 -> folds [341837.21, 328489.62, 317367.23] | avg=329231.35
+      max_depth=12, min_samples_leaf=5, max_features=sqrt -> folds [349077.20, 333067.25, 318635.54] | avg=333593.33
+      max_depth=12, min_samples_leaf=5, max_features=0.5 -> folds [335356.30, 321734.02, 306661.44] | avg=321250.59
+      max_depth=12, min_samples_leaf=10, max_features=1.0 -> folds [347970.87, 335859.32, 324529.88] | avg=336120.02
+      max_depth=12, min_samples_leaf=10, max_features=sqrt -> folds [356802.78, 340351.68, 326465.81] | avg=341206.75
+      max_depth=12, min_samples_leaf=10, max_features=0.5 -> folds [341381.16, 328944.49, 313974.33] | avg=328100.00
+      max_depth=24, min_samples_leaf=1, max_features=1.0 -> folds [337756.72, 324898.34, 317640.70] | avg=326765.25
+      max_depth=24, min_samples_leaf=1, max_features=sqrt -> folds [331008.39, 319097.34, 305926.69] | avg=318677.47
+      max_depth=24, min_samples_leaf=1, max_features=0.5 -> folds [328921.80, 316537.37, 305471.58] | avg=316976.91
+      max_depth=24, min_samples_leaf=5, max_features=1.0 -> folds [339631.86, 326709.65, 315539.99] | avg=327293.83
+      max_depth=24, min_samples_leaf=5, max_features=sqrt -> folds [343127.28, 328145.55, 313327.29] | avg=328200.04
+      max_depth=24, min_samples_leaf=5, max_features=0.5 -> folds [332282.46, 320214.30, 305332.02] | avg=319276.26
+      max_depth=24, min_samples_leaf=10, max_features=1.0 -> folds [346680.49, 334928.57, 323502.57] | avg=335037.21
+      max_depth=24, min_samples_leaf=10, max_features=sqrt -> folds [354324.71, 338734.90, 325571.64] | avg=339543.75
+      max_depth=24, min_samples_leaf=10, max_features=0.5 -> folds [339869.46, 327917.15, 313094.20] | avg=326960.27
+  Fold 05: params=(max_depth=24, min_samples_leaf=1, max_features=0.5), RMSE=301365.77, MAE=175301.69, R2=0.7841
+    Inner 3-fold RMSE per param:
+      max_depth=None, min_samples_leaf=1, max_features=1.0 -> folds [311121.64, 333254.35, 323215.86] | avg=322530.62
+      max_depth=None, min_samples_leaf=1, max_features=sqrt -> folds [302153.31, 330424.41, 322325.31] | avg=318301.01
+      max_depth=None, min_samples_leaf=1, max_features=0.5 -> folds [303870.30, 325246.10, 315929.13] | avg=315015.18
+      max_depth=None, min_samples_leaf=5, max_features=1.0 -> folds [308511.47, 341380.52, 323374.82] | avg=324422.27
+      max_depth=None, min_samples_leaf=5, max_features=sqrt -> folds [306256.10, 346456.26, 333469.91] | avg=328727.42
+      max_depth=None, min_samples_leaf=5, max_features=0.5 -> folds [300371.68, 333534.98, 319259.62] | avg=317722.09
+      max_depth=None, min_samples_leaf=10, max_features=1.0 -> folds [311479.51, 352330.50, 333119.75] | avg=332309.92
+      max_depth=None, min_samples_leaf=10, max_features=sqrt -> folds [316341.99, 358983.88, 344454.49] | avg=339926.79
+      max_depth=None, min_samples_leaf=10, max_features=0.5 -> folds [306424.53, 344052.14, 330134.88] | avg=326870.52
+      max_depth=12, min_samples_leaf=1, max_features=1.0 -> folds [312774.19, 336260.51, 326078.15] | avg=325037.62
+      max_depth=12, min_samples_leaf=1, max_features=sqrt -> folds [307442.43, 342616.54, 330149.94] | avg=326736.30
+      max_depth=12, min_samples_leaf=1, max_features=0.5 -> folds [306668.17, 328300.73, 320548.62] | avg=318505.84
+      max_depth=12, min_samples_leaf=5, max_features=1.0 -> folds [310564.66, 343600.32, 325526.48] | avg=326563.82
+      max_depth=12, min_samples_leaf=5, max_features=sqrt -> folds [311046.85, 351756.04, 338616.60] | avg=333806.50
+      max_depth=12, min_samples_leaf=5, max_features=0.5 -> folds [303480.19, 336120.70, 321475.22] | avg=320358.71
+      max_depth=12, min_samples_leaf=10, max_features=1.0 -> folds [312525.23, 353450.68, 334136.54] | avg=333370.82
+      max_depth=12, min_samples_leaf=10, max_features=sqrt -> folds [319105.31, 361386.09, 347770.02] | avg=342753.80
+      max_depth=12, min_samples_leaf=10, max_features=0.5 -> folds [307637.46, 345396.15, 330701.96] | avg=327911.86
+      max_depth=24, min_samples_leaf=1, max_features=1.0 -> folds [310242.34, 333008.41, 323275.69] | avg=322175.48
+      max_depth=24, min_samples_leaf=1, max_features=sqrt -> folds [301343.25, 329930.55, 321078.90] | avg=317450.90
+      max_depth=24, min_samples_leaf=1, max_features=0.5 -> folds [304022.18, 324895.85, 316055.33] | avg=314991.12
+      max_depth=24, min_samples_leaf=5, max_features=1.0 -> folds [308474.98, 341476.88, 323361.54] | avg=324437.80
+      max_depth=24, min_samples_leaf=5, max_features=sqrt -> folds [305912.51, 346234.09, 333559.03] | avg=328568.55
+      max_depth=24, min_samples_leaf=5, max_features=0.5 -> folds [300311.50, 333855.60, 319202.03] | avg=317789.71
+      max_depth=24, min_samples_leaf=10, max_features=1.0 -> folds [311479.51, 352330.50, 333119.75] | avg=332309.92
+      max_depth=24, min_samples_leaf=10, max_features=sqrt -> folds [316494.66, 358956.73, 344454.49] | avg=339968.63
+      max_depth=24, min_samples_leaf=10, max_features=0.5 -> folds [306381.45, 343991.83, 330134.88] | avg=326836.05
+  Fold 06: params=(max_depth=None, min_samples_leaf=1, max_features=0.5), RMSE=305837.85, MAE=179569.15, R2=0.8275
+    Inner 3-fold RMSE per param:
+      max_depth=None, min_samples_leaf=1, max_features=1.0 -> folds [317050.84, 337779.95, 319768.97] | avg=324866.58
+      max_depth=None, min_samples_leaf=1, max_features=sqrt -> folds [309644.52, 332440.89, 315516.23] | avg=319200.54
+      max_depth=None, min_samples_leaf=1, max_features=0.5 -> folds [307781.52, 329885.16, 311754.79] | avg=316473.82
+      max_depth=None, min_samples_leaf=5, max_features=1.0 -> folds [315865.09, 339200.10, 322468.76] | avg=325844.65
+      max_depth=None, min_samples_leaf=5, max_features=sqrt -> folds [318577.90, 344539.41, 322611.43] | avg=328576.24
+      max_depth=None, min_samples_leaf=5, max_features=0.5 -> folds [309242.03, 333418.38, 315597.57] | avg=319419.33
+      max_depth=None, min_samples_leaf=10, max_features=1.0 -> folds [321732.75, 348479.86, 331835.16] | avg=334015.93
+      max_depth=None, min_samples_leaf=10, max_features=sqrt -> folds [329074.02, 355719.06, 333918.66] | avg=339570.58
+      max_depth=None, min_samples_leaf=10, max_features=0.5 -> folds [315118.70, 342478.42, 324448.88] | avg=327348.66
+      max_depth=12, min_samples_leaf=1, max_features=1.0 -> folds [318663.15, 341561.73, 320356.93] | avg=326860.60
+      max_depth=12, min_samples_leaf=1, max_features=sqrt -> folds [316715.63, 341767.98, 322010.35] | avg=326831.32
+      max_depth=12, min_samples_leaf=1, max_features=0.5 -> folds [311537.20, 333768.71, 315340.22] | avg=320215.38
+      max_depth=12, min_samples_leaf=5, max_features=1.0 -> folds [317975.11, 341286.01, 324321.83] | avg=327860.98
+      max_depth=12, min_samples_leaf=5, max_features=sqrt -> folds [323063.33, 348258.49, 328839.80] | avg=333387.21
+      max_depth=12, min_samples_leaf=5, max_features=0.5 -> folds [311743.08, 335690.27, 318101.62] | avg=321844.99
+      max_depth=12, min_samples_leaf=10, max_features=1.0 -> folds [322622.95, 349394.85, 333074.16] | avg=335030.66
+      max_depth=12, min_samples_leaf=10, max_features=sqrt -> folds [332289.97, 357639.89, 337294.16] | avg=342408.00
+      max_depth=12, min_samples_leaf=10, max_features=0.5 -> folds [316496.38, 344237.30, 325905.45] | avg=328879.71
+      max_depth=24, min_samples_leaf=1, max_features=1.0 -> folds [317390.74, 337601.04, 319737.02] | avg=324909.60
+      max_depth=24, min_samples_leaf=1, max_features=sqrt -> folds [311722.54, 333458.43, 313416.97] | avg=319532.65
+      max_depth=24, min_samples_leaf=1, max_features=0.5 -> folds [309465.73, 329794.40, 311983.39] | avg=317081.18
+      max_depth=24, min_samples_leaf=5, max_features=1.0 -> folds [315866.37, 339192.31, 322438.69] | avg=325832.45
+      max_depth=24, min_samples_leaf=5, max_features=sqrt -> folds [318513.60, 344597.30, 323137.80] | avg=328749.57
+      max_depth=24, min_samples_leaf=5, max_features=0.5 -> folds [308750.91, 333200.68, 315429.20] | avg=319126.93
+      max_depth=24, min_samples_leaf=10, max_features=1.0 -> folds [321732.75, 348479.86, 331835.16] | avg=334015.93
+      max_depth=24, min_samples_leaf=10, max_features=sqrt -> folds [329117.94, 355719.83, 333989.07] | avg=339608.95
+      max_depth=24, min_samples_leaf=10, max_features=0.5 -> folds [315118.70, 342478.42, 324410.21] | avg=327335.78
+  Fold 07: params=(max_depth=24, min_samples_leaf=1, max_features=0.5), RMSE=333487.71, MAE=188740.16, R2=0.8039
+    Inner 3-fold RMSE per param:
+      max_depth=None, min_samples_leaf=1, max_features=1.0 -> folds [319305.62, 314593.82, 330185.76] | avg=321361.73
+      max_depth=None, min_samples_leaf=1, max_features=sqrt -> folds [310658.90, 310702.97, 324162.33] | avg=315174.74
+      max_depth=None, min_samples_leaf=1, max_features=0.5 -> folds [312104.64, 309086.29, 323184.38] | avg=314791.77
+      max_depth=None, min_samples_leaf=5, max_features=1.0 -> folds [317018.79, 314517.22, 334890.47] | avg=322142.16
+      max_depth=None, min_samples_leaf=5, max_features=sqrt -> folds [319002.30, 320377.91, 336589.48] | avg=325323.23
+      max_depth=None, min_samples_leaf=5, max_features=0.5 -> folds [310951.69, 309539.04, 325270.95] | avg=315253.90
+      max_depth=None, min_samples_leaf=10, max_features=1.0 -> folds [322241.74, 321819.58, 341944.92] | avg=328668.74
+      max_depth=None, min_samples_leaf=10, max_features=sqrt -> folds [328497.03, 330798.05, 348084.03] | avg=335793.04
+      max_depth=None, min_samples_leaf=10, max_features=0.5 -> folds [317646.36, 317386.86, 333214.33] | avg=322749.18
+      max_depth=12, min_samples_leaf=1, max_features=1.0 -> folds [322300.45, 316999.94, 333838.28] | avg=324379.56
+      max_depth=12, min_samples_leaf=1, max_features=sqrt -> folds [319568.94, 317830.36, 333175.22] | avg=323524.84
+      max_depth=12, min_samples_leaf=1, max_features=0.5 -> folds [314800.33, 310790.01, 325453.45] | avg=317014.60
+      max_depth=12, min_samples_leaf=5, max_features=1.0 -> folds [318552.74, 316244.61, 337116.12] | avg=323971.16
+      max_depth=12, min_samples_leaf=5, max_features=sqrt -> folds [324505.69, 324626.68, 341025.36] | avg=330052.58
+      max_depth=12, min_samples_leaf=5, max_features=0.5 -> folds [313187.45, 312814.84, 329274.94] | avg=318425.74
+      max_depth=12, min_samples_leaf=10, max_features=1.0 -> folds [323228.90, 322594.65, 343095.31] | avg=329639.62
+      max_depth=12, min_samples_leaf=10, max_features=sqrt -> folds [331689.98, 333071.77, 350002.60] | avg=338254.79
+      max_depth=12, min_samples_leaf=10, max_features=0.5 -> folds [319556.05, 318503.82, 336204.79] | avg=324754.89
+      max_depth=24, min_samples_leaf=1, max_features=1.0 -> folds [318598.93, 314899.21, 330223.58] | avg=321240.57
+      max_depth=24, min_samples_leaf=1, max_features=sqrt -> folds [310847.48, 310604.18, 323395.12] | avg=314948.93
+      max_depth=24, min_samples_leaf=1, max_features=0.5 -> folds [311718.93, 307982.02, 320368.20] | avg=313356.38
+      max_depth=24, min_samples_leaf=5, max_features=1.0 -> folds [317028.93, 314512.85, 334904.44] | avg=322148.74
+      max_depth=24, min_samples_leaf=5, max_features=sqrt -> folds [319017.37, 320172.69, 336692.28] | avg=325294.11
+      max_depth=24, min_samples_leaf=5, max_features=0.5 -> folds [310903.83, 310011.71, 325151.50] | avg=315355.68
+      max_depth=24, min_samples_leaf=10, max_features=1.0 -> folds [322241.92, 321819.58, 341944.92] | avg=328668.81
+      max_depth=24, min_samples_leaf=10, max_features=sqrt -> folds [328497.03, 330760.46, 348046.65] | avg=335768.05
+      max_depth=24, min_samples_leaf=10, max_features=0.5 -> folds [317646.36, 317386.86, 333214.33] | avg=322749.18
+  Fold 08: params=(max_depth=24, min_samples_leaf=1, max_features=0.5), RMSE=258500.01, MAE=163520.42, R2=0.8486
+    Inner 3-fold RMSE per param:
+      max_depth=None, min_samples_leaf=1, max_features=1.0 -> folds [334330.31, 322241.00, 327430.72] | avg=328000.68
+      max_depth=None, min_samples_leaf=1, max_features=sqrt -> folds [335597.53, 319683.80, 316463.49] | avg=323914.94
+      max_depth=None, min_samples_leaf=1, max_features=0.5 -> folds [332029.99, 315392.67, 317251.59] | avg=321558.08
+      max_depth=None, min_samples_leaf=5, max_features=1.0 -> folds [336781.61, 320652.17, 328936.58] | avg=328790.12
+      max_depth=None, min_samples_leaf=5, max_features=sqrt -> folds [346830.85, 328332.01, 326370.42] | avg=333844.43
+      max_depth=None, min_samples_leaf=5, max_features=0.5 -> folds [335671.50, 315758.63, 320989.70] | avg=324139.94
+      max_depth=None, min_samples_leaf=10, max_features=1.0 -> folds [345011.60, 325326.77, 337162.81] | avg=335833.73
+      max_depth=None, min_samples_leaf=10, max_features=sqrt -> folds [357473.07, 340173.52, 337576.76] | avg=345074.45
+      max_depth=None, min_samples_leaf=10, max_features=0.5 -> folds [345013.80, 322961.07, 329986.35] | avg=332653.74
+      max_depth=12, min_samples_leaf=1, max_features=1.0 -> folds [337536.17, 324043.37, 331000.00] | avg=330859.85
+      max_depth=12, min_samples_leaf=1, max_features=sqrt -> folds [345076.29, 328994.03, 322596.00] | avg=332222.11
+      max_depth=12, min_samples_leaf=1, max_features=0.5 -> folds [334960.83, 319425.37, 320188.25] | avg=324858.15
+      max_depth=12, min_samples_leaf=5, max_features=1.0 -> folds [338824.02, 322062.54, 330719.38] | avg=330535.31
+      max_depth=12, min_samples_leaf=5, max_features=sqrt -> folds [352797.16, 333648.15, 330971.58] | avg=339138.96
+      max_depth=12, min_samples_leaf=5, max_features=0.5 -> folds [339439.36, 317948.00, 323639.20] | avg=327008.86
+      max_depth=12, min_samples_leaf=10, max_features=1.0 -> folds [346299.47, 326178.44, 337989.30] | avg=336822.40
+      max_depth=12, min_samples_leaf=10, max_features=sqrt -> folds [361081.64, 341943.73, 339985.88] | avg=347670.41
+      max_depth=12, min_samples_leaf=10, max_features=0.5 -> folds [346329.91, 323583.43, 330959.62] | avg=333624.32
+      max_depth=24, min_samples_leaf=1, max_features=1.0 -> folds [334200.15, 322386.17, 328008.04] | avg=328198.12
+      max_depth=24, min_samples_leaf=1, max_features=sqrt -> folds [335821.35, 320342.99, 314648.33] | avg=323604.22
+      max_depth=24, min_samples_leaf=1, max_features=0.5 -> folds [332420.71, 315373.48, 315947.48] | avg=321247.22
+      max_depth=24, min_samples_leaf=5, max_features=1.0 -> folds [336815.18, 320656.35, 328914.27] | avg=328795.27
+      max_depth=24, min_samples_leaf=5, max_features=sqrt -> folds [347299.85, 328319.38, 326265.25] | avg=333961.49
+      max_depth=24, min_samples_leaf=5, max_features=0.5 -> folds [335332.00, 315805.30, 321151.12] | avg=324096.14
+      max_depth=24, min_samples_leaf=10, max_features=1.0 -> folds [345011.60, 325326.77, 337162.81] | avg=335833.73
+      max_depth=24, min_samples_leaf=10, max_features=sqrt -> folds [357603.30, 340419.00, 337599.35] | avg=345207.22
+      max_depth=24, min_samples_leaf=10, max_features=0.5 -> folds [345013.80, 322961.07, 330022.60] | avg=332665.82
+  Fold 09: params=(max_depth=24, min_samples_leaf=1, max_features=0.5), RMSE=309264.18, MAE=181450.39, R2=0.8178
+    Inner 3-fold RMSE per param:
+      max_depth=None, min_samples_leaf=1, max_features=1.0 -> folds [342251.50, 316802.37, 312808.40] | avg=323954.09
+      max_depth=None, min_samples_leaf=1, max_features=sqrt -> folds [345541.87, 304603.97, 311774.47] | avg=320640.11
+      max_depth=None, min_samples_leaf=1, max_features=0.5 -> folds [339528.18, 303717.39, 308794.35] | avg=317346.64
+      max_depth=None, min_samples_leaf=5, max_features=1.0 -> folds [349041.36, 314563.06, 312241.88] | avg=325282.10
+      max_depth=None, min_samples_leaf=5, max_features=sqrt -> folds [357986.72, 313053.45, 318638.29] | avg=329892.82
+      max_depth=None, min_samples_leaf=5, max_features=0.5 -> folds [348011.49, 305076.51, 308003.54] | avg=320363.85
+      max_depth=None, min_samples_leaf=10, max_features=1.0 -> folds [358657.12, 322336.23, 320857.70] | avg=333950.35
+      max_depth=None, min_samples_leaf=10, max_features=sqrt -> folds [371122.49, 323822.82, 328664.19] | avg=341203.16
+      max_depth=None, min_samples_leaf=10, max_features=0.5 -> folds [356951.37, 314102.14, 316632.41] | avg=329228.64
+      max_depth=12, min_samples_leaf=1, max_features=1.0 -> folds [345128.68, 319936.78, 314220.40] | avg=326428.62
+      max_depth=12, min_samples_leaf=1, max_features=sqrt -> folds [355174.71, 313520.11, 317630.26] | avg=328775.02
+      max_depth=12, min_samples_leaf=1, max_features=0.5 -> folds [343485.99, 306441.19, 310832.76] | avg=320253.31
+      max_depth=12, min_samples_leaf=5, max_features=1.0 -> folds [351271.61, 316375.10, 313533.26] | avg=327059.99
+      max_depth=12, min_samples_leaf=5, max_features=sqrt -> folds [363168.52, 318252.12, 323421.77] | avg=334947.47
+      max_depth=12, min_samples_leaf=5, max_features=0.5 -> folds [350248.54, 306992.10, 310817.05] | avg=322685.90
+      max_depth=12, min_samples_leaf=10, max_features=1.0 -> folds [359838.36, 323266.01, 321619.05] | avg=334907.81
+      max_depth=12, min_samples_leaf=10, max_features=sqrt -> folds [372413.02, 327317.79, 332003.27] | avg=343911.36
+      max_depth=12, min_samples_leaf=10, max_features=0.5 -> folds [357506.81, 314012.27, 318243.05] | avg=329920.71
+      max_depth=24, min_samples_leaf=1, max_features=1.0 -> folds [342479.12, 318009.41, 312531.04] | avg=324339.86
+      max_depth=24, min_samples_leaf=1, max_features=sqrt -> folds [348076.79, 305108.91, 312627.58] | avg=321937.76
+      max_depth=24, min_samples_leaf=1, max_features=0.5 -> folds [340251.25, 303435.34, 308316.16] | avg=317334.25
+      max_depth=24, min_samples_leaf=5, max_features=1.0 -> folds [349039.61, 314550.25, 312212.97] | avg=325267.61
+      max_depth=24, min_samples_leaf=5, max_features=sqrt -> folds [357348.23, 313311.16, 318572.35] | avg=329743.91
+      max_depth=24, min_samples_leaf=5, max_features=0.5 -> folds [347506.90, 305151.13, 307799.25] | avg=320152.43
+      max_depth=24, min_samples_leaf=10, max_features=1.0 -> folds [358657.12, 322336.23, 320857.70] | avg=333950.35
+      max_depth=24, min_samples_leaf=10, max_features=sqrt -> folds [371122.49, 323891.78, 328595.70] | avg=341203.32
+      max_depth=24, min_samples_leaf=10, max_features=0.5 -> folds [356878.27, 314102.14, 316632.41] | avg=329204.27
