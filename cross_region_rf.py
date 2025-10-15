@@ -227,6 +227,44 @@ def evaluate_region_split(
         "mae": mae(y_test, preds),
         "r2": r2_score(y_test, preds),
     }
+    # Chunk the held-out region into up to 10 subsets to inspect variability.
+    test_subsplit_details: List[Dict[str, float]] = []
+    subsplit_metrics_collectors: Dict[str, List[float]] = {"rmse": [], "mae": [], "r2": []}
+    if len(test_idx) > 0:
+        rng = np.random.default_rng(seed + 23456)
+        positions = np.arange(len(test_idx))
+        permuted = rng.permutation(positions)
+        split_count = min(len(permuted), 10)
+        subsplit_positions = np.array_split(permuted, split_count)
+        for subsplit_id, subset_pos in enumerate(subsplit_positions):
+            if subset_pos.size == 0:
+                continue
+            y_subset = y_test[subset_pos]
+            preds_subset = preds[subset_pos]
+            subset_rmse = rmse(y_subset, preds_subset)
+            subset_mae = mae(y_subset, preds_subset)
+            subset_r2 = r2_score(y_subset, preds_subset)
+            test_subsplit_details.append(
+                {
+                    "split": int(subsplit_id),
+                    "size": int(subset_pos.size),
+                    "rmse": subset_rmse,
+                    "mae": subset_mae,
+                    "r2": subset_r2,
+                }
+            )
+            subsplit_metrics_collectors["rmse"].append(subset_rmse)
+            subsplit_metrics_collectors["mae"].append(subset_mae)
+            subsplit_metrics_collectors["r2"].append(subset_r2)
+    test_subsplit_summary: Dict[str, Dict[str, float]] = {}
+    for metric_name, values in subsplit_metrics_collectors.items():
+        if values:
+            mean_val = float(np.mean(values))
+            std_val = float(np.std(values, ddof=1)) if len(values) > 1 else 0.0
+        else:
+            mean_val = float("nan")
+            std_val = float("nan")
+        test_subsplit_summary[metric_name] = {"mean": mean_val, "std": std_val}
 
     return {
         "test_region": test_region,
@@ -238,6 +276,8 @@ def evaluate_region_split(
         "outer_selected_rmse": outer_selected_rmse,
         "avg_map": avg_map,
         "test_metrics": test_metrics,
+        "test_subsplit_details": test_subsplit_details,
+        "test_subsplit_summary": test_subsplit_summary,
         "train_samples": int(len(train_idx)),
         "test_samples": int(len(test_idx)),
     }
@@ -322,6 +362,21 @@ if __name__ == "__main__":
         print(
             f"Test metrics -> RMSE={metrics['rmse']:.2f}, MAE={metrics['mae']:.2f}, R2={metrics['r2']:.4f}"
         )
+        subsplit_summary = res["test_subsplit_summary"]
+        subsplit_details = res["test_subsplit_details"]
+        print(
+            "Test sub-splits (up to 10 chunks): "
+            f"RMSE={subsplit_summary['rmse']['mean']:.2f} ± {subsplit_summary['rmse']['std']:.2f}, "
+            f"MAE={subsplit_summary['mae']['mean']:.2f} ± {subsplit_summary['mae']['std']:.2f}, "
+            f"R2={subsplit_summary['r2']['mean']:.4f} ± {subsplit_summary['r2']['std']:.4f}"
+        )
+        if subsplit_details:
+            print("Test sub-split details:")
+            for detail in subsplit_details:
+                print(
+                    f"  Chunk {detail['split']:02d} (n={detail['size']}): "
+                    f"RMSE={detail['rmse']:.2f}, MAE={detail['mae']:.2f}, R2={detail['r2']:.4f}"
+                )
         print("Inner-CV average RMSE across folds (top 5 combos):")
         sorted_avg = sorted(
             (
