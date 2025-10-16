@@ -2,7 +2,7 @@
 
 ## Overview
 This repository contains a cross-region housing price study based on the Melbourne dataset. The goal is to compare ridge regression, random forest, and LightGBM models under a leave-one-region-out setup to understand how well each approach generalizes across metropolitan areas.
-## How to Preprocess Data and Construct Feature
+## How to Preprocess Data and Construct Features
  Make sure Melbourne_housing.csv ang ipynb files in the same folder.
 1. open data_preprocessing.ipynb in jupter notebook
    * click run all
