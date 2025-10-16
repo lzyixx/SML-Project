@@ -22,4 +22,5 @@ This repository contains a cross-region housing price study based on the Melbour
    python cross_region_rf.py
    ```
 4. Open light_gbm.ipynb and run all code blocks, the notebook will work the best with GPU acceleration
+
 All scripts and notebooks report cross-validation statistics and hold-out region metrics that you can reference in the project report.
