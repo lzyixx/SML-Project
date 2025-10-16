@@ -430,7 +430,7 @@ if __name__ == "__main__":
     for region, count in summarize_regions(ds.regions):
         print(f"  {region}: {count}")
 
-    alpha_grid = [0.01, 0.1, 1.0, 10.0]
+    alpha_grid = [1.0, 10.0,100]
     results = evaluate_all_regions(ds, alphas=alpha_grid, outer_k=10, inner_k=3, seed=42)
     print("\nCross-region Ridge evaluation:")
     for res in results:
